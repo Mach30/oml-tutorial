@@ -1,0 +1,43 @@
+@dc:title "Kepler 16-b Example Description"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/objectives> with # as objectives {
+	
+	// The vocabulary used by this description
+	uses <http://opencaesar.io/tutorial/vocabulary/bundle>
+	 
+	@dc:^description "Characterize the atmosphere of Kepler 16-b"
+	ci characterize-atmosphere : mission:Objective
+	
+	@dc:^description "Characterize the liquid ocean of Kepler 16-b"
+	ci characterize-liquid-ocean : mission:Objective
+	
+	// There are several ways to declare relations.
+
+	// 1) by instantiating a relation entity.
+
+	ri a1 : mission:Aggregates [
+		from characterize-atmosphere
+		to characterize-liquid-ocean
+	]
+
+    // 2) by asserting the forward or reverse property of a relation entity as part of defining an instance
+
+	@dc:^description "Characterize the gravitational field of Kepler 16-b"
+	ci characterize-gravitational-field : mission:Objective [
+		mission:aggregates characterize-liquid-ocean
+	]
+	
+    // 3) by asserting the forward or reverse property of a relation entity in reference to an instance
+
+    ref ci characterize-gravitational-field [
+		mission:aggregates characterize-rocky-core
+	]
+
+	@dc:^description "Characterize the rocky core of Kepler 16-b"
+	ci characterize-rocky-core : mission:Objective
+	
+	@dc:^description "Characterize the energetic particule environment of the Kepler 16-b binary star system"
+	ci characterize-environment : mission:Objective
+ 
+}
