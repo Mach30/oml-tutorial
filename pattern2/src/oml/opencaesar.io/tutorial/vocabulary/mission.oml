@@ -1,0 +1,42 @@
+@dc:title "Mission Vocabulary Tutorial"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by ModelWare"
+vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission {
+	
+	// The vocabulary bundle used by this description bundle
+	extends <http://www.w3.org/2002/07/owl>
+	
+  @rdfs:label "Objective"
+	@dc:^description """An [=Objective=] represents a specific interest 
+  that one or more stakeholders have in the successful execution of a mission."""
+	concept Objective
+
+  @rdfs:label "Mission"
+	@dc:^description """A [=Mission=] [=pursue=]s [=Objective=]s."""
+	concept Mission
+
+	@rdfs:label "Aggregates"
+	@dc:^description """[=aggregates=] is a many-to-many relation used 
+  to represent objective decomposition as directed acyclic graphs."""
+  relation entity Aggregates [
+    from Objective
+    to Objective
+    forward aggregates
+    reverse isAggregatedIn
+    asymmetric
+    irreflexive
+  ]
+
+	@rdfs:label "Pursues"
+	@dc:^description """A [=Mission=] [=pursues=] zero or more [=Objective=]s."""
+	relation entity Pursues [
+		from Mission
+		to Objective
+		@rdfs:label "pursues"
+		forward pursues
+		@rdfs:label "is pursued by"
+		reverse isPursuedBy
+		asymmetric
+		irreflexive
+	]
+}
