@@ -186,7 +186,7 @@ task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, dependsOn: owlLoad) {
 	endpointURL = "http://localhost:3030/$dataset.name".toString()
 	queryPath = file('src/sparql')
 	resultPath = file('build/frames')
-	format = 'csv'
+	format = 'tsv'
 }
 
 task renderObjectives(type: Exec, dependsOn: owlQuery) {
