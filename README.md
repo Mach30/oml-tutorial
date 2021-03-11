@@ -1,6 +1,6 @@
-# OML Tutorial (pattern1)
+# OML Tutorial
 
-[![Gitpod](https://img.shields.io/badge/gitpod-open-blue?logo=gitpod)](https://gitpod.io/#https://github.com/modelware/oml-tutorial/tree/pattern1/objective-aggregates-objective) 
+[![Gitpod](https://img.shields.io/badge/gitpod-open-blue?logo=gitpod)](https://gitpod.io/#https://github.com/modelware/oml-tutorial) 
 [![Build Status](https://travis-ci.org/opencaesar/oml-template.svg?branch=master)](https://travis-ci.org/opencaesar/oml-template)
 [![Documentation](https://img.shields.io/badge/Documentation-HTML-orange)](https://opencaesar.github.io/oml-template/) 
 
