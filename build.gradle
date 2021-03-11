@@ -1,0 +1,100 @@
+buildscript {
+  repositories {
+    mavenLocal()
+    maven { url 'https://dl.bintray.com/opencaesar/adapters' }
+    maven { url 'https://dl.bintray.com/opencaesar/owl-tools' }
+    maven { url 'https://dl.bintray.com/opencaesar/oml-tools' }
+    maven { url 'https://dl.bintray.com/opencaesar/oml' }
+    maven { url 'https://dl.bintray.com/vermeulen-mp/gradle-plugins' }
+    mavenCentral()
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.+'
+    classpath 'io.opencaesar.owl:owl-fuseki-gradle:+'
+    classpath 'io.opencaesar.owl:owl-shacl-fuseki-gradle:+'
+    classpath 'io.opencaesar.owl:owl-query-gradle:+'
+    classpath 'io.opencaesar.owl:owl-load-gradle:+'
+    classpath 'io.opencaesar.owl:owl-reason-gradle:+'
+    classpath 'io.opencaesar.adapters:oml2owl-gradle:0.8.+'
+    classpath 'io.opencaesar.oml:oml-bikeshed-gradle:0.8.+'
+    classpath 'io.opencaesar.oml:oml-merge-gradle:0.8.+'
+    
+    // needed since gradle-bintray-plugin brings an old version of xerces
+    configurations.classpath.exclude group: 'xerces', module: 'xercesImpl'
+  }
+}
+plugins {
+    id 'com.palantir.git-version' version '0.12.3'
+}
+
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+subprojects {
+
+  group 'io.modelware.oml.tutorial'
+
+  apply plugin: 'eclipse'
+  apply plugin: 'idea'
+
+  repositories {
+	  mavenLocal()
+	  maven { url 'https://dl.bintray.com/opencaesar/ontologies' }
+  }
+
+  /*
+   * Start the headless Fuseki server
+   */
+  task startFuseki(type: io.opencaesar.owl.fuseki.StartFusekiTask, group:"fuseki") {
+	  configurationPath = file('.fuseki.ttl')
+	  outputFolderPath = file('.fuseki')
+  }
+
+  /*
+   * Stop the headless Fuseki server
+   */
+  task stopFuseki(type: io.opencaesar.owl.fuseki.StopFusekiTask, group:"fuseki") {
+	  outputFolderPath = file('.fuseki')
+  }
+
+  /*
+   * A task to delete the build artifacts
+   */
+  task clean(type: Delete, group:"oml") {
+	  delete 'build'
+  }
+
+  /*
+   * Publish to Maven spec
+   */
+  apply plugin: 'maven-publish'
+  
+  task omlZip(type: Zip, group:"oml") {
+    from file('src/oml')
+    include "**/*.oml"
+    destinationDirectory = file('build/libs')
+    archiveBaseName = project.name
+    archiveVersion = project.version
+  }
+  
+  publishToMavenLocal.dependsOn omlZip
+  
+  publishing {
+      publications {
+          maven(MavenPublication) {
+              artifact omlZip
+        pom.withXml {
+                  def dependencies = asNode().appendNode('dependencies')
+                  configurations.oml.allDependencies.stream().each {
+                      def dependency = dependencies.appendNode('dependency')
+                      dependency.appendNode('groupId', it.group)
+                      dependency.appendNode('artifactId', it.name)
+                      dependency.appendNode('version', it.version)
+                  }
+              }
+          }
+      }
+  }
+  
+}

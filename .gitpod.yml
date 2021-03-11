@@ -1,3 +1,5 @@
+image: opencaesar/analysis-environment:version-1.0.0
+
 tasks:
   - init: ./gradlew build
 
