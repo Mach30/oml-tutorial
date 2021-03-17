@@ -6,7 +6,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	// The vocabulary bundle used by this description bundle
 	extends <http://www.w3.org/2002/07/owl>
 	
-  @rdfs:label "Objective"
+ 	@rdfs:label "Objective"
 	@dc:^description """An [=Objective=] represents a specific interest 
   that one or more stakeholders have in the successful execution of a mission."""
 	concept Objective
@@ -22,5 +22,4 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
     asymmetric
     irreflexive
   ]
-
 }
