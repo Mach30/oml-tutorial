@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:oml="http://opencaesar.io/oml" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_K11XoIe1EeuNs8t_5R_XGA" selectedViews="_PR7IcIe1EeuNs8t_5R_XGA" version="14.3.1.202003261200">
+    <semanticResources>build/oml/iso.org/80000-1-decimalPrefix.oml</semanticResources>
+    <semanticResources>build/oml/purl.org/dc/elements/1.1.oml</semanticResources>
+    <semanticResources>build/oml/iupac.org/metrology.oml</semanticResources>
+    <semanticResources>build/oml/www.w3.org/2000/01/rdf-schema.oml</semanticResources>
+    <semanticResources>build/oml/www.w3.org/2002/07/owl.oml</semanticResources>
+    <semanticResources>build/oml/www.w3.org/2001/XMLSchema.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-1.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-3-instances.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-3-quantities.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-3-units.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-instances.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-3-magnitudes-1.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-3-magnitudes-2.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-3-rules.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-4-instances.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-4-quantities.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-4-units.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-4-magnitudes-1.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-4-magnitudes-2.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-4-rules.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-5-instances.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-5-quantities.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-5-units.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-5-magnitudes-1.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-5-magnitudes-2.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-5-rules.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-6-instances.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-6-quantities.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-6-units.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-6-magnitudes-1.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-6-magnitudes-2.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/80000-6-rules.oml</semanticResources>
+    <semanticResources>build/oml/iso.org/diagrams/80000-3-diagram.oml</semanticResources>
+    <semanticResources>build/oml/iupac.org/diagrams/core.oml</semanticResources>
+    <semanticResources>build/oml/iupac.org/diagrams/quantities-and-values.oml</semanticResources>
+    <semanticResources>build/oml/iupac.org/diagrams/system-of-quantities.oml</semanticResources>
+    <semanticResources>build/oml/iupac.org/diagrams/system-of-units.oml</semanticResources>
+    <semanticResources>build/oml/iupac.org/diagrams/units.oml</semanticResources>
+    <semanticResources>build/oml/nist.gov/pml/special-publication-811-instances.oml</semanticResources>
+    <semanticResources>build/oml/nist.gov/pml/special-publication-811-units.oml</semanticResources>
+    <semanticResources>build/oml/nist.gov/pml/special-publication-811-magnitudes-1.oml</semanticResources>
+    <semanticResources>build/oml/nist.gov/pml/special-publication-811-magnitudes-2.oml</semanticResources>
+    <semanticResources>build/oml/opencaesar.io/diagram.oml</semanticResources>
+    <semanticResources>build/oml/www.w3.org/1999/02/22-rdf-syntax-ns.oml</semanticResources>
+    <semanticResources>src/oml/opencaesar.io/tutorial/description/bundle.oml</semanticResources>
+    <semanticResources>src/oml/opencaesar.io/tutorial/description/missions.oml</semanticResources>
+    <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/mission.oml</semanticResources>
+    <semanticResources>src/oml/opencaesar.io/tutorial/description/objectives.oml</semanticResources>
+    <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/bundle.oml</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_PR7IcIe1EeuNs8t_5R_XGA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_i0OTWYfJEeuNs8t_5R_XGA" name="Objectives" repPath="#_i0FwcIfJEeuNs8t_5R_XGA" changeId="8257a485-b1ac-4839-b887-e8c07cd9d345">
+        <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']"/>
+        <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <table:DTable uid="_i0FwcIfJEeuNs8t_5R_XGA" headerColumnWidth="259">
+    <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
+    <lines xmi:type="table:DLine" uid="_i0LQAIfJEeuNs8t_5R_XGA" label="objectives">
+      <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
+      <lines xmi:type="table:DLine" uid="_i0MeIIfJEeuNs8t_5R_XGA" label="characterize-atmosphere">
+        <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
+        <lines xmi:type="table:DLine" uid="_i0MeJofJEeuNs8t_5R_XGA" label="characterize-liquid-ocean">
+          <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
+          <cells xmi:type="table:DCell" uid="_i0NsQ4fJEeuNs8t_5R_XGA" label="Characterize Liquid Ocean" column="_i0NFOIfJEeuNs8t_5R_XGA">
+            <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+            <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          </cells>
+          <cells xmi:type="table:DCell" uid="_i0NsRYfJEeuNs8t_5R_XGA" label="Characterize the liquid ocean of Kepler 16-b" column="_i0NFOofJEeuNs8t_5R_XGA">
+            <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+            <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          </cells>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_i0MeJ4fJEeuNs8t_5R_XGA" labelSize="12" defaultForegroundStyle="true"/>
+        </lines>
+        <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
+        <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']"/>
+        <cells xmi:type="table:DCell" uid="_i0NFPofJEeuNs8t_5R_XGA" label="Characterize Atmosphere" column="_i0NFOIfJEeuNs8t_5R_XGA">
+          <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
+          <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
+        </cells>
+        <cells xmi:type="table:DCell" uid="_i0NsQYfJEeuNs8t_5R_XGA" label="Characterize the atmosphere of Kepler 16-b" column="_i0NFOofJEeuNs8t_5R_XGA">
+          <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
+          <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
+        </cells>
+        <currentStyle xmi:type="table:DTableElementStyle" uid="_i0MeIYfJEeuNs8t_5R_XGA" labelSize="12" defaultForegroundStyle="true"/>
+      </lines>
+      <lines xmi:type="table:DLine" uid="_i0MeIofJEeuNs8t_5R_XGA" label="characterize-environment">
+        <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
+        <lines xmi:type="table:DLine" uid="_5tbpQIfVEeuNs8t_5R_XGA" label="characterize-liquid-ocean">
+          <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
+          <cells xmi:type="table:DCell" uid="_5tcQWofVEeuNs8t_5R_XGA" label="Characterize Liquid Ocean" column="_i0NFOIfJEeuNs8t_5R_XGA">
+            <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+            <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          </cells>
+          <cells xmi:type="table:DCell" uid="_5tcQXIfVEeuNs8t_5R_XGA" label="Characterize the liquid ocean of Kepler 16-b" column="_i0NFOofJEeuNs8t_5R_XGA">
+            <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+            <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          </cells>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_5tbpQYfVEeuNs8t_5R_XGA" labelSize="12" defaultForegroundStyle="true"/>
+        </lines>
+        <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
+        <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']"/>
+        <cells xmi:type="table:DCell" uid="_i0NsR4fJEeuNs8t_5R_XGA" label="Characterize Environment" column="_i0NFOIfJEeuNs8t_5R_XGA">
+          <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
+          <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
+        </cells>
+        <cells xmi:type="table:DCell" uid="_i0NsSYfJEeuNs8t_5R_XGA" label="Characterize the energetic particule environment of the Kepler 16-b binary star system" column="_i0NFOofJEeuNs8t_5R_XGA">
+          <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
+          <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
+        </cells>
+        <currentStyle xmi:type="table:DTableElementStyle" uid="_i0MeI4fJEeuNs8t_5R_XGA" labelSize="12" defaultForegroundStyle="true"/>
+      </lines>
+      <lines xmi:type="table:DLine" uid="_i0MeJIfJEeuNs8t_5R_XGA" label="characterize-gravitational-field">
+        <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
+        <lines xmi:type="table:DLine" uid="_i0NFMIfJEeuNs8t_5R_XGA" label="characterize-liquid-ocean">
+          <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
+          <cells xmi:type="table:DCell" uid="_i0NsT4fJEeuNs8t_5R_XGA" label="Characterize Liquid Ocean" column="_i0NFOIfJEeuNs8t_5R_XGA">
+            <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+            <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          </cells>
+          <cells xmi:type="table:DCell" uid="_i0NsUYfJEeuNs8t_5R_XGA" label="Characterize the liquid ocean of Kepler 16-b" column="_i0NFOofJEeuNs8t_5R_XGA">
+            <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+            <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+          </cells>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_i0NFMYfJEeuNs8t_5R_XGA" labelSize="12" defaultForegroundStyle="true"/>
+        </lines>
+        <lines xmi:type="table:DLine" uid="_i0NFMofJEeuNs8t_5R_XGA" label="characterize-rocky-core">
+          <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
+          <lines xmi:type="table:DLine" uid="_i0NFNIfJEeuNs8t_5R_XGA" label="characterize-rocky-core-density">
+            <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
+            <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
+            <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
+            <cells xmi:type="table:DCell" uid="_i0OTUIfJEeuNs8t_5R_XGA" label="Characterize Rocky Core Density" column="_i0NFOIfJEeuNs8t_5R_XGA">
+              <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
+              <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
+            </cells>
+            <cells xmi:type="table:DCell" uid="_i0OTUofJEeuNs8t_5R_XGA" label="Characterize the core density of Kepler 16-b" column="_i0NFOofJEeuNs8t_5R_XGA">
+              <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
+              <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
+            </cells>
+            <currentStyle xmi:type="table:DTableElementStyle" uid="_i0NFNYfJEeuNs8t_5R_XGA" labelSize="12" defaultForegroundStyle="true"/>
+          </lines>
+          <lines xmi:type="table:DLine" uid="_i0NFNofJEeuNs8t_5R_XGA" label="characterize-rocky-core-shape">
+            <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
+            <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
+            <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
+            <cells xmi:type="table:DCell" uid="_i0OTVIfJEeuNs8t_5R_XGA" label="Characterize Rocky Core Shape" column="_i0NFOIfJEeuNs8t_5R_XGA">
+              <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
+              <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
+            </cells>
+            <cells xmi:type="table:DCell" uid="_i0OTVofJEeuNs8t_5R_XGA" label="Characterize the core shape of Kepler 16-b" column="_i0NFOofJEeuNs8t_5R_XGA">
+              <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
+              <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
+            </cells>
+            <currentStyle xmi:type="table:DTableElementStyle" uid="_i0NFN4fJEeuNs8t_5R_XGA" labelSize="12" defaultForegroundStyle="true"/>
+          </lines>
+          <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
+          <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
+          <cells xmi:type="table:DCell" uid="_i0NsU4fJEeuNs8t_5R_XGA" label="Characterize Rocky Core" column="_i0NFOIfJEeuNs8t_5R_XGA">
+            <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
+            <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
+          </cells>
+          <cells xmi:type="table:DCell" uid="_i0NsVYfJEeuNs8t_5R_XGA" label="Characterize the rocky core of Kepler 16-b" column="_i0NFOofJEeuNs8t_5R_XGA">
+            <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
+            <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
+          </cells>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_i0NFM4fJEeuNs8t_5R_XGA" labelSize="12" defaultForegroundStyle="true"/>
+        </lines>
+        <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
+        <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']"/>
+        <cells xmi:type="table:DCell" uid="_i0NsS4fJEeuNs8t_5R_XGA" label="Characterize Gravitational Field" column="_i0NFOIfJEeuNs8t_5R_XGA">
+          <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
+          <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
+        </cells>
+        <cells xmi:type="table:DCell" uid="_i0NsTYfJEeuNs8t_5R_XGA" label="Characterize the gravitational field of Kepler 16-b" column="_i0NFOofJEeuNs8t_5R_XGA">
+          <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
+          <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
+        </cells>
+        <currentStyle xmi:type="table:DTableElementStyle" uid="_i0MeJYfJEeuNs8t_5R_XGA" labelSize="12" defaultForegroundStyle="true"/>
+      </lines>
+      <semanticElements xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
+      <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedLineMappings[name='Root']"/>
+    </lines>
+    <columns xmi:type="table:DFeatureColumn" uid="_i0NFOIfJEeuNs8t_5R_XGA" label="Label" cells="_i0NFPofJEeuNs8t_5R_XGA _i0NsQ4fJEeuNs8t_5R_XGA _i0NsR4fJEeuNs8t_5R_XGA _i0NsS4fJEeuNs8t_5R_XGA _i0NsT4fJEeuNs8t_5R_XGA _i0NsU4fJEeuNs8t_5R_XGA _i0OTUIfJEeuNs8t_5R_XGA _i0OTVIfJEeuNs8t_5R_XGA _5tcQWofVEeuNs8t_5R_XGA" width="182" featureName="name">
+      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedColumnMappings[name='label']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_i0NFOofJEeuNs8t_5R_XGA" label="Description" cells="_i0NsQYfJEeuNs8t_5R_XGA _i0NsRYfJEeuNs8t_5R_XGA _i0NsSYfJEeuNs8t_5R_XGA _i0NsTYfJEeuNs8t_5R_XGA _i0NsUYfJEeuNs8t_5R_XGA _i0NsVYfJEeuNs8t_5R_XGA _i0OTUofJEeuNs8t_5R_XGA _i0OTVofJEeuNs8t_5R_XGA _5tcQXIfVEeuNs8t_5R_XGA" width="463" featureName="name">
+      <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']/@ownedColumnMappings[name='description']"/>
+    </columns>
+    <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']/@ownedRepresentations[name='Objectives']"/>
+  </table:DTable>
+</xmi:XMI>
