@@ -1,0 +1,20 @@
+@dc:title "Kepler 16-b Example Missions"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/missions> with # as missions {
+  
+  extends <http://opencaesar.io/tutorial/description/objectives>
+
+  @dc:^description "Orbiter Mission"
+  ci orbiter : mission:Mission [
+		mission:pursues objectives:characterize-atmosphere
+		mission:pursues objectives:characterize-environment
+		mission:pursues objectives:characterize-gravitational-field
+	]
+ 
+  @dc:^description "Lander Mission"
+  ci lander : mission:Mission [
+		mission:pursues objectives:characterize-atmosphere
+		mission:pursues objectives:characterize-environment
+	]
+}
