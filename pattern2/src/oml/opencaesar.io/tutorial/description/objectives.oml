@@ -34,6 +34,7 @@ description <http://opencaesar.io/tutorial/description/objectives> with # as obj
 	ci characterize-rocky-core-shape : mission:Objective
 
 	@dc:^description "Characterize the energetic particule environment of the Kepler 16-b binary star system"
-	ci characterize-environment : mission:Objective
- 
+	ci characterize-environment : mission:Objective [
+		mission:aggregates characterize-liquid-ocean
+	]
 }
