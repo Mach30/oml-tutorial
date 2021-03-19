@@ -2,17 +2,16 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/objectives> with # as objectives {
-
-	uses <http://opencaesar.io/tutorial/vocabulary/mission>
-
+	
+	// The vocabulary used by this description
+	uses <http://opencaesar.io/tutorial/vocabulary/bundle>
+	 
 	@dc:^description "Characterize the atmosphere of Kepler 16-b"
-	@rdfs:label "Characterize Atmosphere"
 	ci characterize-atmosphere : mission:Objective [
 		mission:aggregates characterize-liquid-ocean
 	]
-
+	
 	@dc:^description "Characterize the liquid ocean of Kepler 16-b"
-	@rdfs:label "Characterize Liquid Ocean"
 	ci characterize-liquid-ocean : mission:Objective
 
 	@dc:^description "Characterize the gravitational field of Kepler 16-b"
@@ -21,7 +20,7 @@ description <http://opencaesar.io/tutorial/description/objectives> with # as obj
 		mission:aggregates characterize-liquid-ocean
 		mission:aggregates characterize-rocky-core
 	]
-
+	
 	@dc:^description "Characterize the rocky core of Kepler 16-b"
 	@rdfs:label "Characterize Rocky Core"
 	ci characterize-rocky-core : mission:Objective [
@@ -39,8 +38,7 @@ description <http://opencaesar.io/tutorial/description/objectives> with # as obj
 
 	@dc:^description "Characterize the energetic particule environment of the Kepler 16-b binary star system"
 	@rdfs:label "Characterize Environment"
-	ci characterize-environment : mission:Objective
-[
+	ci characterize-environment : mission:Objective [
 		mission:aggregates characterize-liquid-ocean
 	]
 }
