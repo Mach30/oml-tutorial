@@ -40,10 +40,10 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
     Example [=Component=]s include launch vehicle, spacecraft, telecommunication subsystem, 
     flight software, attitude control software, and mission operations team.
 	
-	[=Component=]s can be aggregated in homeomeric trees. """
-	concept Component :> base:AggregatedElement [
-		restricts all relation base:aggregates to Component
-		restricts all relation base:isAggregatedIn to Component
+	  [=Component=]s can be organized hierarchically by containment of other [=Component=]s. """
+	concept Component :> base:ContainedElement, base:Container [
+		restricts all relation base:contains to Component
+		restricts all relation base:isContainedIn to Component
 	]
 
 	@rdfs:label "Deploys"

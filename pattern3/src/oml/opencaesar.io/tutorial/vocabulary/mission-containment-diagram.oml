@@ -1,0 +1,8 @@
+vocabulary <http://opencaesar.io/tutorial/vocabulary/mission-containment-diagram> with # as mission-containment-diagram {
+  
+  extends <http://opencaesar.io/tutorial/vocabulary/mission>
+
+  ref relation entity base:Contains
+
+  ref concept mission:Component
+}

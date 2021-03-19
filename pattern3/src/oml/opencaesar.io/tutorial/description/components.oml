@@ -1,0 +1,46 @@
+@dc:title "Kepler 16-b Example Components"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/components> with # as components {
+
+	// The vocabulary used by this description
+	uses <http://opencaesar.io/tutorial/vocabulary/bundle>
+
+  ci orbiter-launch-system : mission:Component
+
+	ci orbiter-spacecraft : mission:Component [
+    base:contains orbiter-power-subsystem
+    base:contains orbiter-harness
+    base:contains orbiter-thermal-subsystem
+    base:contains orbiter-command-and-data-handling
+    base:contains orbiter-telecom-subsystem
+    base:contains orbiter-guidance-navigation-control-subsystem
+    base:contains orbiter-mechanical-subsystem
+    base:contains orbiter-spacraft-flight-software
+    base:contains orbiter-propulsion-subsystem
+  ]
+
+  ci orbiter-power-subsystem : mission:Component
+  ci orbiter-harness : mission:Component
+  ci orbiter-thermal-subsystem : mission:Component
+  ci orbiter-command-and-data-handling : mission:Component
+  ci orbiter-telecom-subsystem : mission:Component
+  ci orbiter-guidance-navigation-control-subsystem : mission:Component
+  ci orbiter-mechanical-subsystem : mission:Component
+  ci orbiter-spacraft-flight-software : mission:Component
+  ci orbiter-propulsion-subsystem : mission:Component
+
+  ci orbiter-mission-operations-system : mission:Component
+
+	ci orbiter-ground-data-system : mission:Component
+
+
+  ci lander-launch-system : mission:Component
+
+	ci lander-spacecraft : mission:Component
+
+  ci lander-mission-operations-system : mission:Component
+
+  ci lander-ground-data-system : mission:Component
+
+}

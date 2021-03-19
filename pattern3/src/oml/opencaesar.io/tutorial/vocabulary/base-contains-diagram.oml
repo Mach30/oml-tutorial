@@ -1,0 +1,7 @@
+vocabulary <http://opencaesar.io/tutorial/vocabulary/base-contains-diagram> with # as base-contains-diagram {
+  
+  extends <http://opencaesar.io/tutorial/vocabulary/base>
+
+  ref relation entity base:Contains
+ 
+}

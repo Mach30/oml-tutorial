@@ -27,4 +27,34 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/base> with # as base {
 		asymmetric
 		irreflexive
 	]
+
+	@rdfs:label "Container"
+	@dc:^description """"[=Container=] is the domain of the [=contains=] property. 
+	Containment is a homeomeric	one-to-many relation. Concepts that may participate 
+	as the container in such relations should specialize[=Container=] and 
+	apply appropriate range restrictions to [=contains=]."""
+	aspect Container
+
+	@rdfs:label "Contained Element"
+	@dc:^description """"[=ContainedElement=] is the range of the [=contains=] property. 
+	Containment is a homeomeric	one-to-many relation. Concepts that may participate 
+	in such as the contained in such relations should specialize [=ContainedElement=] and 
+	apply appropriate range restrictions to [=isContainedIn=]."""
+	aspect ContainedElement
+
+	@rdfs:label "Contains"
+	@dc:^description """[=contains=] is a homeomeric one-to-many relation used 
+	to represent tree structures. Context-specific containment relations 
+	should specialize [=contains=]."""
+	relation entity Contains [
+		from Container
+		to ContainedElement
+		@rdfs:label "contains"
+		forward contains
+		@rdfs:label "is contained in"
+		reverse isContainedIn
+		inverse functional
+		asymmetric
+		irreflexive
+	]
 }
