@@ -13,24 +13,27 @@ description <http://opencaesar.io/tutorial/description/objectives> with # as obj
 	
 	@dc:^description "Characterize the liquid ocean of Kepler 16-b"
 	ci characterize-liquid-ocean : mission:Objective
-	
 
 	@dc:^description "Characterize the gravitational field of Kepler 16-b"
+	@rdfs:label "Characterize Gravitational Field"
 	ci characterize-gravitational-field : mission:Objective [
 		mission:aggregates characterize-liquid-ocean
 		mission:aggregates characterize-rocky-core
 	]
 	
 	@dc:^description "Characterize the rocky core of Kepler 16-b"
+	@rdfs:label "Characterize Rocky Core"
 	ci characterize-rocky-core : mission:Objective [
 		mission:aggregates characterize-rocky-core-density
 		mission:aggregates characterize-rocky-core-shape
 	]
-	
+
 	@dc:^description "Characterize the core density of Kepler 16-b"
+	@rdfs:label "Characterize Rocky Core Density"
 	ci characterize-rocky-core-density : mission:Objective
 
 	@dc:^description "Characterize the core shape of Kepler 16-b"
+	@rdfs:label "Characterize Rocky Core Shape"
 	ci characterize-rocky-core-shape : mission:Objective
 
 	@dc:^description "Characterize the energetic particule environment of the Kepler 16-b binary star system"
