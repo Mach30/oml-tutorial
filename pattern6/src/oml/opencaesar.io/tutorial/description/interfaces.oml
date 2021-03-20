@@ -100,7 +100,7 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
     mission:presents lander-spacecraft.launch
     mission:presents lander-spacecraft.ground
   ]
-
+  
   ci lander-mission-operations-system.commands : mission:Interface
   ci lander-mission-operations-system.telemetry : mission:Interface
 
@@ -113,7 +113,7 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   ci lander-ground-data-system.command.space : mission:Interface
   ci lander-ground-data-system.telemetry.downlink : mission:Interface
   ci lander-ground-data-system.telemetry.space : mission:Interface
-
+  
   ref ci components:lander-ground-data-system [
     mission:presents lander-ground-data-system.command.uplink
     mission:presents lander-ground-data-system.command.space

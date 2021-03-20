@@ -1,0 +1,107 @@
+@dc:title "Kepler 16-b Example Junctions"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/junctions> with # as junctions {
+  extends <http://opencaesar.io/tutorial/description/interfaces>
+
+  // command uplink paths from mos to orbiter spacecraft subsystems and launch system
+  
+  ci orbiter-mission-operations-system.commands2gds : mission:Junction [
+    mission:joins1 interfaces:orbiter-mission-operations-system.commands
+    mission:joins2 interfaces:orbiter-ground-data-system.command.uplink
+  ]
+
+  ci orbiter-ground-data-system.commands2spacecraft.space-link : mission:Junction [
+    mission:joins1 interfaces:orbiter-ground-data-system.command.space
+    mission:joins2 interfaces:orbiter-spacecraft.ground
+  ]
+
+  ci orbiter-ground-data-system.commands2launch-system.space-link : mission:Junction [
+    mission:joins1 interfaces:orbiter-ground-data-system.command.space 
+    mission:joins2 interfaces:orbiter-launch-system.ground
+  ]
+
+  ci orbiter-spacecraft.commands2subsystems : mission:Junction [
+    mission:joins1 interfaces:orbiter-spacecraft.commands
+    mission:joins2 interfaces:orbiter-command-and-data-handling.commands
+    mission:joins2 interfaces:orbiter-power-subsystem.commands
+    mission:joins2 interfaces:orbiter-thermal-subsystem.commands
+    mission:joins2 interfaces:orbiter-guidance-navigation-control-subsystem.commands
+    mission:joins2 interfaces:orbiter-propulsion-subsystem.commands
+  ]
+
+  // telemetry downlink paths from orbiter spacecraft subsystems and launch system to mos
+
+  ci orbiter-spacecraft.subsystems2telemetry : mission:Junction [
+    mission:joins1 interfaces:orbiter-command-and-data-handling.telemetry
+    mission:joins1 interfaces:orbiter-power-subsystem.telemetry
+    mission:joins1 interfaces:orbiter-thermal-subsystem.telemetry
+    mission:joins1 interfaces:orbiter-guidance-navigation-control-subsystem.telemetry
+    mission:joins1 interfaces:orbiter-propulsion-subsystem.telemetry
+    mission:joins2 interfaces:orbiter-spacecraft.telemetry
+  ]
+
+  ci orbiter-spacecraft.telemetry.space-link : mission:Junction [
+    mission:joins1 interfaces:orbiter-spacecraft.ground
+    mission:joins2 interfaces:orbiter-ground-data-system.telemetry.space
+  ]
+
+  ci orbiter-launch-system.telemetry.space-link : mission:Junction [
+    mission:joins1 interfaces:orbiter-launch-system.ground
+    mission:joins2 interfaces:orbiter-ground-data-system.telemetry.space
+  ]
+
+  ci orbiter-ground-data-system.telemetry2mos : mission:Junction [
+    mission:joins1 interfaces:orbiter-ground-data-system.telemetry.downlink
+    mission:joins2 interfaces:orbiter-mission-operations-system.telemetry
+  ]
+
+  // orbiter spacecraft-launch system link
+
+  ci orbiter-spacecraft-launch-system-link : mission:Junction [
+    mission:joins interfaces:orbiter-launch-system.spacecraft
+    mission:joins interfaces:orbiter-spacecraft.launch
+  ]
+
+  // command uplink paths from mos to lander spacecraft and launch system
+  
+  ci lander-mission-operations-system.commands2gds : mission:Junction [
+    mission:joins1 interfaces:lander-mission-operations-system.commands
+    mission:joins2 interfaces:lander-ground-data-system.command.uplink
+  ]
+
+  ci lander-ground-data-system.command2spacecraft.space-link : mission:Junction [
+    mission:joins1 interfaces:lander-ground-data-system.command.space
+    mission:joins2 interfaces:lander-spacecraft.ground
+  ]
+
+  ci lander-ground-data-system.commands2launch-system.space-link : mission:Junction [
+    mission:joins1 interfaces:lander-ground-data-system.command.space 
+    mission:joins2 interfaces:lander-launch-system.ground
+  ]
+
+  // telemetry downlink paths from lander spacecraft and launch system to mos
+  
+  ci lander-spacecraft.telemetry.space-link : mission:Junction [
+    mission:joins1 interfaces:lander-spacecraft.ground
+    mission:joins2 interfaces:lander-ground-data-system.telemetry.space
+  ]
+
+  ci lander-launch-system.telemetry.space-link : mission:Junction [
+    mission:joins1 interfaces:lander-launch-system.ground
+    mission:joins2 interfaces:lander-ground-data-system.telemetry.space
+  ]
+
+  ci lander-ground-data-system.telemetry2mos : mission:Junction [
+    mission:joins1 interfaces:lander-ground-data-system.telemetry.downlink
+    mission:joins2 interfaces:lander-mission-operations-system.telemetry
+  ]
+
+  // lander spacecraft-launch system link
+
+  ci lander-spacecraft-launch-system-link : mission:Junction [
+    mission:joins interfaces:lander-launch-system.spacecraft
+    mission:joins interfaces:lander-spacecraft.launch
+  ]
+
+}
