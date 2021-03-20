@@ -4,120 +4,36 @@
 description <http://opencaesar.io/tutorial/description/interfaces> with # as interfaces {
   extends  <http://opencaesar.io/tutorial/description/components>
 
-  ci orbiter-launch-system.spacecraft : mission:Interface
-  ci orbiter-launch-system.ground : mission:Interface
-
-  ref ci components:orbiter-launch-system [
-    mission:presents orbiter-launch-system.spacecraft
-    mission:presents orbiter-launch-system.ground
-  ]
-
-  ci orbiter-spacecraft.launch : mission:Interface
-  ci orbiter-spacecraft.ground : mission:Interface
-
-  ci orbiter-spacecraft.commands : mission:Interface
-  ci orbiter-spacecraft.telemetry : mission:Interface
+  ci orbiter-spacecraft.commandIn : kepler16b:SpacecraftCommandInInterface
+  ci orbiter-spacecraft.telemetryOut : kepler16b:SpacecraftTelemetryOutInterface
 
   ref ci components:orbiter-spacecraft [
-    mission:presents orbiter-spacecraft.launch
-    mission:presents orbiter-spacecraft.ground
-    mission:presents orbiter-spacecraft.commands
-    mission:presents orbiter-spacecraft.telemetry
+    mission:presents orbiter-spacecraft.commandIn
+    mission:presents orbiter-spacecraft.telemetryOut
   ]
 
-  ci orbiter-command-and-data-handling.commands : mission:Interface
-  ci orbiter-command-and-data-handling.telemetry : mission:Interface
-
-  ref ci components:orbiter-command-and-data-handling [
-    mission:presents orbiter-command-and-data-handling.commands
-    mission:presents orbiter-command-and-data-handling.telemetry
-  ]
-  
-  ci orbiter-power-subsystem.commands : mission:Interface
-  ci orbiter-power-subsystem.telemetry : mission:Interface
-  
-  ref ci components:orbiter-power-subsystem [
-    mission:presents orbiter-power-subsystem.commands
-    mission:presents orbiter-power-subsystem.telemetry
-  ]
-  
-  ci orbiter-thermal-subsystem.commands : mission:Interface
-  ci orbiter-thermal-subsystem.telemetry : mission:Interface
-
-  ref ci components:orbiter-thermal-subsystem [
-    mission:presents orbiter-thermal-subsystem.commands
-    mission:presents orbiter-thermal-subsystem.telemetry
-  ]
-  
-  ci orbiter-guidance-navigation-control-subsystem.commands : mission:Interface
-  ci orbiter-guidance-navigation-control-subsystem.telemetry : mission:Interface
-
-  ref ci components:orbiter-guidance-navigation-control-subsystem [
-    mission:presents orbiter-guidance-navigation-control-subsystem.commands
-    mission:presents orbiter-guidance-navigation-control-subsystem.telemetry
-  ]
-  
-  ci orbiter-propulsion-subsystem.commands : mission:Interface
-  ci orbiter-propulsion-subsystem.telemetry : mission:Interface
-
-  ref ci components:orbiter-propulsion-subsystem [
-    mission:presents orbiter-propulsion-subsystem.commands
-    mission:presents orbiter-propulsion-subsystem.telemetry
-  ]
-  
-  ci orbiter-mission-operations-system.commands : mission:Interface
-  ci orbiter-mission-operations-system.telemetry : mission:Interface
-
-  ref ci components:orbiter-mission-operations-system [
-    mission:presents orbiter-mission-operations-system.commands
-    mission:presents orbiter-mission-operations-system.telemetry
-  ]
-  
-  ci orbiter-ground-data-system.command.uplink : mission:Interface
-  ci orbiter-ground-data-system.command.space : mission:Interface
-  ci orbiter-ground-data-system.telemetry.downlink : mission:Interface
-  ci orbiter-ground-data-system.telemetry.space : mission:Interface
+  ci orbiter-ground-data-system.commandOut : kepler16b:SpacecraftCommandOutInterface
+  ci orbiter-ground-data-system.telemetryIn : kepler16b:SpacecraftTelemetryInInterface
 
   ref ci components:orbiter-ground-data-system [
-    mission:presents orbiter-ground-data-system.command.uplink
-    mission:presents orbiter-ground-data-system.command.space
-    mission:presents orbiter-ground-data-system.telemetry.downlink
-    mission:presents orbiter-ground-data-system.telemetry.space
-  ]
-
-  ci lander-launch-system.spacecraft : mission:Interface
-  ci lander-launch-system.ground : mission:Interface
-
-  ref ci components:lander-launch-system [
-    mission:presents lander-launch-system.spacecraft
-    mission:presents lander-launch-system.ground
+    mission:presents orbiter-ground-data-system.commandOut
+    mission:presents orbiter-ground-data-system.telemetryIn
   ]
   
-  ci lander-spacecraft.launch : mission:Interface
-  ci lander-spacecraft.ground : mission:Interface
-  
+  ci lander-spacecraft.commandIn : kepler16b:LanderCommandInInterface
+  ci lander-spacecraft.telemetryOut : kepler16b:LanderTelemetryOutInterface
+
   ref ci components:lander-spacecraft [
-    mission:presents lander-spacecraft.launch
-    mission:presents lander-spacecraft.ground
-  ]
-  
-  ci lander-mission-operations-system.commands : mission:Interface
-  ci lander-mission-operations-system.telemetry : mission:Interface
-
-  ref ci components:lander-mission-operations-system [
-    mission:presents lander-mission-operations-system.commands
-    mission:presents lander-mission-operations-system.telemetry
+    mission:presents lander-spacecraft.commandIn
+    mission:presents lander-spacecraft.telemetryOut
   ]
 
-  ci lander-ground-data-system.command.uplink : mission:Interface
-  ci lander-ground-data-system.command.space : mission:Interface
-  ci lander-ground-data-system.telemetry.downlink : mission:Interface
-  ci lander-ground-data-system.telemetry.space : mission:Interface
-  
+  ci lander-ground-data-system.commandOut : kepler16b:LanderCommandOutInterface
+  ci lander-ground-data-system.telemetryIn : kepler16b:LanderTelemetryInInterface
+
   ref ci components:lander-ground-data-system [
-    mission:presents lander-ground-data-system.command.uplink
-    mission:presents lander-ground-data-system.command.space
-    mission:presents lander-ground-data-system.telemetry.downlink
-    mission:presents lander-ground-data-system.telemetry.space
+    mission:presents lander-ground-data-system.commandOut
+    mission:presents lander-ground-data-system.telemetryIn
   ]
+  
 }
