@@ -1,0 +1,60 @@
+@dc:title "Base Vocabulary Tutorial"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by ModelWare"
+vocabulary <http://opencaesar.io/tutorial/vocabulary/base> with # as base {
+	
+	extends <http://www.w3.org/2002/07/owl>
+	
+  @rdfs:label "Aggregated Element"
+	@dc:^description """[=AggregatedElement=] is the domain and rage of the [=aggregates=] property. 
+  Aggregation is a homeomeric relation that is potentially many-to-many. 
+  Concepts that may participate in such aggregations should specialize
+	[=AggregatedElement=] and apply appropriate range restrictions 
+  to [=aggregates=] and [=isAggregatedIn=]."""
+	aspect AggregatedElement
+
+  @rdfs:label "Aggregates"
+	@dc:^description """[=aggregates=] is a homeomeric many-to-many relation used
+  to represent relations corresponding to directed acyclic graphs. 
+  Context-specific aggregation relations should specialize [=aggregates=]."""
+	relation entity Aggregates [
+		from AggregatedElement
+		to AggregatedElement
+		@rdfs:label "aggregates"
+		forward aggregates
+		@rdfs:label "is aggregated in"
+		reverse isAggregatedIn
+		asymmetric
+		irreflexive
+	]
+
+	@rdfs:label "Container"
+	@dc:^description """"[=Container=] is the domain of the [=contains=] property. 
+	Containment is a homeomeric	one-to-many relation. Concepts that may participate 
+	as the container in such relations should specialize[=Container=] and 
+	apply appropriate range restrictions to [=contains=]."""
+	aspect Container
+
+	@rdfs:label "Contained Element"
+	@dc:^description """"[=ContainedElement=] is the range of the [=contains=] property. 
+	Containment is a homeomeric	one-to-many relation. Concepts that may participate 
+	in such as the contained in such relations should specialize [=ContainedElement=] and 
+	apply appropriate range restrictions to [=isContainedIn=]."""
+	aspect ContainedElement
+
+	@rdfs:label "Contains"
+	@dc:^description """[=contains=] is a homeomeric one-to-many relation used 
+	to represent tree structures. Context-specific containment relations 
+	should specialize [=contains=]."""
+	relation entity Contains [
+		from Container
+		to ContainedElement
+		@rdfs:label "contains"
+		forward contains
+		@rdfs:label "is contained in"
+		reverse isContainedIn
+		inverse functional
+		asymmetric
+		irreflexive
+	]
+}

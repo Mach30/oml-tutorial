@@ -1,0 +1,31 @@
+@dc:title "Kepler 16-b Example Missions"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/missions> with # as missions {
+  
+  extends <http://opencaesar.io/tutorial/description/objectives>
+  extends <http://opencaesar.io/tutorial/description/components>
+
+  @dc:^description "Orbiter Mission"
+  ci orbiter : mission:Mission [
+		mission:pursues objectives:characterize-atmosphere
+		mission:pursues objectives:characterize-environment
+		mission:pursues objectives:characterize-gravitational-field
+
+		mission:deploys components:orbiter-launch-system
+		mission:deploys components:orbiter-spacecraft
+		mission:deploys components:orbiter-mission-operations-system
+		mission:deploys components:orbiter-ground-data-system
+	]
+ 
+  @dc:^description "Lander Mission"
+  ci lander : mission:Mission [
+		mission:pursues objectives:characterize-atmosphere
+		mission:pursues objectives:characterize-environment
+
+		mission:deploys components:lander-launch-system
+		mission:deploys components:lander-spacecraft
+		mission:deploys components:lander-mission-operations-system
+		mission:deploys components:lander-ground-data-system
+	]
+}
