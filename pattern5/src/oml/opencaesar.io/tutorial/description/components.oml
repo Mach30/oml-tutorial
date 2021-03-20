@@ -32,8 +32,9 @@ description <http://opencaesar.io/tutorial/description/components> with # as com
  
   ci orbiter-mission-operations-system : mission:Component
 
-	ci orbiter-ground-data-system : mission:Component
-
+	ci orbiter-ground-data-system : mission:Component [
+    base:contains orbiter-mission-operations-system
+  ]
 
   ci lander-launch-system : mission:Component
 
@@ -41,6 +42,8 @@ description <http://opencaesar.io/tutorial/description/components> with # as com
 
   ci lander-mission-operations-system : mission:Component
 
-  ci lander-ground-data-system : mission:Component
+  ci lander-ground-data-system : mission:Component [
+    base:contains lander-mission-operations-system
+  ]
 
 }
