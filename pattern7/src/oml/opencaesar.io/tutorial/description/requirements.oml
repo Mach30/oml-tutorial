@@ -1,0 +1,39 @@
+@dc:title "Kepler 16-b Example Requirements"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/requirements> with # as requirements {
+	extends <http://opencaesar.io/tutorial/description/junctions>
+
+	@dc:^description """The components:orbiter-ground-data-system shall send spacecraft commands to the components:orbiter-spacecraft."""
+  ci orbiter-ground-data-system-to-spacecraft-command-flow : mission:Requirement [
+		mission:specifies junctions:orbiter-ground-data-system.orbiter-spacecraft.command.uplink
+	]
+
+	@dc:^description """The components:orbiter-spacecraft shall send spacecraft telemetry to the components:orbiter-ground-data-system."""
+	ci orbiter-spacecraft-to-ground-data-system-telemetry-flow : mission:Requirement [
+		mission:specifies junctions:orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink
+	]
+
+	@dc:^description """The components:orbiter-ground-data-system shall operate the components:orbiter-spacecraft via spacecraft commands and spacecraft telemetry."""
+	ci orbiter-ground-data-system-spacecraft-operations : mission:Requirement [
+		mission:specifies junctions:orbiter-ground-data-system.orbiter-spacecraft.command.uplink
+		mission:specifies junctions:orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink
+	]
+
+	@dc:^description """The components:lander-ground-data-system shall send spacecraft commands to the components:lander-spacecraft."""
+  ci lander-ground-data-system-to-spacecraft-command-flow : mission:Requirement [
+		mission:specifies junctions:lander-ground-data-system.lander-spacecraft.command.uplink
+	]
+
+	@dc:^description """The components:lander-spacecraft shall send spacecraft telemetry to the components:lander-ground-data-system."""
+	ci lander-spacecraft-to-ground-data-system-telemetry-flow : mission:Requirement [
+		mission:specifies junctions:lander-ground-data-system.lander-spacecraft.telemetry.downlink
+	]
+
+	@dc:^description """The components:lander-ground-data-system shall operate the components:lander-spacecraft via lander commands and lander telemetry."""
+	ci lander-ground-data-system-spacecraft-operations : mission:Requirement [
+		mission:specifies junctions:lander-ground-data-system.lander-spacecraft.command.uplink
+		mission:specifies junctions:lander-ground-data-system.lander-spacecraft.telemetry.downlink
+	]
+	
+}
