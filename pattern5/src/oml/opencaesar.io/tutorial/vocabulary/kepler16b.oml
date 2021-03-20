@@ -1,0 +1,38 @@
+@dc:title "Kepler16b Vocabulary Tutorial"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by ModelWare"
+vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler16b {
+	 
+  extends <http://opencaesar.io/tutorial/vocabulary/mission>
+
+  // First, we introduce a taxonomy of interfaces
+  // for different kinds of information that should not be confused.
+
+  concept CommandInterface :> mission:Interface
+  concept CommandOutInterface :> CommandInterface
+  concept CommandInInterface :> CommandInterface
+
+  concept TelemetryInterface :> mission:Interface
+  concept TelemetryOutInterface :> TelemetryInterface
+  concept TelemetryInInterface :> TelemetryInterface
+
+  // To ensure proper connections, we specialize Command and Telemetry
+  // interfaces according to the intended recipient (Command)
+  // or source (Telemetry).
+
+  concept SpacecraftCommandInterface :> CommandInterface
+  concept SpacecraftCommandOutInterface :> SpacecraftCommandInterface, CommandOutInterface
+  concept SpacecraftCommandInInterface :> SpacecraftCommandInterface, CommandInInterface
+
+  concept OrbiterCommandInterface :> CommandInterface
+  concept OrbiterCommandOutInterface :> OrbiterCommandInterface, CommandOutInterface
+  concept OrbiterCommandInInterface :> OrbiterCommandInterface, CommandInInterface
+
+  concept SpacecraftTelemetryInterface :> TelemetryInterface
+  concept SpacecraftTelemetryOutInterface :> SpacecraftTelemetryInterface, TelemetryOutInterface
+  concept SpacecraftTelemetryInInterface :> SpacecraftTelemetryInterface, TelemetryInInterface
+
+  concept OrbiterTelemetryInterface :> TelemetryInterface
+  concept OrbiterTelemetryOutInterface :> OrbiterTelemetryInterface, TelemetryOutInterface
+  concept OrbiterTelemetryInInterface :> OrbiterTelemetryInterface, TelemetryInInterface
+}

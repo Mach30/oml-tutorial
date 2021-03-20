@@ -5,5 +5,5 @@ vocabulary bundle <http://opencaesar.io/tutorial/vocabulary/bundle> with # as vo
 		
 	// The vocabularies included in this bundle
 	includes <http://opencaesar.io/tutorial/vocabulary/component-properties>	
-
+	includes <http://opencaesar.io/tutorial/vocabulary/kepler16b>
 }
