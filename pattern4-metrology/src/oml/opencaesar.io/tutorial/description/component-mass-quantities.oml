@@ -5,19 +5,40 @@ description <http://opencaesar.io/tutorial/description/component-mass-quantities
  
   extends <http://opencaesar.io/tutorial/description/components>
 
-  ci orbiter-launch-system.mass : component-properties:MassAllocation [
+  ci orbiter-launch-system.mass.quantity : component-properties:MassAllocationQuantity [
     metrology:isQuantityOf components:orbiter-launch-system
   ]
 
-  ci orbiter-spacecraft.mass : component-properties:MassAllocation [
+  ci orbiter-launch-system.mass.magnitude : component-properties:MassAllocationMagnitude [
+    metrology:hasDoubleNumber "2000"^^xsd:double
+    metrology:isMagnitudeOf orbiter-launch-system.mass.quantity 
+  ]
+
+  ci orbiter-spacecraft.mass.quantity : component-properties:MassAllocationQuantity [
     metrology:isQuantityOf components:orbiter-spacecraft
   ]
 
-  ci lander-launch-system.mass : component-properties:MassAllocation [
+  ci orbiter-spacecraft.mass.magnitude : component-properties:MassAllocationMagnitude [
+    metrology:hasDoubleNumber "700"^^xsd:double
+    metrology:isMagnitudeOf orbiter-spacecraft.mass.quantity
+  ]
+
+  ci lander-launch-system.mass.quantity : component-properties:MassAllocationQuantity [
     metrology:isQuantityOf components:lander-launch-system
   ]
 
-  ci lander-spacecraft.mass : component-properties:MassAllocation [
+  ci lander-launch-system.mass.magnitude : component-properties:MassAllocationMagnitude [
+    metrology:hasDoubleNumber "3000"^^xsd:double
+    metrology:isMagnitudeOf lander-launch-system.mass.quantity
+  ]
+
+  ci lander-spacecraft.mass.quantity : component-properties:MassAllocationQuantity [
     metrology:isQuantityOf components:lander-spacecraft
   ]
+
+  ci lander-spacecraft.mass.magnitude : component-properties:MassAllocationMagnitude [
+    metrology:hasDoubleNumber "1200"^^xsd:double
+    metrology:isMagnitudeOf lander-spacecraft.mass.quantity
+  ]
+
 }

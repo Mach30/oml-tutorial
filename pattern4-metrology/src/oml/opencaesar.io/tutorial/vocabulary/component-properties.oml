@@ -6,7 +6,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/component-properties> with 
   ref concept mission:Component :> metrology:Object
 
   @rdfs:label "Mass Allocation"
-	concept MassAllocation :> 80000-4-quantities:mass [
+	concept MassAllocationQuantity :> 80000-4-quantities:mass [
 		restricts all relation metrology:hasMagnitude to MassAllocationMagnitude
 	]
 
