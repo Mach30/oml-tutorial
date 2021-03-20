@@ -1,0 +1,23 @@
+@dc:title "Kepler 16-b Example Component Mass Quantities"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/component-mass-quantities> with # as component-mass-quantities {
+ 
+  extends <http://opencaesar.io/tutorial/description/components>
+
+  ci orbiter-launch-system.mass : component-properties:MassAllocation [
+    metrology:isQuantityOf components:orbiter-launch-system
+  ]
+
+  ci orbiter-spacecraft.mass : component-properties:MassAllocation [
+    metrology:isQuantityOf components:orbiter-spacecraft
+  ]
+
+  ci lander-launch-system.mass : component-properties:MassAllocation [
+    metrology:isQuantityOf components:lander-launch-system
+  ]
+
+  ci lander-spacecraft.mass : component-properties:MassAllocation [
+    metrology:isQuantityOf components:lander-spacecraft
+  ]
+}

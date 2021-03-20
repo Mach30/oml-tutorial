@@ -1,0 +1,16 @@
+vocabulary <http://opencaesar.io/tutorial/vocabulary/component-properties> with # as component-properties {
+	 
+	extends <http://opencaesar.io/tutorial/vocabulary/mission>
+	extends <http://iso.org/80000-4-magnitudes-1>
+
+  ref concept mission:Component :> metrology:Object
+
+  @rdfs:label "Mass Allocation"
+	concept MassAllocation :> 80000-4-quantities:mass [
+		restricts all relation metrology:hasMagnitude to MassAllocationMagnitude
+	]
+
+	concept MassAllocationMagnitude :> 80000-4-units:MassMagnitude [
+		restricts relation metrology:hasReference to 80000-4-instances:kilogram
+	]
+}
