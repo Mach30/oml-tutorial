@@ -65,6 +65,14 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
     mission:presents orbiter-propulsion-subsystem.telemetry
   ]
   
+  ci orbiter-mission-operations-system.commands : mission:Interface
+  ci orbiter-mission-operations-system.telemetry : mission:Interface
+
+  ci orbiter-ground-data-system.command.uplink : mission:Interface
+  ci orbiter-ground-data-system.command.space : mission:Interface
+  ci orbiter-ground-data-system.telemetry.downlink : mission:Interface
+  ci orbiter-ground-data-system.telemetry.space : mission:Interface
+
   ci lander-launch-system.spacecraft : mission:Interface
   ci lander-launch-system.ground : mission:Interface
 
@@ -80,5 +88,13 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
     mission:presents lander-spacecraft.launch
     mission:presents lander-spacecraft.ground
   ]
+
+  ci lander-mission-operations-system.commands : mission:Interface
+  ci lander-mission-operations-system.telemetry : mission:Interface
+
+  ci lander-ground-data-system.command.uplink : mission:Interface
+  ci lander-ground-data-system.command.space : mission:Interface
+  ci lander-ground-data-system.telemetry.downlink : mission:Interface
+  ci lander-ground-data-system.telemetry.space : mission:Interface
   
 }
