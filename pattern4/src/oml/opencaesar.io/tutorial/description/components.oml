@@ -6,44 +6,93 @@ description <http://opencaesar.io/tutorial/description/components> with # as com
 	// The vocabulary used by this description
 	uses <http://opencaesar.io/tutorial/vocabulary/mission>
 
-  ci orbiter-launch-system : mission:Component
+	ci orbiter-launch-system : mission:Component [
+		base:hasIdentifier "C.01"
+		base:hasCanonicalName "Orbiter Launch System"
+	]
 
 	ci orbiter-spacecraft : mission:Component [
-    base:contains orbiter-power-subsystem
-    base:contains orbiter-harness
-    base:contains orbiter-thermal-subsystem
-    base:contains orbiter-command-and-data-handling
-    base:contains orbiter-telecom-subsystem
-    base:contains orbiter-guidance-navigation-control-subsystem
-    base:contains orbiter-mechanical-subsystem
-    base:contains orbiter-spacraft-flight-software
-    base:contains orbiter-propulsion-subsystem
-  ]
+		base:hasIdentifier "C.02"
+		base:hasCanonicalName "Orbiter Spacecraft"
+		base:contains orbiter-power-subsystem
+		base:contains orbiter-harness
+		base:contains orbiter-thermal-subsystem
+		base:contains orbiter-command-and-data-handling-subsystem
+		base:contains orbiter-telecom-subsystem
+		base:contains orbiter-guidance-navigation-control-subsystem
+		base:contains orbiter-mechanical-subsystem
+		base:contains orbiter-spacraft-flight-software
+		base:contains orbiter-propulsion-subsystem
+	]
 
-  ci orbiter-power-subsystem : mission:Component
-  ci orbiter-harness : mission:Component
-  ci orbiter-thermal-subsystem : mission:Component
-  ci orbiter-command-and-data-handling : mission:Component
-  ci orbiter-telecom-subsystem : mission:Component
-  ci orbiter-guidance-navigation-control-subsystem : mission:Component
-  ci orbiter-mechanical-subsystem : mission:Component
-  ci orbiter-spacraft-flight-software : mission:Component
-  ci orbiter-propulsion-subsystem : mission:Component
- 
-  ci orbiter-mission-operations-system : mission:Component
+	ci orbiter-power-subsystem : mission:Component [
+		base:hasIdentifier "C.02.01"
+		base:hasCanonicalName "Orbiter Power Subsystem"
+	]
+
+	ci orbiter-harness : mission:Component [
+		base:hasIdentifier "C.02.02"
+		base:hasCanonicalName "Orbiter Harness"
+	]
+
+	ci orbiter-thermal-subsystem : mission:Component [
+		base:hasIdentifier "C.02.03"
+		base:hasCanonicalName "Orbiter Thermal Subsystem"
+	]
+
+	ci orbiter-command-and-data-handling-subsystem : mission:Component [
+		base:hasIdentifier "C.02.04"
+		base:hasCanonicalName "Orbiter C&DH Subsystem"
+	]
+
+	ci orbiter-telecom-subsystem : mission:Component [
+		base:hasIdentifier "C.02.05"
+		base:hasCanonicalName "Orbiter Telecom Subsystem"
+	]
+
+	ci orbiter-guidance-navigation-control-subsystem : mission:Component [
+		base:hasIdentifier "C.02.06"
+		base:hasCanonicalName "Orbiter GN&C Subsystem"
+	]
+
+	ci orbiter-mechanical-subsystem : mission:Component [
+		base:hasIdentifier "C.02.07"
+		base:hasCanonicalName "Orbiter Mechanical Subsystem"
+	]
+
+	ci orbiter-spacraft-flight-software : mission:Component [
+		base:hasIdentifier "C.02.08"
+		base:hasCanonicalName "Orbiter Flight Software"
+	]
+
+	ci orbiter-propulsion-subsystem : mission:Component [
+		base:hasIdentifier "C.02.09"
+		base:hasCanonicalName "Orbiter Propulsion Subsystem"
+	]
 
 	ci orbiter-ground-data-system : mission:Component [
-    base:contains orbiter-mission-operations-system
-  ]
+		base:hasIdentifier "C.03"
+		base:hasCanonicalName "Orbiter Ground Data System"
+	]
 
-  ci lander-launch-system : mission:Component
+	// Common to orbiter and lander missions
+	ci mission-operations-system : mission:Component [
+		base:hasIdentifier "C.04"
+		base:hasCanonicalName "Mission Operations System"
+	]
 
-	ci lander-spacecraft : mission:Component
+	ci lander-launch-system : mission:Component [
+		base:hasIdentifier "C.05"
+		base:hasCanonicalName "Lander Launch System"
+	]
 
-  ci lander-mission-operations-system : mission:Component
+	ci lander-spacecraft : mission:Component [
+		base:hasIdentifier "C.06"
+		base:hasCanonicalName "Lander Spacecraft"
+	]
 
-  ci lander-ground-data-system : mission:Component [
-    base:contains lander-mission-operations-system
-  ]
-
+	ci lander-ground-data-system : mission:Component [
+		base:hasIdentifier "C.07"
+		base:hasCanonicalName "Lander Ground Data System"
+	]
 }

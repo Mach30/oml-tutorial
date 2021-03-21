@@ -43,4 +43,22 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/base> with # as base {
     	asymmetric
     	irreflexive
 	]
+	
+ 	@rdfs:label "ContainedIndividual"
+	@dc:^description """A [=ContainedIndividual=] is an individual that can participate in homeomeric containment relationships."""
+	aspect ContainedIndividual
+
+	@rdfs:label "Aggregates"
+	@dc:^description """[=aggregates=] is a many-to-many relation used 
+	to represent homeomeric relations that form directed rooted trees."""
+    relation entity Contains [
+		from ContainedIndividual
+    	to ContainedIndividual
+    	forward contains
+    	reverse isContainedIn
+    	inverse functional
+    	asymmetric
+    	irreflexive
+	]
+	
 }
