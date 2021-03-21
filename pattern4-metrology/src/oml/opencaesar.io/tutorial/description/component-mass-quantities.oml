@@ -3,6 +3,8 @@
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/component-mass-quantities> with # as component-mass-quantities {
  
+  uses <http://opencaesar.io/tutorial/vocabulary/vbundle-metrology>
+
   extends <http://opencaesar.io/tutorial/description/components>
 
   ci orbiter-launch-system.mass.quantity : component-properties:MassAllocationQuantity [

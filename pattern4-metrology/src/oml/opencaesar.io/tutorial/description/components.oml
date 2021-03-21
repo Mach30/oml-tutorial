@@ -4,7 +4,7 @@
 description <http://opencaesar.io/tutorial/description/components> with # as components {
 
 	// The vocabulary used by this description
-	uses <http://opencaesar.io/tutorial/vocabulary/bundle>
+	uses <http://opencaesar.io/tutorial/vocabulary/vbundle>
 
   ci orbiter-launch-system : mission:Component
 
