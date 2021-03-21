@@ -131,7 +131,7 @@ task owlReasonMechanical(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml
 		"$dataset.rootMechanicalOntologyIri/individuals = ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS".toString()
 	]
 	// Junit error report
-	reportPath = file('build/reports/reasoning.xml')
+	reportPath = file('build/reports/mechanical/reasoning.xml')
 }
 
 

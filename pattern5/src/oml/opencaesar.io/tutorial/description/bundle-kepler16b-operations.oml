@@ -1,0 +1,11 @@
+@dc:title "Kepler16b Operations Description Bundle"
+@dc:creator "Example Company"
+@dc:rights "Copyright 2019, by Example Company"
+description bundle <http://opencaesar.io/tutorial/description/bundle-kepler16b-operations> with # as description-bundle-kepler16b-operations {
+	
+	// The vocabulary bundle used by this description bundle
+	extends <http://opencaesar.io/tutorial/description/bundle>
+
+	includes <http://opencaesar.io/tutorial/description/interfaces>	
+
+}
