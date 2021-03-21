@@ -6,6 +6,8 @@ description bundle <http://opencaesar.io/tutorial/description/bundle-kepler16b-o
 	// The vocabulary bundle used by this description bundle
 	extends <http://opencaesar.io/tutorial/description/bundle>
 
+	uses <http://opencaesar.io/tutorial/vocabulary/bundle-kepler16b>
+
 	includes <http://opencaesar.io/tutorial/description/interfaces>	
 
 }
