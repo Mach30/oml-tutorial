@@ -1,0 +1,42 @@
+@dc:title "Project Vocabulary Tutorial"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by ModelWare"
+vocabulary <http://opencaesar.io/tutorial/vocabulary/project> with # as project {
+  extends <http://opencaesar.io/tutorial/vocabulary/mission>
+
+	@rdfs:label "Policy"
+	@dc:^description "A [=Policy=] represents a specific exercise of authority that [=binds=] one or more model elements."
+	concept Policy  
+
+	@rdfs:label "Bound Element"
+	@dc:^description "[=BoundElement=] is the domain of [=binds=]."
+	aspect BoundElement
+
+	@rdfs:label "Binds"
+	@dc:^description """A [=Policy=] [=binds=] zero or more [=BoundElement=]s."""
+	relation entity Binds [
+		from Policy
+		to BoundElement
+		@rdfs:label "binds"
+		forward binds
+		@rdfs:label "is bound by"
+		reverse isBoundBy
+		asymmetric
+		irreflexive
+	]
+
+  @dc:^description """From a project management perspective, a [=Requirement=] has the force of a [=Policy=]."""
+  ref concept mission:Requirement :> Policy
+
+  @dc:^description """From a project management perspective, an [=Interface=] can be a [=BoundElement=]."""
+  ref concept mission:Interface :> BoundElement
+
+  @dc:^description """From a project management perspective, a [=Requirement=] r specifying that 
+  a [=Component=] c [=presents=] an [=Interface=] i means that r [=binds=] c."""
+  rule requirement-binds-interface-presenter [
+    mission:specifies(r,p) ^
+    mission:Presents(c,p,i) 
+    ->
+    binds(r,i)
+  ]
+}

@@ -4,5 +4,5 @@
 vocabulary bundle <http://opencaesar.io/tutorial/vocabulary/bundle> with # as vocabulary-bundle {
 		
 	// The vocabularies included in this bundle
-	includes <http://opencaesar.io/tutorial/vocabulary/mission>
+	includes <http://opencaesar.io/tutorial/vocabulary/project>
 }
