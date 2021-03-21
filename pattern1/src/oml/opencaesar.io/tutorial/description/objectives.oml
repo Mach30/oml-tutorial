@@ -4,7 +4,7 @@
 description <http://opencaesar.io/tutorial/description/objectives> with # as objectives {
 	
 	// The vocabulary used by this description
-	uses <http://opencaesar.io/tutorial/vocabulary/bundle>
+	uses <http://opencaesar.io/tutorial/vocabulary/mission>
 	 
 	@dc:^description "Characterize the atmosphere of Kepler 16-b"
 	ci characterize-atmosphere : mission:Objective
