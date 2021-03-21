@@ -2,6 +2,8 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/interfaces> with # as interfaces {
+
+  uses <http://opencaesar.io/tutorial/vocabulary/kepler16b>
   extends  <http://opencaesar.io/tutorial/description/components>
 
   ci orbiter-spacecraft.commandIn : kepler16b:SpacecraftCommandInInterface
