@@ -7,33 +7,53 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   ci orbiter-spacecraft.commandIn : kepler16b:SpacecraftCommandInInterface
   ci orbiter-spacecraft.telemetryOut : kepler16b:SpacecraftTelemetryOutInterface
 
-  ref ci components:orbiter-spacecraft [
-    mission:presents orbiter-spacecraft.commandIn
-    mission:presents orbiter-spacecraft.telemetryOut
+  ri orbiter-spacecraft.presents.commandIn : mission:Presents [
+    from components:orbiter-spacecraft
+    to orbiter-spacecraft.commandIn
+  ]
+
+  ri orbiter-spacecraft.presents.telemetryOut : mission:Presents [
+    from components:orbiter-spacecraft
+    to orbiter-spacecraft.telemetryOut
   ]
 
   ci orbiter-ground-data-system.commandOut : kepler16b:SpacecraftCommandOutInterface
   ci orbiter-ground-data-system.telemetryIn : kepler16b:SpacecraftTelemetryInInterface
 
-  ref ci components:orbiter-ground-data-system [
-    mission:presents orbiter-ground-data-system.commandOut
-    mission:presents orbiter-ground-data-system.telemetryIn
+  ri orbiter-ground-data-system.presents.commandOut : mission:Presents [
+    from components:orbiter-ground-data-system
+    to orbiter-ground-data-system.commandOut
+  ]
+
+  ri orbiter-ground-data-system.presents.telemetryIn : mission:Presents [
+    from components:orbiter-ground-data-system
+    to orbiter-ground-data-system.commandOut
   ]
   
   ci lander-spacecraft.commandIn : kepler16b:LanderCommandInInterface
   ci lander-spacecraft.telemetryOut : kepler16b:LanderTelemetryOutInterface
 
-  ref ci components:lander-spacecraft [
-    mission:presents lander-spacecraft.commandIn
-    mission:presents lander-spacecraft.telemetryOut
+  ri lander-spacecraft.presents.commandIn : mission:Presents [
+    from components:lander-spacecraft
+    to lander-spacecraft.commandIn
+  ]
+
+  ri lander-spacecraft.presents.telemetryOut : mission:Presents [
+    from components:lander-spacecraft
+    to lander-spacecraft.telemetryOut
   ]
 
   ci lander-ground-data-system.commandOut : kepler16b:LanderCommandOutInterface
   ci lander-ground-data-system.telemetryIn : kepler16b:LanderTelemetryInInterface
 
-  ref ci components:lander-ground-data-system [
-    mission:presents lander-ground-data-system.commandOut
-    mission:presents lander-ground-data-system.telemetryIn
+  ri lander-ground-data-system.presents.commandOut : mission:Presents [
+    from components:lander-ground-data-system
+    to lander-ground-data-system.commandOut
   ]
   
+  ri lander-ground-data-system.presents.telemetryIn : mission:Presents [
+    from components:lander-ground-data-system
+    to lander-ground-data-system.commandOut
+  ]
+
 }

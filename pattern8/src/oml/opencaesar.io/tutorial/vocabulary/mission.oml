@@ -65,9 +65,24 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	or interaction with another [=Component=]."""
 	concept Interface
 
+	@rdfs:label "Specifies"
+	@dc:^description """A [=Requirement=] [=specifies=] zero or more
+	[=SpecifiedElement=]s."""
+	relation entity Specifies [
+		from Requirement
+		to SpecifiedElement
+		@rdfs:label "specifies"
+		forward specifies
+		@rdfs:label "is specified by"
+		reverse isSpecifiedBy
+		functional
+		asymmetric
+		irreflexive
+	]
+
 	@rdfs:label "Presents"
 	@dc:^description "A [=Component=] [=presents=] zero or more [=Interface=]s."
-	relation entity Presents [
+	relation entity Presents :> SpecifiedElement [
 		from Component
 		to Interface
 		@rdfs:label "presents"
@@ -82,7 +97,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	@rdfs:label "Junction"
 	@dc:^description """An [=Junction=] represents a set of mechanical, electrical, signal, 
 	or other properties that are common to a set of mutually connected [=Interface=]s."""
-	concept Junction :> SpecifiedElement
+	concept Junction
 
 		@rdfs:label "Joins"
 	@dc:^description """A [=Junction=] [=joins=] zero or more [=Interface=]s."""
@@ -138,21 +153,6 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	that must be true for every acceptable realization of that element."""
 	concept Requirement
 
-	@rdfs:label "Specifies"
-	@dc:^description """A [=Requirement=] [=specifies=] zero or more
-	[=SpecifiedElement=]s."""
-	relation entity Specifies [
-		from Requirement
-		to SpecifiedElement
-		@rdfs:label "specifies"
-		forward specifies
-		@rdfs:label "is specified by"
-		reverse isSpecifiedBy
-		functional
-		asymmetric
-		irreflexive
-	]
-		
 	@rdfs:label "Refines"
 	@dc:^description """A [=Requirement=] [=refines=] zero or more [=Requirement=]s."""
 	relation entity Refines [
