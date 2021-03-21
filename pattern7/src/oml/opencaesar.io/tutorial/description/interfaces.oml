@@ -27,7 +27,7 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
 
   ri orbiter-ground-data-system.presents.telemetryIn : mission:Presents [
     from components:orbiter-ground-data-system
-    to orbiter-ground-data-system.commandOut
+    to orbiter-ground-data-system.telemetryIn
   ]
   
   ci lander-spacecraft.commandIn : kepler16b:LanderCommandInInterface
@@ -53,7 +53,7 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
 
   ri lander-ground-data-system.presents.telemetryIn : mission:Presents [
     from components:lander-ground-data-system
-    to lander-ground-data-system.commandOut
+    to lander-ground-data-system.telemetryIn
   ]
   
 }
