@@ -50,6 +50,7 @@
     <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/mission.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/objectives.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/bundle.oml</semanticResources>
+    <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/base.oml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_PR7IcIe1EeuNs8t_5R_XGA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='IMCE']"/>
     </ownedViews>

@@ -2,60 +2,15 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by ModelWare"
 vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission {
-	 
+	
 	extends <http://opencaesar.io/tutorial/vocabulary/base>
 	
-  @rdfs:label "Objective"
+ 	@rdfs:label "Objective"
 	@dc:^description """An [=Objective=] represents a specific interest 
-  that one or more stakeholders have in the successful execution of a mission.
-	
-	[=Objective=]s can be aggregated in homeomeric trees. 
-	"""
-	concept Objective :> base:AggregatedElement [
+ 		that one or more stakeholders have in the successful execution of a mission."""
+	concept Objective :> base:IdentifiedIndividual, base:AggregatedIndividual [
 		restricts all relation base:aggregates to Objective
 		restricts all relation base:isAggregatedIn to Objective
 	]
 
-  @rdfs:label "Mission"
-	@dc:^description """A [=Mission=] [=pursue=]s [=Objective=]s."""
-	concept Mission
-
-	@rdfs:label "Pursues"
-	@dc:^description """A [=Mission=] [=pursues=] zero or more [=Objective=]s."""
-	relation entity Pursues [
-		from Mission
-		to Objective
-		@rdfs:label "pursues"
-		forward pursues
-		@rdfs:label "is pursued by"
-		reverse isPursuedBy
-		asymmetric
-		irreflexive
-	]
-
-  @rdfs:label "Component"
-	@dc:^description """A [=Component=] is a designed entity that exists to 
-		presents one or more [=Interface=](s) in the context of a [=Mission=].
-    (The concept of interface will be introduced in pattern 5).
-    Example [=Component=]s include launch vehicle, spacecraft, telecommunication subsystem, 
-    flight software, attitude control software, and mission operations team.
-	
-	  [=Component=]s can be organized hierarchically by containment of other [=Component=]s. """
-	concept Component :> base:ContainedElement, base:Container [
-		restricts all relation base:contains to Component
-		restricts all relation base:isContainedIn to Component
-	]
-
-	@rdfs:label "Deploys"
-	@dc:^description """A [=Mission=] [=deploys=] zero or more [=Component=]s."""
-	relation entity Deploys [
-		from Mission
-		to Component
-		@rdfs:label "deploys"
-		forward deploys
-		@rdfs:label "is deployed by"
-		reverse isDeployedBy
-		asymmetric
-		irreflexive
-	]
 }
