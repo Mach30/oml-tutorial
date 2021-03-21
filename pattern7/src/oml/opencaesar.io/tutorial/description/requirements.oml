@@ -5,10 +5,7 @@ description <http://opencaesar.io/tutorial/description/requirements> with # as r
     extends <http://opencaesar.io/tutorial/description/junctions>
 
 	@dc:^description """The components:orbiter-ground-data-system shall operate the components:orbiter-spacecraft via spacecraft commands and spacecraft telemetry."""
-	ci orbiter-ground-data-system-spacecraft-operations : mission:Requirement [
-		mission:specifies junctions:orbiter-ground-data-system.orbiter-spacecraft.command.uplink
-		mission:specifies junctions:orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink
-	]
+	ci orbiter-ground-data-system-spacecraft-operations : mission:Requirement
 
 	@dc:^description """The components:orbiter-ground-data-system shall send spacecraft commands to the components:orbiter-spacecraft."""
 	ci orbiter-ground-data-system-to-spacecraft-command-flow : mission:Requirement [
@@ -21,10 +18,7 @@ description <http://opencaesar.io/tutorial/description/requirements> with # as r
 	]
 
 	@dc:^description """The components:lander-ground-data-system shall operate the components:lander-spacecraft via lander commands and lander telemetry."""
-	ci lander-ground-data-system-spacecraft-operations : mission:Requirement [
-		mission:specifies junctions:lander-ground-data-system.lander-spacecraft.command.uplink
-		mission:specifies junctions:lander-ground-data-system.lander-spacecraft.telemetry.downlink
-	]
+	ci lander-ground-data-system-spacecraft-operations : mission:Requirement
 	
 	@dc:^description """The components:lander-ground-data-system shall send spacecraft commands to the components:lander-spacecraft."""
 	ci lander-ground-data-system-to-spacecraft-command-flow : mission:Requirement [

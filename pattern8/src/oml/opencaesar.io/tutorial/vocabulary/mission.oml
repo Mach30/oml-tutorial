@@ -82,7 +82,8 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	@rdfs:label "Junction"
 	@dc:^description """An [=Junction=] represents a set of mechanical, electrical, signal, 
 	or other properties that are common to a set of mutually connected [=Interface=]s."""
-	concept Junction
+	concept Junction :> SpecifiedElement
+
 		@rdfs:label "Joins"
 	@dc:^description """A [=Junction=] [=joins=] zero or more [=Interface=]s."""
 	relation entity Joins [
@@ -126,16 +127,23 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 		irreflexive
 	]
 
+	@rdfs:label "Specified Element"
+	@dc:^description """[=SpecifiedElement=] is the range of [=specifies=].
+	Any concept or reified relation that [=isSpecifiedBy=] a [=Requirement=] should
+	specialize [=SpecifiedElement=]."""
+	aspect SpecifiedElement
+
 	@rdfs:label "Requirement"
 	@dc:^description """A [=Requirement=] specifies an assertion about a [=Junction=] 
 	that must be true for every acceptable realization of that element."""
 	concept Requirement
 
 	@rdfs:label "Specifies"
-	@dc:^description """A [=Requirement=] [=specifies=] zero or one [=Junction=]s."""
+	@dc:^description """A [=Requirement=] [=specifies=] zero or more
+	[=SpecifiedElement=]s."""
 	relation entity Specifies [
 		from Requirement
-		to Junction
+		to SpecifiedElement
 		@rdfs:label "specifies"
 		forward specifies
 		@rdfs:label "is specified by"
