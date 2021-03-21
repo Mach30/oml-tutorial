@@ -3,6 +3,9 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/component-properties> with 
 	extends <http://opencaesar.io/tutorial/vocabulary/mission>
 	extends <http://iso.org/80000-4-magnitudes-1>
 
+	// Note: adding a superclass to mission:Component outside 
+	// of its definition in the mission ontology is possible in OML and OWL.
+	// In UML/SysML, this is not possible because a class owns its generalizations.
   ref concept mission:Component :> metrology:Object
 
   @rdfs:label "Mass Allocation"
