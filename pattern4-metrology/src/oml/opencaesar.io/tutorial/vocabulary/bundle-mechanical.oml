@@ -1,0 +1,11 @@
+@dc:title "Example Vocabulary Bundle"
+@dc:creator "Example Company"
+@dc:rights "Copyright 2019, by Example Company"
+vocabulary bundle <http://opencaesar.io/tutorial/vocabulary/bundle-mechanical> with # as vocabulary-bundle-mechanical {
+		
+	extends <http://opencaesar.io/tutorial/vocabulary/bundle>
+
+	// The vocabularies included in this bundle
+	includes <http://opencaesar.io/tutorial/vocabulary/mechanical>	
+
+}

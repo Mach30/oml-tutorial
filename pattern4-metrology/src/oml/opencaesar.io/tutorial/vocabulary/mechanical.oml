@@ -1,4 +1,4 @@
-vocabulary <http://opencaesar.io/tutorial/vocabulary/component-properties> with # as component-properties {
+vocabulary <http://opencaesar.io/tutorial/vocabulary/mechanical> with # as mechanical {
 	 
 	extends <http://opencaesar.io/tutorial/vocabulary/mission>
 	extends <http://iso.org/80000-4-magnitudes-1>
@@ -8,12 +8,11 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/component-properties> with 
 	// In UML/SysML, this is not possible because a class owns its generalizations.
   ref concept mission:Component :> metrology:Object
 
-  @rdfs:label "Mass Allocation"
-	concept MassAllocationQuantity :> 80000-4-quantities:mass [
-		restricts all relation metrology:hasMagnitude to MassAllocationMagnitude
+	concept MassQuantity :> 80000-4-quantities:mass [
+		restricts all relation metrology:hasMagnitude to MassMagnitude
 	]
 
-	concept MassAllocationMagnitude :> 80000-4-units:MassMagnitude [
+	concept MassMagnitude :> 80000-4-units:MassMagnitude [
 		restricts relation metrology:hasReference to 80000-4-instances:kilogram
 	]
 }

@@ -1,44 +1,44 @@
 @dc:title "Kepler 16-b Example Component Mass Quantities"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/component-mass-quantities> with # as component-mass-quantities {
+description <http://opencaesar.io/tutorial/description/mass-properties> with # as mass-properties {
  
-  uses <http://opencaesar.io/tutorial/vocabulary/vbundle-metrology>
+  uses <http://opencaesar.io/tutorial/vocabulary/bundle-mechanical>
 
   extends <http://opencaesar.io/tutorial/description/components>
 
-  ci orbiter-launch-system.mass.quantity : component-properties:MassAllocationQuantity [
+  ci orbiter-launch-system.mass.quantity : mechanical:MassQuantity [
     metrology:isQuantityOf components:orbiter-launch-system
   ]
 
-  ci orbiter-launch-system.mass.magnitude : component-properties:MassAllocationMagnitude [
+  ci orbiter-launch-system.mass.magnitude : mechanical:MassMagnitude [
     metrology:hasDoubleNumber "2000"^^xsd:double
     metrology:isMagnitudeOf orbiter-launch-system.mass.quantity 
   ]
 
-  ci orbiter-spacecraft.mass.quantity : component-properties:MassAllocationQuantity [
+  ci orbiter-spacecraft.mass.quantity : mechanical:MassQuantity [
     metrology:isQuantityOf components:orbiter-spacecraft
   ]
 
-  ci orbiter-spacecraft.mass.magnitude : component-properties:MassAllocationMagnitude [
+  ci orbiter-spacecraft.mass.magnitude : mechanical:MassMagnitude [
     metrology:hasDoubleNumber "700"^^xsd:double
     metrology:isMagnitudeOf orbiter-spacecraft.mass.quantity
   ]
 
-  ci lander-launch-system.mass.quantity : component-properties:MassAllocationQuantity [
+  ci lander-launch-system.mass.quantity : mechanical:MassQuantity [
     metrology:isQuantityOf components:lander-launch-system
   ]
 
-  ci lander-launch-system.mass.magnitude : component-properties:MassAllocationMagnitude [
+  ci lander-launch-system.mass.magnitude : mechanical:MassMagnitude [
     metrology:hasDoubleNumber "3000"^^xsd:double
     metrology:isMagnitudeOf lander-launch-system.mass.quantity
   ]
 
-  ci lander-spacecraft.mass.quantity : component-properties:MassAllocationQuantity [
+  ci lander-spacecraft.mass.quantity : mechanical:MassQuantity [
     metrology:isQuantityOf components:lander-spacecraft
   ]
 
-  ci lander-spacecraft.mass.magnitude : component-properties:MassAllocationMagnitude [
+  ci lander-spacecraft.mass.magnitude : mechanical:MassMagnitude [
     metrology:hasDoubleNumber "1200"^^xsd:double
     metrology:isMagnitudeOf lander-spacecraft.mass.quantity
   ]
