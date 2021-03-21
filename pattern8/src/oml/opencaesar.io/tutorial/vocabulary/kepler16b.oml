@@ -1,0 +1,83 @@
+@dc:title "Kepler16b Vocabulary Tutorial"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by ModelWare"
+vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler16b {
+	 
+  extends <http://opencaesar.io/tutorial/vocabulary/mission>
+
+  // First, we introduce a taxonomy of interfaces
+  // for different kinds of information that should not be confused.
+
+  concept CommandInterface :> mission:Interface
+  concept CommandOutInterface :> CommandInterface
+  concept CommandInInterface :> CommandInterface
+
+  concept TelemetryInterface :> mission:Interface
+  concept TelemetryOutInterface :> TelemetryInterface
+  concept TelemetryInInterface :> TelemetryInterface
+
+  // To ensure proper connections, we specialize Command and Telemetry
+  // interfaces according to the intended recipient (Command)
+  // or source (Telemetry).
+
+  concept SpacecraftCommandInterface :> CommandInterface
+  concept SpacecraftCommandOutInterface :> SpacecraftCommandInterface, CommandOutInterface
+  concept SpacecraftCommandInInterface :> SpacecraftCommandInterface, CommandInInterface
+  
+  concept SpacecraftTelemetryInterface :> TelemetryInterface
+  concept SpacecraftTelemetryOutInterface :> SpacecraftTelemetryInterface, TelemetryOutInterface
+  concept SpacecraftTelemetryInInterface :> SpacecraftTelemetryInterface, TelemetryInInterface
+
+  concept LanderCommandInterface :> CommandInterface
+  concept LanderCommandOutInterface :> LanderCommandInterface, CommandOutInterface
+  concept LanderCommandInInterface :> LanderCommandInterface, CommandInInterface
+
+  concept LanderTelemetryInterface :> TelemetryInterface
+  concept LanderTelemetryOutInterface :> LanderTelemetryInterface, TelemetryOutInterface
+  concept LanderTelemetryInInterface :> LanderTelemetryInterface, TelemetryInInterface
+
+  // Similar to the taxonomy of interfaces,
+  // we introduce a corresponding taxonomy of junctions.
+
+  // Note that we are restricting mission:joins1 to an OutInterface
+  // and mission:joins2 to an InInterface.
+
+  concept CommandUplink :> mission:Junction [
+    restricts all relation mission:joins to CommandInterface
+    restricts all relation mission:joins1 to CommandOutInterface
+    restricts all relation mission:joins2 to CommandInInterface
+  ]
+ 
+  concept TelemetryDownlink :> mission:Junction [
+    restricts all relation mission:joins to TelemetryInterface
+    restricts all relation mission:joins1 to TelemetryOutInterface
+    restricts all relation mission:joins2 to TelemetryInInterface
+  ]
+
+  // And specialize these junctions according to the information conveyed.
+
+  concept SpacecraftCommandUplink :> CommandUplink [
+    restricts all relation mission:joins to SpacecraftCommandInterface
+    restricts all relation mission:joins1 to SpacecraftCommandOutInterface
+    restricts all relation mission:joins2 to SpacecraftCommandInInterface
+  ]
+
+  concept SpacecraftTelemetryDownlink :> TelemetryDownlink [
+    restricts all relation mission:joins to SpacecraftTelemetryInterface
+    restricts all relation mission:joins1 to SpacecraftTelemetryOutInterface
+    restricts all relation mission:joins2 to SpacecraftTelemetryInInterface
+  ]
+
+  concept LanderCommandUplink :> CommandUplink [
+    restricts all relation mission:joins to LanderCommandInterface
+    restricts all relation mission:joins1 to LanderCommandOutInterface
+    restricts all relation mission:joins2 to LanderCommandInInterface
+  ]
+
+  concept LanderTelemetryDownlink :> TelemetryDownlink [
+    restricts all relation mission:joins to LanderTelemetryInterface
+    restricts all relation mission:joins1 to LanderTelemetryOutInterface
+    restricts all relation mission:joins2 to LanderTelemetryInInterface
+  ]
+
+}
