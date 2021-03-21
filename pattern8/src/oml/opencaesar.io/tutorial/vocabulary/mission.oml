@@ -99,7 +99,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	or other properties that are common to a set of mutually connected [=Interface=]s."""
 	concept Junction
 
-		@rdfs:label "Joins"
+	@rdfs:label "Joins"
 	@dc:^description """A [=Junction=] [=joins=] zero or more [=Interface=]s."""
 	relation entity Joins [
 		from Junction

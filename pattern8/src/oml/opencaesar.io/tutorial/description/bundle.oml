@@ -7,9 +7,6 @@ description bundle <http://opencaesar.io/tutorial/description/bundle> with # as 
 	uses <http://opencaesar.io/tutorial/vocabulary/bundle>
 	
 	// All the descriptions included in this description bundle
-	includes <http://opencaesar.io/tutorial/description/component-mass-quantities>
-	includes <http://opencaesar.io/tutorial/description/interfaces>
-	includes <http://opencaesar.io/tutorial/description/junctions>
-	includes <http://opencaesar.io/tutorial/description/requirements>
+	includes <http://opencaesar.io/tutorial/description/components>
 
 }

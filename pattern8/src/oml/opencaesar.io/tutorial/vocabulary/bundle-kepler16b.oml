@@ -1,0 +1,11 @@
+@dc:title "Example Kepler16b Operations Vocabulary Bundle"
+@dc:creator "Example Company"
+@dc:rights "Copyright 2019, by Example Company"
+vocabulary bundle <http://opencaesar.io/tutorial/vocabulary/bundle-kepler16b> with # as vocabulary-bundle-kepler16b {
+		
+	extends <http://opencaesar.io/tutorial/vocabulary/bundle-operations>
+
+	// The vocabularies included in this bundle
+	includes <http://opencaesar.io/tutorial/vocabulary/kepler16b>	
+
+}
