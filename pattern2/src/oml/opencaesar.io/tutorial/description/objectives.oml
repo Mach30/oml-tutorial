@@ -6,39 +6,44 @@ description <http://opencaesar.io/tutorial/description/objectives> with # as obj
 	// The vocabulary used by this description
 	uses <http://opencaesar.io/tutorial/vocabulary/mission>
 	 
-	@dc:^description "Characterize the atmosphere of Kepler 16-b"
 	ci characterize-atmosphere : mission:Objective [
-		mission:aggregates characterize-liquid-ocean
+		base:hasIdentifier "O.01"
+		base:hasCanonicalName "Characterize the atmosphere of Kepler 16-b"
+		base:aggregates characterize-liquid-ocean
 	]
 	
-	@dc:^description "Characterize the liquid ocean of Kepler 16-b"
-	ci characterize-liquid-ocean : mission:Objective
+	ci characterize-liquid-ocean : mission:Objective [
+    	base:hasIdentifier "O.02"
+    	base:hasCanonicalName "Characterize the liquid ocean of Kepler 16-b"
+    ]
 
-	@dc:^description "Characterize the gravitational field of Kepler 16-b"
-	@rdfs:label "Characterize Gravitational Field"
 	ci characterize-gravitational-field : mission:Objective [
-		mission:aggregates characterize-liquid-ocean
-		mission:aggregates characterize-rocky-core
+		base:hasIdentifier "O.03"
+		base:hasCanonicalName "Characterize the gravitational field of Kepler 16-b"
+		base:aggregates characterize-liquid-ocean
+		base:aggregates characterize-rocky-core
 	]
-	
-	@dc:^description "Characterize the rocky core of Kepler 16-b"
-	@rdfs:label "Characterize Rocky Core"
+
 	ci characterize-rocky-core : mission:Objective [
-		mission:aggregates characterize-rocky-core-density
-		mission:aggregates characterize-rocky-core-shape
+		base:hasIdentifier "O.04"
+		base:hasCanonicalName "Characterize the rocky core of Kepler 16-b"
+		base:aggregates characterize-rocky-core-density
+		base:aggregates characterize-rocky-core-shape
 	]
 
-	@dc:^description "Characterize the core density of Kepler 16-b"
-	@rdfs:label "Characterize Rocky Core Density"
-	ci characterize-rocky-core-density : mission:Objective
+	ci characterize-rocky-core-density : mission:Objective [
+		base:hasIdentifier "O.05"
+		base:hasCanonicalName "Characterize the core density of Kepler 16-b"
+	]
 
-	@dc:^description "Characterize the core shape of Kepler 16-b"
-	@rdfs:label "Characterize Rocky Core Shape"
-	ci characterize-rocky-core-shape : mission:Objective
+	ci characterize-rocky-core-shape : mission:Objective [
+		base:hasIdentifier "O.06"
+		base:hasCanonicalName "Characterize the core shape of Kepler 16-b"
+	]
 
-	@dc:^description "Characterize the energetic particule environment of the Kepler 16-b binary star system"
-	@rdfs:label "Characterize Environment"
 	ci characterize-environment : mission:Objective [
-		mission:aggregates characterize-liquid-ocean
+		base:hasIdentifier "O.07"
+		base:hasCanonicalName "Characterize the energetic particule environment of the Kepler 16-b binary star system"
+		base:aggregates characterize-liquid-ocean
 	]
 }

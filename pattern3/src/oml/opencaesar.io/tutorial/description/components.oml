@@ -3,24 +3,40 @@
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/components> with # as components {
 
-	// The vocabulary used by this description
 	uses <http://opencaesar.io/tutorial/vocabulary/mission>
 
-  ci orbiter-launch-system : mission:Component
-
-	ci orbiter-spacecraft : mission:Component
+	ci orbiter-launch-system : mission:Component [
+		base:hasIdentifier "C.01"
+		base:hasCanonicalName "Orbiter Launch System"
+	]
  
-  ci orbiter-mission-operations-system : mission:Component
+	ci orbiter-spacecraft : mission:Component [
+		base:hasIdentifier "C.02"
+		base:hasCanonicalName "Orbiter Spacecraft"
+	]
 
-	ci orbiter-ground-data-system : mission:Component
+	ci orbiter-ground-data-system : mission:Component [
+		base:hasIdentifier "C.03"
+		base:hasCanonicalName "Orbiter Ground Data System"
+	]
 
+	ci mission-operations-system : mission:Component [
+		base:hasIdentifier "C.04"
+		base:hasCanonicalName "Mission Operations System shared by orbiter and lander missions"
+	]
 
-  ci lander-launch-system : mission:Component
+	ci lander-launch-system : mission:Component [
+		base:hasIdentifier "C.05"
+		base:hasCanonicalName "Lander Launch System"
+	]
 
-	ci lander-spacecraft : mission:Component
+	ci lander-spacecraft : mission:Component [
+		base:hasIdentifier "C.06"
+		base:hasCanonicalName "Lander Spacecraft"
+	]
 
-  ci lander-mission-operations-system : mission:Component
-
-  ci lander-ground-data-system : mission:Component
-
+	ci lander-ground-data-system : mission:Component [
+		base:hasIdentifier "C.07"
+		base:hasCanonicalName "Lander Ground Data System"
+	]
 }
