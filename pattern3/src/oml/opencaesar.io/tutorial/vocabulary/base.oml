@@ -2,8 +2,7 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by ModelWare"
 vocabulary <http://opencaesar.io/tutorial/vocabulary/base> with # as base {
-	
-	// The vocabulary bundle used by this description bundle
+
 	extends <http://www.w3.org/2002/07/owl>
 	
  	@rdfs:label "IdentifiedIndividual"
@@ -15,25 +14,25 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/base> with # as base {
 		domain IdentifiedIndividual
 		range xsd:string
 	]
-	
+
 	@rdfs:label "hasIdentifier"
 	scalar property hasIdentifier [
 		domain IdentifiedIndividual
 		range xsd:string
 	]
-	
+
 	@rdfs:label "hasDescription"
 	scalar property hasDescription [
 		domain IdentifiedIndividual
 		range xsd:string
 	]
-	
+
  	@rdfs:label "AggregatedIndividual"
 	@dc:^description """An [=AggregatedIndividual=] is an individual that can participate in homeomeric aggregation relationships."""
 	aspect AggregatedIndividual
 
 	@rdfs:label "Aggregates"
-	@dc:^description """[=aggregates=] is a many-to-many relation used 
+	@dc:^description """[=aggregates=] is a many-to-many relation used
 	to represent homeomeric relations that form directed acyclic graphs."""
     relation entity Aggregates [
 		from AggregatedIndividual

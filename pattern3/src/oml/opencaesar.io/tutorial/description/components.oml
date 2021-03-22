@@ -3,6 +3,7 @@
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/components> with # as components {
 
+
 	uses <http://opencaesar.io/tutorial/vocabulary/mission>
 
 	ci orbiter-launch-system : mission:Component [

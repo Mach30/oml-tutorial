@@ -2,15 +2,15 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by ModelWare"
 vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission {
-	
+
 	extends <http://opencaesar.io/tutorial/vocabulary/base>
 	
- 	@rdfs:label "Objective"
+  @rdfs:label "Objective"
 	@dc:^description """An [=Objective=] represents a specific interest 
- 		that one or more stakeholders have in the successful execution of a mission."""
+  that one or more stakeholders have in the successful execution of a mission."""
 	concept Objective :> base:IdentifiedIndividual, base:AggregatedIndividual [
 		restricts all relation base:aggregates to Objective
 		restricts all relation base:isAggregatedIn to Objective
-	]
+  ]
 
 }
