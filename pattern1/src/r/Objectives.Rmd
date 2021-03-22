@@ -87,7 +87,7 @@ d3 <- d2$results
 
 parts <- split(d3[, c("o2_id", "o2_name")], paste(d3$o1_id, d3$o1_name))
 
-# pack aggregated objectives
+# pack rows
 
 rows <- do.call(rbind, parts)
 
