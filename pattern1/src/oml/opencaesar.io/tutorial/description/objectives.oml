@@ -40,21 +40,25 @@ description <http://opencaesar.io/tutorial/description/objectives> with # as obj
 	]
 
 	ci characterize-rocky-core : mission:Objective [
+		base:hasIdentifier "O.04"
 		base:hasCanonicalName "Characterize the rocky core of Kepler 16-b"
 		base:aggregates characterize-rocky-core-density
 		base:aggregates characterize-rocky-core-shape
 	]
 	
 	ci characterize-rocky-core-density : mission:Objective [
+		base:hasIdentifier "O.05"
 		base:hasCanonicalName "Characterize the core density of Kepler 16-b"
 	]
 
 	ci characterize-rocky-core-shape : mission:Objective [
+		base:hasIdentifier "O.06"
 		base:hasCanonicalName "Characterize the core shape of Kepler 16-b"		
 	]
 
 	ci characterize-environment : mission:Objective [
-		base:hasCanonicalName "Characterize the energetic particule environment of the Kepler 16-b binary star system"
+		base:hasIdentifier "O.07"
+		base:hasCanonicalName "Characterize the energetic particle environment of the Kepler 16-b binary star system"
 	]
  
 }

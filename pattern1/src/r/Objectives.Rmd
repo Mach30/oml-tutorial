@@ -1,0 +1,77 @@
+---
+title: "Pattern 1: Objective Aggregation"
+output: html_notebook
+---
+
+# Objectives Only
+
+Raw query of objectives:
+
+```{r}
+library(SPARQL)
+
+endpointURL = "http://localhost:3030/oml-tutorial"
+queryString1 = "
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
+PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
+
+SELECT DISTINCT ?o_id ?o_name
+
+WHERE {
+	?obj 
+      a mission:Objective ;
+      base:hasIdentifier ?o_id ;
+      base:hasCanonicalName ?o_name ;
+}
+ORDER BY ?o_id
+"
+d1 <- SPARQL(url=endpointURL, query=queryString1)
+d1$results
+```
+
+Making a nicer table:
+
+```{r}
+library(knitr)
+t1 <- knitr::kable(d1$results, col.names = c("ID", "Name"))
+t1
+```
+
+
+
+# Objective Aggregation
+
+Raw query:
+
+```{r}
+library(SPARQL)
+queryString2 = "
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
+PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
+
+SELECT DISTINCT ?o1_id ?o1_name ?o2_id ?o2_name
+
+WHERE {
+	?o1
+      a mission:Objective ;
+      base:hasIdentifier ?o1_id ;
+      base:hasCanonicalName ?o1_name .
+
+  optional {
+      ?o1 base:aggregates [
+        base:hasIdentifier ?o2_id ;
+        base:hasCanonicalName ?o2_name
+      ]
+  }
+}
+ORDER BY ?o1_id ?o2_id
+"
+d2 <- SPARQL(url=endpointURL, query=queryString2)
+d2$results
+```
+
+```{r}
+library(knitr)
+t2 <- knitr::kable(d2$results, col.names = c("ID", "Name", "ID", "Name"))
+t2
+```
