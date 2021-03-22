@@ -56,20 +56,28 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_uTNWgIh2EeuDrI5NhTTJXQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_wwZKoIh2EeuDrI5NhTTJXQ" name="Objectives Table" repPath="#_wwRO0Ih2EeuDrI5NhTTJXQ" changeId="5fd336a4-3288-41ab-ad35-33c1a2a4d399">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_wwZKoIh2EeuDrI5NhTTJXQ" name="Objectives Table" repPath="#_wwRO0Ih2EeuDrI5NhTTJXQ" changeId="9d42af0b-be6e-4419-afa3-ac187a821ad7">
         <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']"/>
         <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0DsucYh2EeuDrI5NhTTJXQ" name="Objectives Diagram" repPath="#_0Dq5QIh2EeuDrI5NhTTJXQ" changeId="02aaa101-35db-482e-aea9-1e29e32bdcff">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0DsucYh2EeuDrI5NhTTJXQ" name="Objectives Diagram" repPath="#_0Dq5QIh2EeuDrI5NhTTJXQ" changeId="cc180407-3316-4b1b-bbb9-b3203b8ad034">
         <description xmi:type="description_2:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']"/>
+        <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_acoo8IrMEeuzoclIG5mN3w" name="Objective Instances" repPath="#_acoB4IrMEeuzoclIG5mN3w" changeId="516d5b20-1fd7-41de-a3fb-f99273b5151c">
+        <description xmi:type="description_2:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']"/>
         <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_uTV5YIh2EeuDrI5NhTTJXQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IMa6wIh4EeuDrI5NhTTJXQ" name="Mission Vocabulary" repPath="#_IMaTsIh4EeuDrI5NhTTJXQ" changeId="96cb108c-c1c4-4cae-896e-fedcb19a8538">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IMa6wIh4EeuDrI5NhTTJXQ" name="Mission Vocabulary" repPath="#_IMaTsIh4EeuDrI5NhTTJXQ" changeId="b52ac16c-99b7-47ac-b8a3-21cbd989a405">
         <description xmi:type="description_2:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']"/>
         <target xmi:type="oml:Vocabulary" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_oTr_sYrJEeuzoclIG5mN3w" name="Base Vocabulary" repPath="#_oTrYoIrJEeuzoclIG5mN3w" changeId="5ba0b198-3848-47de-bccb-e160a030125a">
+        <description xmi:type="description_2:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']"/>
+        <target xmi:type="oml:Vocabulary" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -77,139 +85,139 @@
     <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
     <lines xmi:type="table:DLine" uid="_wwSc8Ih2EeuDrI5NhTTJXQ" label="objectives">
       <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
-      <lines xmi:type="table:DLine" uid="_Cpix8IiBEeuDrI5NhTTJXQ" label="characterize-atmosphere">
+      <lines xmi:type="table:DLine" uid="_svlRUIrLEeuzoclIG5mN3w" label="characterize-atmosphere">
         <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
-        <lines xmi:type="table:DLine" uid="_CpjZAIiBEeuDrI5NhTTJXQ" label="characterize-liquid-ocean">
+        <lines xmi:type="table:DLine" uid="_svnGgorLEeuzoclIG5mN3w" label="characterize-liquid-ocean">
           <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
-          <cells xmi:type="table:DCell" uid="_CpkAGIiBEeuDrI5NhTTJXQ" column="_wwU5OIh2EeuDrI5NhTTJXQ">
+          <cells xmi:type="table:DCell" uid="_svvCUorLEeuzoclIG5mN3w" column="_wwU5OIh2EeuDrI5NhTTJXQ">
             <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
             <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           </cells>
-          <cells xmi:type="table:DCell" uid="_CpkAGoiBEeuDrI5NhTTJXQ" label="Characterize the liquid ocean of Kepler 16-b" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
+          <cells xmi:type="table:DCell" uid="_svvCV4rLEeuzoclIG5mN3w" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
             <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
             <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           </cells>
-          <currentStyle xmi:type="table:DTableElementStyle" uid="_CpjZAYiBEeuDrI5NhTTJXQ" labelSize="12" defaultForegroundStyle="true"/>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_svntkIrLEeuzoclIG5mN3w" labelSize="12" defaultForegroundStyle="true"/>
         </lines>
         <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']"/>
-        <cells xmi:type="table:DCell" uid="_CpkAFIiBEeuDrI5NhTTJXQ" column="_wwU5OIh2EeuDrI5NhTTJXQ">
+        <cells xmi:type="table:DCell" uid="_svqJ1IrLEeuzoclIG5mN3w" column="_wwU5OIh2EeuDrI5NhTTJXQ">
           <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
           <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
         </cells>
-        <cells xmi:type="table:DCell" uid="_CpkAFoiBEeuDrI5NhTTJXQ" label="Characterize the atmosphere of Kepler 16-b" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
+        <cells xmi:type="table:DCell" uid="_svubQ4rLEeuzoclIG5mN3w" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
           <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
           <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
         </cells>
-        <currentStyle xmi:type="table:DTableElementStyle" uid="_Cpix8YiBEeuDrI5NhTTJXQ" labelSize="12" defaultForegroundStyle="true"/>
+        <currentStyle xmi:type="table:DTableElementStyle" uid="_svlRUYrLEeuzoclIG5mN3w" labelSize="12" defaultForegroundStyle="true"/>
       </lines>
-      <lines xmi:type="table:DLine" uid="_Cpix8oiBEeuDrI5NhTTJXQ" label="characterize-environment">
+      <lines xmi:type="table:DLine" uid="_svlRVIrLEeuzoclIG5mN3w" label="characterize-environment">
         <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
-        <lines xmi:type="table:DLine" uid="_gkm14IjhEeuDrI5NhTTJXQ" label="characterize-liquid-ocean">
+        <lines xmi:type="table:DLine" uid="_svoUoorLEeuzoclIG5mN3w" label="characterize-liquid-ocean">
           <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
-          <cells xmi:type="table:DCell" uid="_gkoEBYjhEeuDrI5NhTTJXQ" column="_wwU5OIh2EeuDrI5NhTTJXQ">
+          <cells xmi:type="table:DCell" uid="_svvpZYrLEeuzoclIG5mN3w" column="_wwU5OIh2EeuDrI5NhTTJXQ">
             <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
             <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           </cells>
-          <cells xmi:type="table:DCell" uid="_gkoEB4jhEeuDrI5NhTTJXQ" label="Characterize the liquid ocean of Kepler 16-b" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
+          <cells xmi:type="table:DCell" uid="_svvpZ4rLEeuzoclIG5mN3w" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
             <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
             <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           </cells>
-          <currentStyle xmi:type="table:DTableElementStyle" uid="_gkm14YjhEeuDrI5NhTTJXQ" labelSize="12" defaultForegroundStyle="true"/>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_svoUo4rLEeuzoclIG5mN3w" labelSize="12" defaultForegroundStyle="true"/>
         </lines>
         <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']"/>
-        <cells xmi:type="table:DCell" uid="_CpkAHIiBEeuDrI5NhTTJXQ" label="Characterize Environment" column="_wwU5OIh2EeuDrI5NhTTJXQ">
+        <cells xmi:type="table:DCell" uid="_svvpYYrLEeuzoclIG5mN3w" column="_wwU5OIh2EeuDrI5NhTTJXQ">
           <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
           <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
         </cells>
-        <cells xmi:type="table:DCell" uid="_CpkAHoiBEeuDrI5NhTTJXQ" label="Characterize the energetic particule environment of the Kepler 16-b binary star system" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
+        <cells xmi:type="table:DCell" uid="_svvpY4rLEeuzoclIG5mN3w" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
           <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
           <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
         </cells>
-        <currentStyle xmi:type="table:DTableElementStyle" uid="_Cpix84iBEeuDrI5NhTTJXQ" labelSize="12" defaultForegroundStyle="true"/>
+        <currentStyle xmi:type="table:DTableElementStyle" uid="_svlRVYrLEeuzoclIG5mN3w" labelSize="12" defaultForegroundStyle="true"/>
       </lines>
-      <lines xmi:type="table:DLine" uid="_Cpix9IiBEeuDrI5NhTTJXQ" label="characterize-gravitational-field">
+      <lines xmi:type="table:DLine" uid="_svlRVorLEeuzoclIG5mN3w" label="characterize-gravitational-field">
         <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
-        <lines xmi:type="table:DLine" uid="_CpjZAoiBEeuDrI5NhTTJXQ" label="characterize-liquid-ocean">
+        <lines xmi:type="table:DLine" uid="_svo7sIrLEeuzoclIG5mN3w" label="characterize-liquid-ocean">
           <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
-          <cells xmi:type="table:DCell" uid="_CpkAJIiBEeuDrI5NhTTJXQ" column="_wwU5OIh2EeuDrI5NhTTJXQ">
+          <cells xmi:type="table:DCell" uid="_svwQc4rLEeuzoclIG5mN3w" column="_wwU5OIh2EeuDrI5NhTTJXQ">
             <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
             <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           </cells>
-          <cells xmi:type="table:DCell" uid="_CpkAJoiBEeuDrI5NhTTJXQ" label="Characterize the liquid ocean of Kepler 16-b" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
+          <cells xmi:type="table:DCell" uid="_svwQdYrLEeuzoclIG5mN3w" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
             <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
             <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
           </cells>
-          <currentStyle xmi:type="table:DTableElementStyle" uid="_CpjZA4iBEeuDrI5NhTTJXQ" labelSize="12" defaultForegroundStyle="true"/>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_svo7sYrLEeuzoclIG5mN3w" labelSize="12" defaultForegroundStyle="true"/>
         </lines>
-        <lines xmi:type="table:DLine" uid="_CpjZBIiBEeuDrI5NhTTJXQ" label="characterize-rocky-core">
+        <lines xmi:type="table:DLine" uid="_svo7sorLEeuzoclIG5mN3w" label="characterize-rocky-core">
           <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
-          <lines xmi:type="table:DLine" uid="_CpjZBoiBEeuDrI5NhTTJXQ" label="characterize-rocky-core-density">
+          <lines xmi:type="table:DLine" uid="_svpiwIrLEeuzoclIG5mN3w" label="characterize-rocky-core-density">
             <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
             <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
             <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
-            <cells xmi:type="table:DCell" uid="_CpknIYiBEeuDrI5NhTTJXQ" label="Characterize Rocky Core Density" column="_wwU5OIh2EeuDrI5NhTTJXQ">
+            <cells xmi:type="table:DCell" uid="_svw3g4rLEeuzoclIG5mN3w" column="_wwU5OIh2EeuDrI5NhTTJXQ">
               <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
               <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
             </cells>
-            <cells xmi:type="table:DCell" uid="_CpknI4iBEeuDrI5NhTTJXQ" label="Characterize the core density of Kepler 16-b" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
+            <cells xmi:type="table:DCell" uid="_svw3hYrLEeuzoclIG5mN3w" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
               <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
               <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
             </cells>
-            <currentStyle xmi:type="table:DTableElementStyle" uid="_CpjZB4iBEeuDrI5NhTTJXQ" labelSize="12" defaultForegroundStyle="true"/>
+            <currentStyle xmi:type="table:DTableElementStyle" uid="_svpiwYrLEeuzoclIG5mN3w" labelSize="12" defaultForegroundStyle="true"/>
           </lines>
-          <lines xmi:type="table:DLine" uid="_CpjZCIiBEeuDrI5NhTTJXQ" label="characterize-rocky-core-shape">
+          <lines xmi:type="table:DLine" uid="_svpiworLEeuzoclIG5mN3w" label="characterize-rocky-core-shape">
             <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
             <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
             <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
-            <cells xmi:type="table:DCell" uid="_CpknJYiBEeuDrI5NhTTJXQ" label="Characterize Rocky Core Shape" column="_wwU5OIh2EeuDrI5NhTTJXQ">
+            <cells xmi:type="table:DCell" uid="_svw3h4rLEeuzoclIG5mN3w" column="_wwU5OIh2EeuDrI5NhTTJXQ">
               <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
               <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
             </cells>
-            <cells xmi:type="table:DCell" uid="_CpknJ4iBEeuDrI5NhTTJXQ" label="Characterize the core shape of Kepler 16-b" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
+            <cells xmi:type="table:DCell" uid="_svxekYrLEeuzoclIG5mN3w" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
               <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
               <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
             </cells>
-            <currentStyle xmi:type="table:DTableElementStyle" uid="_CpjZCYiBEeuDrI5NhTTJXQ" labelSize="12" defaultForegroundStyle="true"/>
+            <currentStyle xmi:type="table:DTableElementStyle" uid="_svpiw4rLEeuzoclIG5mN3w" labelSize="12" defaultForegroundStyle="true"/>
           </lines>
           <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
           <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']/@ownedSubLines[name='Aggregated%20Objective']"/>
-          <cells xmi:type="table:DCell" uid="_CpkAKIiBEeuDrI5NhTTJXQ" label="Characterize Rocky Core" column="_wwU5OIh2EeuDrI5NhTTJXQ">
+          <cells xmi:type="table:DCell" uid="_svwQd4rLEeuzoclIG5mN3w" column="_wwU5OIh2EeuDrI5NhTTJXQ">
             <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
             <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
           </cells>
-          <cells xmi:type="table:DCell" uid="_CpkAKoiBEeuDrI5NhTTJXQ" label="Characterize the rocky core of Kepler 16-b" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
+          <cells xmi:type="table:DCell" uid="_svw3gYrLEeuzoclIG5mN3w" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
             <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
             <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
           </cells>
-          <currentStyle xmi:type="table:DTableElementStyle" uid="_CpjZBYiBEeuDrI5NhTTJXQ" labelSize="12" defaultForegroundStyle="true"/>
+          <currentStyle xmi:type="table:DTableElementStyle" uid="_svo7s4rLEeuzoclIG5mN3w" labelSize="12" defaultForegroundStyle="true"/>
         </lines>
         <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedLineMappings[name='Root']/@ownedSubLines[name='Objective']"/>
-        <cells xmi:type="table:DCell" uid="_CpkAIIiBEeuDrI5NhTTJXQ" label="Characterize Gravitational Field" column="_wwU5OIh2EeuDrI5NhTTJXQ">
+        <cells xmi:type="table:DCell" uid="_svvpaYrLEeuzoclIG5mN3w" column="_wwU5OIh2EeuDrI5NhTTJXQ">
           <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
           <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
         </cells>
-        <cells xmi:type="table:DCell" uid="_CpkAIoiBEeuDrI5NhTTJXQ" label="Characterize the gravitational field of Kepler 16-b" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
+        <cells xmi:type="table:DCell" uid="_svwQcYrLEeuzoclIG5mN3w" column="_wwU5Ooh2EeuDrI5NhTTJXQ">
           <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
           <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
         </cells>
-        <currentStyle xmi:type="table:DTableElementStyle" uid="_Cpix9YiBEeuDrI5NhTTJXQ" labelSize="12" defaultForegroundStyle="true"/>
+        <currentStyle xmi:type="table:DTableElementStyle" uid="_svlRV4rLEeuzoclIG5mN3w" labelSize="12" defaultForegroundStyle="true"/>
       </lines>
       <semanticElements xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
       <originMapping xmi:type="description_1:LineMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedLineMappings[name='Root']"/>
     </lines>
-    <columns xmi:type="table:DFeatureColumn" uid="_wwU5OIh2EeuDrI5NhTTJXQ" label="Label" cells="_CpkAFIiBEeuDrI5NhTTJXQ _CpkAGIiBEeuDrI5NhTTJXQ _CpkAHIiBEeuDrI5NhTTJXQ _CpkAIIiBEeuDrI5NhTTJXQ _CpkAJIiBEeuDrI5NhTTJXQ _CpkAKIiBEeuDrI5NhTTJXQ _CpknIYiBEeuDrI5NhTTJXQ _CpknJYiBEeuDrI5NhTTJXQ _gkoEBYjhEeuDrI5NhTTJXQ" width="182" featureName="name">
+    <columns xmi:type="table:DFeatureColumn" uid="_wwU5OIh2EeuDrI5NhTTJXQ" label="Label" cells="_svqJ1IrLEeuzoclIG5mN3w _svvCUorLEeuzoclIG5mN3w _svvpYYrLEeuzoclIG5mN3w _svvpZYrLEeuzoclIG5mN3w _svvpaYrLEeuzoclIG5mN3w _svwQc4rLEeuzoclIG5mN3w _svwQd4rLEeuzoclIG5mN3w _svw3g4rLEeuzoclIG5mN3w _svw3h4rLEeuzoclIG5mN3w" width="182" featureName="name">
       <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedColumnMappings[name='label']"/>
     </columns>
-    <columns xmi:type="table:DFeatureColumn" uid="_wwU5Ooh2EeuDrI5NhTTJXQ" label="Description" cells="_CpkAFoiBEeuDrI5NhTTJXQ _CpkAGoiBEeuDrI5NhTTJXQ _CpkAHoiBEeuDrI5NhTTJXQ _CpkAIoiBEeuDrI5NhTTJXQ _CpkAJoiBEeuDrI5NhTTJXQ _CpkAKoiBEeuDrI5NhTTJXQ _CpknI4iBEeuDrI5NhTTJXQ _CpknJ4iBEeuDrI5NhTTJXQ _gkoEB4jhEeuDrI5NhTTJXQ" width="463" featureName="name">
+    <columns xmi:type="table:DFeatureColumn" uid="_wwU5Ooh2EeuDrI5NhTTJXQ" label="Description" cells="_svubQ4rLEeuzoclIG5mN3w _svvCV4rLEeuzoclIG5mN3w _svvpY4rLEeuzoclIG5mN3w _svvpZ4rLEeuzoclIG5mN3w _svwQcYrLEeuzoclIG5mN3w _svwQdYrLEeuzoclIG5mN3w _svw3gYrLEeuzoclIG5mN3w _svw3hYrLEeuzoclIG5mN3w _svxekYrLEeuzoclIG5mN3w" width="463" featureName="name">
       <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']/@ownedColumnMappings[name='description']"/>
     </columns>
     <description xmi:type="description_1:EditionTableDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Table']"/>
@@ -396,18 +404,18 @@
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_0D3GiYh2EeuDrI5NhTTJXQ" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_0D3Gioh2EeuDrI5NhTTJXQ"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0DyOA4h2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-rocky-core-density" incomingEdges="_0D2ffIh2EeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
-      <ownedStyle xmi:type="diagram:Square" uid="_0DyOBIh2EeuDrI5NhTTJXQ" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0Dxm84h2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-rocky-core-shape" incomingEdges="_0D3GhIh2EeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_0Dxm9Ih2EeuDrI5NhTTJXQ" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0Dxm9oh2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-environment" outgoingEdges="_h-lgpIjhEeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
-      <ownedStyle xmi:type="diagram:Square" uid="_0Dxm94h2EeuDrI5NhTTJXQ" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0DyOAIh2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-rocky-core" outgoingEdges="_0D2ffIh2EeuDrI5NhTTJXQ _0D3GhIh2EeuDrI5NhTTJXQ" incomingEdges="_0D2fd4h2EeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_0DyOAYh2EeuDrI5NhTTJXQ" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']"/>
@@ -420,22 +428,6 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0Dxm84h2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-rocky-core-shape" incomingEdges="_0D3GhIh2EeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
-      <ownedStyle xmi:type="diagram:Square" uid="_0Dxm9Ih2EeuDrI5NhTTJXQ" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0Dxm8Ih2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-atmosphere" outgoingEdges="_0D14YIh2EeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
-      <ownedStyle xmi:type="diagram:Square" uid="_0Dxm8Yh2EeuDrI5NhTTJXQ" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
-        <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']"/>
-    </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_0DyOBoh2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-gravitational-field" outgoingEdges="_0D2fcoh2EeuDrI5NhTTJXQ _0D2fd4h2EeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
@@ -444,10 +436,26 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0DyOAIh2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-rocky-core" outgoingEdges="_0D2ffIh2EeuDrI5NhTTJXQ _0D3GhIh2EeuDrI5NhTTJXQ" incomingEdges="_0D2fd4h2EeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
-      <ownedStyle xmi:type="diagram:Square" uid="_0DyOAYh2EeuDrI5NhTTJXQ" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0Dxm9oh2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-environment" outgoingEdges="_h-lgpIjhEeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_0Dxm94h2EeuDrI5NhTTJXQ" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0DyOA4h2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-rocky-core-density" incomingEdges="_0D2ffIh2EeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_0DyOBIh2EeuDrI5NhTTJXQ" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0Dxm8Ih2EeuDrI5NhTTJXQ" name="«objective»&#xA;characterize-atmosphere" outgoingEdges="_0D14YIh2EeuDrI5NhTTJXQ" width="9" height="9" resizeKind="NSEW">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_0Dxm8Yh2EeuDrI5NhTTJXQ" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Objectives%20Diagrams']/@defaultLayer/@nodeMappings[name='Objective']"/>
@@ -530,58 +538,142 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_IMd-GYh4EeuDrI5NhTTJXQ"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_IMd-FIh4EeuDrI5NhTTJXQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IMd-FYh4EeuDrI5NhTTJXQ" x="243" y="36" width="120" height="75"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IMd-FYh4EeuDrI5NhTTJXQ" x="-45" y="175" width="120" height="75"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_47QHiYrMEeuzoclIG5mN3w" type="2003" element="_47JZ1IrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_47QukIrMEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_47QukYrMEeuzoclIG5mN3w" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_47QukorMEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_47Quk4rMEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_47QHiorMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47QHi4rMEeuzoclIG5mN3w" x="-41" y="18"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_47QulIrMEeuzoclIG5mN3w" type="2003" element="_47JZ2IrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_47Qul4rMEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_47QumIrMEeuzoclIG5mN3w" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_47QumYrMEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_47QumorMEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_47QulYrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47QulorMEeuzoclIG5mN3w" x="243" y="27"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_IMa6w4h4EeuDrI5NhTTJXQ"/>
-        <edges xmi:type="notation:Edge" xmi:id="_hRTUgIh4EeuDrI5NhTTJXQ" type="4001" element="_hRED8Ih4EeuDrI5NhTTJXQ" source="_IMcI4Ih4EeuDrI5NhTTJXQ" target="_IMcI4Ih4EeuDrI5NhTTJXQ">
-          <children xmi:type="notation:Node" xmi:id="_hRTUhIh4EeuDrI5NhTTJXQ" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRTUhYh4EeuDrI5NhTTJXQ" y="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_hRTUhoh4EeuDrI5NhTTJXQ" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRTUh4h4EeuDrI5NhTTJXQ" y="10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_hRTUiIh4EeuDrI5NhTTJXQ" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRTUiYh4EeuDrI5NhTTJXQ" y="10"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_hRTUgYh4EeuDrI5NhTTJXQ"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_hRTUgoh4EeuDrI5NhTTJXQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hRTUg4h4EeuDrI5NhTTJXQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRaCMIh4EeuDrI5NhTTJXQ" id="(0.35714285714285715,0.4140625)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRaCMYh4EeuDrI5NhTTJXQ" id="(0.35714285714285715,0.4140625)"/>
-        </edges>
         <edges xmi:type="notation:Edge" xmi:id="_hRaCMoh4EeuDrI5NhTTJXQ" type="4001" element="_hRErAoh4EeuDrI5NhTTJXQ" source="_IMd-E4h4EeuDrI5NhTTJXQ" target="_IMcI4Ih4EeuDrI5NhTTJXQ">
           <children xmi:type="notation:Node" xmi:id="_hRaCNoh4EeuDrI5NhTTJXQ" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRaCN4h4EeuDrI5NhTTJXQ" x="-2" y="-36"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRaCN4h4EeuDrI5NhTTJXQ" x="5" y="17"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_hRaCOIh4EeuDrI5NhTTJXQ" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRaCOYh4EeuDrI5NhTTJXQ" x="10" y="1"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRaCOYh4EeuDrI5NhTTJXQ" x="22"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_hRapQIh4EeuDrI5NhTTJXQ" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRapQYh4EeuDrI5NhTTJXQ" x="-16" y="6"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hRapQYh4EeuDrI5NhTTJXQ" x="-49" y="-2"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_hRaCM4h4EeuDrI5NhTTJXQ"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_hRaCNIh4EeuDrI5NhTTJXQ" fontName=".AppleSystemUIFont" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hRaCNYh4EeuDrI5NhTTJXQ" points="[2, 47, -7, -97]$[7, 118, -2, -26]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hRaCNYh4EeuDrI5NhTTJXQ" points="[86, 1, -211, -4]$[265, 4, -32, -1]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRapQoh4EeuDrI5NhTTJXQ" id="(0.2754237288135593,0.363013698630137)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hRapQ4h4EeuDrI5NhTTJXQ" id="(0.35714285714285715,0.4140625)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_47Qum4rMEeuzoclIG5mN3w" type="4001" element="_47KA6IrMEeuzoclIG5mN3w" source="_IMcI4Ih4EeuDrI5NhTTJXQ" target="_IMcI4Ih4EeuDrI5NhTTJXQ">
+          <children xmi:type="notation:Node" xmi:id="_47Qun4rMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47QuoIrMEeuzoclIG5mN3w" x="3" y="-66"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_47QuoYrMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47QuoorMEeuzoclIG5mN3w" x="4" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_47Quo4rMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47QupIrMEeuzoclIG5mN3w" x="-11" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_47QunIrMEeuzoclIG5mN3w" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_47QunYrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_47QunorMEeuzoclIG5mN3w" points="[46, -14, 46, -14]$[68, -14, 68, -14]$[68, 13, 68, 13]$[46, 13, 46, 13]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_47QupYrMEeuzoclIG5mN3w" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_47QuporMEeuzoclIG5mN3w" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_47Qup4rMEeuzoclIG5mN3w" type="4001" element="_47Kn84rMEeuzoclIG5mN3w" source="_IMcI4Ih4EeuDrI5NhTTJXQ" target="_IMcI4Ih4EeuDrI5NhTTJXQ">
+          <children xmi:type="notation:Node" xmi:id="_47RVoIrMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47RVoYrMEeuzoclIG5mN3w" x="-71" y="-5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_47RVoorMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47RVo4rMEeuzoclIG5mN3w" x="10" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_47RVpIrMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47RVpYrMEeuzoclIG5mN3w" x="-10" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_47QuqIrMEeuzoclIG5mN3w" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_47QuqYrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_47QuqorMEeuzoclIG5mN3w" points="[-11, 32, -11, 32]$[-11, 58, -11, 58]$[11, 58, 11, 58]$[11, 32, 11, 32]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_47RVporMEeuzoclIG5mN3w" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_47RVp4rMEeuzoclIG5mN3w" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_47RVqIrMEeuzoclIG5mN3w" type="4001" element="_47QHgIrMEeuzoclIG5mN3w" source="_IMcI4Ih4EeuDrI5NhTTJXQ" target="_47QHiYrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_47RVrIrMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47RVrYrMEeuzoclIG5mN3w" x="1" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_47RVrorMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47RVr4rMEeuzoclIG5mN3w" x="2" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_47RVsIrMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47RVsYrMEeuzoclIG5mN3w" x="2" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_47RVqYrMEeuzoclIG5mN3w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_47RVqorMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_47RVq4rMEeuzoclIG5mN3w" points="[0, 0, 236, 111]$[-233, -109, 3, 2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_47RVsorMEeuzoclIG5mN3w" id="(0.5054945054945055,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_47RVs4rMEeuzoclIG5mN3w" id="(0.9363636363636364,0.9622641509433962)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_47RVtIrMEeuzoclIG5mN3w" type="4001" element="_47QHg4rMEeuzoclIG5mN3w" source="_IMcI4Ih4EeuDrI5NhTTJXQ" target="_47QulIrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_47R8sIrMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47R8sYrMEeuzoclIG5mN3w" x="-7" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_47R8sorMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47R8s4rMEeuzoclIG5mN3w" x="8" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_47R8tIrMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47R8tYrMEeuzoclIG5mN3w" x="8" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_47RVtYrMEeuzoclIG5mN3w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_47RVtorMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_47RVt4rMEeuzoclIG5mN3w" points="[0, 0, -7, 100]$[7, -100, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_47R8torMEeuzoclIG5mN3w" id="(0.5054945054945055,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_47R8t4rMEeuzoclIG5mN3w" id="(0.5040650406504065,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_47R8uIrMEeuzoclIG5mN3w" type="4001" element="_47QHhorMEeuzoclIG5mN3w" source="_IMd-E4h4EeuDrI5NhTTJXQ" target="_47QHiYrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_47R8vIrMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47R8vYrMEeuzoclIG5mN3w" x="-5" y="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_47R8vorMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47R8v4rMEeuzoclIG5mN3w" x="8" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_47R8wIrMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47R8wYrMEeuzoclIG5mN3w" x="7" y="3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_47R8uYrMEeuzoclIG5mN3w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_47R8uorMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_47R8u4rMEeuzoclIG5mN3w" points="[0, 0, 0, 104]$[0, -104, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_47R8worMEeuzoclIG5mN3w" id="(0.5084745762711864,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_47R8w4rMEeuzoclIG5mN3w" id="(0.509090909090909,1.0)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_IMbh1Ih4EeuDrI5NhTTJXQ" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_IMbh1Yh4EeuDrI5NhTTJXQ"/>
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_IMbh1Yh4EeuDrI5NhTTJXQ">
+        <computedStyleDescriptions xmi:type="style:FlatContainerStyleDescription" xmi:id="_47JZ1YrMEeuzoclIG5mN3w" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'«aspect»\n'+self.name" tooltipExpression="aql:self.getOntology().prefix+':'+self.name" backgroundStyle="GradientTopToBottom">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <backgroundColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          <foregroundColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_47KA6YrMEeuzoclIG5mN3w" sourceArrow="OutputClosedArrow" sizeComputationExpression="2" routingStyle="manhattan">
+          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_47KA6orMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelExpression="aql:if self.kind = oml::RangeRestrictionKind::all then '∀ ' else '∃ ' endif+self.relation.name">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </centerLabelStyleDescription>
+        </computedStyleDescriptions>
+      </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hRED8Ih4EeuDrI5NhTTJXQ" name="Aggregates" sourceNode="_MjXJAIh8EeuDrI5NhTTJXQ" targetNode="_MjXJAIh8EeuDrI5NhTTJXQ">
-      <target xmi:type="oml:RelationEntity" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#Aggregates"/>
-      <semanticElements xmi:type="oml:RelationEntity" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#Aggregates"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hRED8Yh4EeuDrI5NhTTJXQ" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='RelationEntity']/@style"/>
-        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_4DjH0Ih5EeuDrI5NhTTJXQ" labelSize="12" showIcon="false"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hRED8oh4EeuDrI5NhTTJXQ" labelSize="12" showIcon="false"/>
-        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_4DjH0Yh5EeuDrI5NhTTJXQ" labelSize="12" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='RelationEntity']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hRErAoh4EeuDrI5NhTTJXQ" name="Pursues" sourceNode="_MjXJBYh8EeuDrI5NhTTJXQ" targetNode="_MjXJAIh8EeuDrI5NhTTJXQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hRErAoh4EeuDrI5NhTTJXQ" name="pursues" sourceNode="_MjXJBYh8EeuDrI5NhTTJXQ" targetNode="_MjXJAIh8EeuDrI5NhTTJXQ">
       <target xmi:type="oml:RelationEntity" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#Pursues"/>
       <semanticElements xmi:type="oml:RelationEntity" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#Pursues"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hRErA4h4EeuDrI5NhTTJXQ" size="2">
@@ -592,7 +684,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='RelationEntity']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MjXJAIh8EeuDrI5NhTTJXQ" name="«concept»&#xA;Objective" outgoingEdges="_hRED8Ih4EeuDrI5NhTTJXQ" incomingEdges="_hRED8Ih4EeuDrI5NhTTJXQ _hRErAoh4EeuDrI5NhTTJXQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MjXJAIh8EeuDrI5NhTTJXQ" name="«concept»&#xA;Objective" tooltipText="mission:Objective" outgoingEdges="_47KA6IrMEeuzoclIG5mN3w _47Kn84rMEeuzoclIG5mN3w _47QHgIrMEeuzoclIG5mN3w _47QHg4rMEeuzoclIG5mN3w" incomingEdges="_hRErAoh4EeuDrI5NhTTJXQ _47KA6IrMEeuzoclIG5mN3w _47Kn84rMEeuzoclIG5mN3w">
       <target xmi:type="oml:Concept" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#Objective"/>
       <semanticElements xmi:type="oml:Concept" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#Objective"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -603,7 +695,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MjXJBYh8EeuDrI5NhTTJXQ" name="«concept»&#xA;Mission" outgoingEdges="_hRErAoh4EeuDrI5NhTTJXQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MjXJBYh8EeuDrI5NhTTJXQ" name="«concept»&#xA;Mission" tooltipText="mission:Mission" outgoingEdges="_hRErAoh4EeuDrI5NhTTJXQ _47QHhorMEeuzoclIG5mN3w">
       <target xmi:type="oml:Concept" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#Mission"/>
       <semanticElements xmi:type="oml:Concept" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#Mission"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -614,9 +706,659 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Concept']"/>
     </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_47JZ1IrMEeuzoclIG5mN3w" name="«aspect»&#xA;IdentifiedIndividual" tooltipText="base:IdentifiedIndividual" incomingEdges="_47QHgIrMEeuzoclIG5mN3w _47QHhorMEeuzoclIG5mN3w">
+      <target xmi:type="oml:Aspect" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#IdentifiedIndividual"/>
+      <semanticElements xmi:type="oml:Aspect" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#IdentifiedIndividual"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_47JZ1orMEeuzoclIG5mN3w" labelSize="12" showIcon="false" description="_47JZ1YrMEeuzoclIG5mN3w" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="204,242,166"/>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_47JZ2IrMEeuzoclIG5mN3w" name="«aspect»&#xA;AggregatedIndividual" tooltipText="base:AggregatedIndividual" incomingEdges="_47QHg4rMEeuzoclIG5mN3w">
+      <target xmi:type="oml:Aspect" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#AggregatedIndividual"/>
+      <semanticElements xmi:type="oml:Aspect" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#AggregatedIndividual"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_47JZ2YrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" description="_47JZ1YrMEeuzoclIG5mN3w" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="204,242,166"/>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_47KA6IrMEeuzoclIG5mN3w" name="∀ isAggregatedIn" sourceNode="_MjXJAIh8EeuDrI5NhTTJXQ" targetNode="_MjXJAIh8EeuDrI5NhTTJXQ">
+      <target xmi:type="oml:RelationRangeRestrictionAxiom" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#//@ownedStatements.0/@ownedRelationRestrictions.1"/>
+      <semanticElements xmi:type="oml:RelationRangeRestrictionAxiom" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#//@ownedStatements.0/@ownedRelationRestrictions.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_47KA64rMEeuzoclIG5mN3w" description="_47KA6YrMEeuzoclIG5mN3w" sourceArrow="OutputClosedArrow" size="2" routingStyle="manhattan">
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_47Kn8IrMEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='RelationRangeRestrictionAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_47Kn84rMEeuzoclIG5mN3w" name="∀ aggregates" sourceNode="_MjXJAIh8EeuDrI5NhTTJXQ" targetNode="_MjXJAIh8EeuDrI5NhTTJXQ">
+      <target xmi:type="oml:RelationRangeRestrictionAxiom" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#//@ownedStatements.0/@ownedRelationRestrictions.0"/>
+      <semanticElements xmi:type="oml:RelationRangeRestrictionAxiom" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#//@ownedStatements.0/@ownedRelationRestrictions.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_47Kn9IrMEeuzoclIG5mN3w" description="_47KA6YrMEeuzoclIG5mN3w" sourceArrow="OutputClosedArrow" size="2" routingStyle="manhattan">
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_47Kn9YrMEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='RelationRangeRestrictionAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_47QHgIrMEeuzoclIG5mN3w" sourceNode="_MjXJAIh8EeuDrI5NhTTJXQ" targetNode="_47JZ1IrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:SpecializationAxiom" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#//@ownedStatements.0/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#//@ownedStatements.0/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_47QHgYrMEeuzoclIG5mN3w" targetArrow="InputClosedArrow" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_47QHg4rMEeuzoclIG5mN3w" sourceNode="_MjXJAIh8EeuDrI5NhTTJXQ" targetNode="_47JZ2IrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:SpecializationAxiom" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#//@ownedStatements.0/@ownedSpecializations.1"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#//@ownedStatements.0/@ownedSpecializations.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_47QHhIrMEeuzoclIG5mN3w" targetArrow="InputClosedArrow" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_47QHhorMEeuzoclIG5mN3w" sourceNode="_MjXJBYh8EeuDrI5NhTTJXQ" targetNode="_47JZ1IrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:SpecializationAxiom" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#//@ownedStatements.1/@ownedSpecializations.0"/>
+      <semanticElements xmi:type="oml:SpecializationAxiom" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#//@ownedStatements.1/@ownedSpecializations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_47QHh4rMEeuzoclIG5mN3w" targetArrow="InputClosedArrow" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='SpecializationAxiom']"/>
+    </ownedDiagramElements>
     <description xmi:type="description_2:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_IMaTsYh4EeuDrI5NhTTJXQ"/>
     <activatedLayers xmi:type="description_2:Layer" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer"/>
     <target xmi:type="oml:Vocabulary" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_oTrYoIrJEeuzoclIG5mN3w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_oTr_sorJEeuzoclIG5mN3w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_oTr_s4rJEeuzoclIG5mN3w" type="Sirius" element="_oTrYoIrJEeuzoclIG5mN3w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_oTzUcIrJEeuzoclIG5mN3w" type="2003" element="_oTsmwIrJEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_oTzUc4rJEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_oTzUdIrJEeuzoclIG5mN3w" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_z8hrEIrJEeuzoclIG5mN3w" type="3010" element="_z5j2pIrJEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_z8hrEYrJEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_z8hrEorJEeuzoclIG5mN3w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_z8hrE4rJEeuzoclIG5mN3w" type="3010" element="_z5kdsYrJEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_z8hrFIrJEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_z8hrFYrJEeuzoclIG5mN3w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_z8hrForJEeuzoclIG5mN3w" type="3010" element="_z5lEwYrJEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_z8hrF4rJEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_z8hrGIrJEeuzoclIG5mN3w"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_oTzUdYrJEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_oTzUdorJEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_oTzUcYrJEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTzUcorJEeuzoclIG5mN3w" x="62" y="63"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_oTzUd4rJEeuzoclIG5mN3w" type="2003" element="_oTsmw4rJEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_oTzUeorJEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_oTzUe4rJEeuzoclIG5mN3w" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_oTz7gIrJEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_oTz7gYrJEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_oTzUeIrJEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTzUeYrJEeuzoclIG5mN3w" x="297" y="63"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_oTr_tIrJEeuzoclIG5mN3w"/>
+        <edges xmi:type="notation:Edge" xmi:id="_oTz7gorJEeuzoclIG5mN3w" type="4001" element="_oTtN0IrJEeuzoclIG5mN3w" source="_oTzUd4rJEeuzoclIG5mN3w" target="_oTzUd4rJEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_oTz7horJEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTz7h4rJEeuzoclIG5mN3w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oTz7iIrJEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTz7iYrJEeuzoclIG5mN3w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_oTz7iorJEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oTz7i4rJEeuzoclIG5mN3w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_oTz7g4rJEeuzoclIG5mN3w" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_oTz7hIrJEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oTz7hYrJEeuzoclIG5mN3w" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oTz7jIrJEeuzoclIG5mN3w" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oTz7jYrJEeuzoclIG5mN3w" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_oTtN0YrJEeuzoclIG5mN3w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_oTtN0orJEeuzoclIG5mN3w">
+        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_oTtN04rJEeuzoclIG5mN3w" sizeComputationExpression="2" routingStyle="manhattan">
+          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          <beginLabelStyleDescription xmi:type="style:BeginLabelStyleDescription" xmi:id="_oTtN1IrJEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelExpression="aql:if self.inverseFunctional then '0..1' else '' endif">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </beginLabelStyleDescription>
+          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_oTtN1YrJEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelExpression="aql:self.forwardRelation.name">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </centerLabelStyleDescription>
+          <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_oTtN1orJEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelExpression="aql:if self.functional then '0..1' else '' endif">
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </endLabelStyleDescription>
+        </computedStyleDescriptions>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_oTsmwIrJEeuzoclIG5mN3w" name="«aspect»&#xA;IdentifiedIndividual" tooltipText="base:IdentifiedIndividual">
+      <target xmi:type="oml:Aspect" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#IdentifiedIndividual"/>
+      <semanticElements xmi:type="oml:Aspect" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#IdentifiedIndividual"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_oTsmwYrJEeuzoclIG5mN3w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_z5j2pIrJEeuzoclIG5mN3w" name="hasCanonicalName : base:string">
+        <target xmi:type="oml:ScalarProperty" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#hasCanonicalName"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#hasCanonicalName"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_z5kdsIrJEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@subNodeMappings[name='Attributes']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@subNodeMappings[name='Attributes']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_z5kdsYrJEeuzoclIG5mN3w" name="hasIdentifier : base:string">
+        <target xmi:type="oml:ScalarProperty" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#hasIdentifier"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#hasIdentifier"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_z5lEwIrJEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@subNodeMappings[name='Attributes']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@subNodeMappings[name='Attributes']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_z5lEwYrJEeuzoclIG5mN3w" name="hasDescription : base:string">
+        <target xmi:type="oml:ScalarProperty" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#hasDescription"/>
+        <semanticElements xmi:type="oml:ScalarProperty" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#hasDescription"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_z5lEworJEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@subNodeMappings[name='Attributes']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@subNodeMappings[name='Attributes']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_oTsmw4rJEeuzoclIG5mN3w" name="«aspect»&#xA;AggregatedIndividual" tooltipText="base:AggregatedIndividual" outgoingEdges="_oTtN0IrJEeuzoclIG5mN3w" incomingEdges="_oTtN0IrJEeuzoclIG5mN3w">
+      <target xmi:type="oml:Aspect" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#AggregatedIndividual"/>
+      <semanticElements xmi:type="oml:Aspect" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#AggregatedIndividual"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_oTsmxIrJEeuzoclIG5mN3w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@containerMappings[name='Aspect']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_oTtN0IrJEeuzoclIG5mN3w" name="aggregates" sourceNode="_oTsmw4rJEeuzoclIG5mN3w" targetNode="_oTsmw4rJEeuzoclIG5mN3w">
+      <target xmi:type="oml:RelationEntity" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#Aggregates"/>
+      <semanticElements xmi:type="oml:RelationEntity" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#Aggregates"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_oTtN14rJEeuzoclIG5mN3w" description="_oTtN04rJEeuzoclIG5mN3w" size="2" routingStyle="manhattan">
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_oTtN2IrJEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_oTtN2orJEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_oTtN2YrJEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer/@edgeMappings[name='RelationEntity']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_2:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_oTrYoYrJEeuzoclIG5mN3w"/>
+    <activatedLayers xmi:type="description_2:Layer" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']/@defaultLayer"/>
+    <target xmi:type="oml:Vocabulary" href="src/oml/opencaesar.io/tutorial/vocabulary/base.oml#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_acoB4IrMEeuzoclIG5mN3w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_acoo8YrMEeuzoclIG5mN3w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_acoo8orMEeuzoclIG5mN3w" type="Sirius" element="_acoB4IrMEeuzoclIG5mN3w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_ac3ScIrMEeuzoclIG5mN3w" type="2003" element="_acrFMIrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac35gorMEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_ac35g4rMEeuzoclIG5mN3w" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_ac4gqIrMEeuzoclIG5mN3w" type="3010" element="_acuIgIrMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac4gqYrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac4gqorMEeuzoclIG5mN3w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ac4gq4rMEeuzoclIG5mN3w" type="3010" element="_acuvkIrMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac4grIrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac4grYrMEeuzoclIG5mN3w"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ac35hIrMEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ac35hYrMEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ac35gIrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac35gYrMEeuzoclIG5mN3w" x="581" y="191"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ac35horMEeuzoclIG5mN3w" type="2003" element="_acsTUorMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac35iYrMEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_ac35iorMEeuzoclIG5mN3w" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_ac5HoIrMEeuzoclIG5mN3w" type="3010" element="_acuvlIrMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5HoYrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5HoorMEeuzoclIG5mN3w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ac4grorMEeuzoclIG5mN3w" type="3010" element="_acuvkorMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac4gr4rMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac4gsIrMEeuzoclIG5mN3w"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ac35i4rMEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ac35jIrMEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ac35h4rMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac35iIrMEeuzoclIG5mN3w" x="461" y="20"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ac35jYrMEeuzoclIG5mN3w" type="2003" element="_acsTVYrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac35kIrMEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_ac35kYrMEeuzoclIG5mN3w" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_ac5Ho4rMEeuzoclIG5mN3w" type="3010" element="_acuvlorMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5HpIrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5HpYrMEeuzoclIG5mN3w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ac5HporMEeuzoclIG5mN3w" type="3010" element="_acuvmIrMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5Hp4rMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5HqIrMEeuzoclIG5mN3w"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ac35korMEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ac35k4rMEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ac35jorMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac35j4rMEeuzoclIG5mN3w" x="20" y="20"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ac35lIrMEeuzoclIG5mN3w" type="2003" element="_acsTWIrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac35l4rMEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_ac4gkIrMEeuzoclIG5mN3w" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_ac5HrIrMEeuzoclIG5mN3w" type="3010" element="_acuvnIrMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5HrYrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5HrorMEeuzoclIG5mN3w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ac5HqYrMEeuzoclIG5mN3w" type="3010" element="_acuvmorMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5HqorMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5Hq4rMEeuzoclIG5mN3w"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ac4gkYrMEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ac4gkorMEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ac35lYrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac35lorMEeuzoclIG5mN3w" x="1298" y="398"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ac4gk4rMEeuzoclIG5mN3w" type="2003" element="_acs6YorMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac4glorMEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_ac4gl4rMEeuzoclIG5mN3w" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_ac5HsorMEeuzoclIG5mN3w" type="3010" element="_acvWoorMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5Hs4rMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5HtIrMEeuzoclIG5mN3w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ac5Hr4rMEeuzoclIG5mN3w" type="3010" element="_acvWoIrMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5HsIrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5HsYrMEeuzoclIG5mN3w"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ac4gmIrMEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ac4gmYrMEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ac4glIrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac4glYrMEeuzoclIG5mN3w" x="1165" y="191"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ac4gmorMEeuzoclIG5mN3w" type="2003" element="_acs6ZYrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac4gnYrMEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_ac4gnorMEeuzoclIG5mN3w" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_ac5HtYrMEeuzoclIG5mN3w" type="3010" element="_acvWpIrMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5HtorMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5Ht4rMEeuzoclIG5mN3w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ac5HuIrMEeuzoclIG5mN3w" type="3010" element="_acvWporMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5HuYrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5HuorMEeuzoclIG5mN3w"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ac4gn4rMEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ac4goIrMEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ac4gm4rMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac4gnIrMEeuzoclIG5mN3w" x="1143" y="20"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ac4goYrMEeuzoclIG5mN3w" type="2003" element="_acs6aIrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac4gpIrMEeuzoclIG5mN3w" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_ac4gpYrMEeuzoclIG5mN3w" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_ac5Hu4rMEeuzoclIG5mN3w" type="3010" element="_acvWqIrMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5HvIrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5HvYrMEeuzoclIG5mN3w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ac5HvorMEeuzoclIG5mN3w" type="3010" element="_acvWqorMEeuzoclIG5mN3w">
+              <styles xmi:type="notation:FontStyle" xmi:id="_ac5Hv4rMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ac5HwIrMEeuzoclIG5mN3w"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ac4gporMEeuzoclIG5mN3w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ac4gp4rMEeuzoclIG5mN3w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ac4goorMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac4go4rMEeuzoclIG5mN3w" x="866" y="398"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_acoo84rMEeuzoclIG5mN3w"/>
+        <edges xmi:type="notation:Edge" xmi:id="_ac5usIrMEeuzoclIG5mN3w" type="4001" element="_acwkwIrMEeuzoclIG5mN3w" source="_ac35horMEeuzoclIG5mN3w" target="_ac3ScIrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac5utIrMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac5utYrMEeuzoclIG5mN3w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac5utorMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac5ut4rMEeuzoclIG5mN3w" x="-1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac5uuIrMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac5uuYrMEeuzoclIG5mN3w" x="-2" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ac5usYrMEeuzoclIG5mN3w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ac5usorMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ac5us4rMEeuzoclIG5mN3w" points="[-1, 73, 0, -171]$[-1, 244, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac6VwIrMEeuzoclIG5mN3w" id="(0.5016077170418006,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac6VwYrMEeuzoclIG5mN3w" id="(0.5013123359580053,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ac6VworMEeuzoclIG5mN3w" type="4001" element="_acxy5IrMEeuzoclIG5mN3w" source="_ac4gk4rMEeuzoclIG5mN3w" target="_ac35lIrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac6VxorMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac6Vx4rMEeuzoclIG5mN3w" x="-4" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac6VyIrMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac6VyYrMEeuzoclIG5mN3w" x="4" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac6VyorMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac6Vy4rMEeuzoclIG5mN3w" x="2" y="-4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ac6Vw4rMEeuzoclIG5mN3w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ac6VxIrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ac6VxYrMEeuzoclIG5mN3w" points="[35, 73, -103, -207]$[138, 280, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac6VzIrMEeuzoclIG5mN3w" id="(0.5026881720430108,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac6VzYrMEeuzoclIG5mN3w" id="(0.5013054830287206,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ac6VzorMEeuzoclIG5mN3w" type="4001" element="_acyZ9IrMEeuzoclIG5mN3w" source="_ac4gmorMEeuzoclIG5mN3w" target="_ac4gk4rMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac6V0orMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac6V04rMEeuzoclIG5mN3w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac6V1IrMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac6V1YrMEeuzoclIG5mN3w" x="-1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac680IrMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac680YrMEeuzoclIG5mN3w" x="-2" y="-9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ac6Vz4rMEeuzoclIG5mN3w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ac6V0IrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ac6V0YrMEeuzoclIG5mN3w" points="[0, 73, -3, -171]$[3, 244, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac680orMEeuzoclIG5mN3w" id="(0.5012165450121655,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac6804rMEeuzoclIG5mN3w" id="(0.5026881720430108,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ac681IrMEeuzoclIG5mN3w" type="4001" element="_aczoFIrMEeuzoclIG5mN3w" source="_ac35jYrMEeuzoclIG5mN3w" target="_ac3ScIrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac682IrMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac682YrMEeuzoclIG5mN3w" x="-5" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac682orMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac6824rMEeuzoclIG5mN3w" x="4" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac683IrMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac683YrMEeuzoclIG5mN3w" x="5" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ac681YrMEeuzoclIG5mN3w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ac681orMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ac6814rMEeuzoclIG5mN3w" points="[167, 73, -394, -171]$[561, 244, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac7j4IrMEeuzoclIG5mN3w" id="(0.5026315789473684,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac7j4YrMEeuzoclIG5mN3w" id="(0.5013123359580053,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ac7j4orMEeuzoclIG5mN3w" type="4001" element="_ac02NIrMEeuzoclIG5mN3w" source="_ac4gk4rMEeuzoclIG5mN3w" target="_ac4goYrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac7j5orMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac7j54rMEeuzoclIG5mN3w" x="4" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac7j6IrMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac7j6YrMEeuzoclIG5mN3w" x="-4" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac7j6orMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac7j64rMEeuzoclIG5mN3w" x="-2" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ac7j44rMEeuzoclIG5mN3w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ac7j5IrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ac7j5YrMEeuzoclIG5mN3w" points="[-78, 73, 220, -207]$[-298, 280, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac7j7IrMEeuzoclIG5mN3w" id="(0.5026881720430108,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac7j7YrMEeuzoclIG5mN3w" id="(0.5013333333333333,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ac7j7orMEeuzoclIG5mN3w" type="4001" element="_ac2EUorMEeuzoclIG5mN3w" source="_ac4gmorMEeuzoclIG5mN3w" target="_ac3ScIrMEeuzoclIG5mN3w">
+          <children xmi:type="notation:Node" xmi:id="_ac8K8IrMEeuzoclIG5mN3w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac8K8YrMEeuzoclIG5mN3w" x="5" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac8K8orMEeuzoclIG5mN3w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac8K84rMEeuzoclIG5mN3w" x="-4" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ac8K9IrMEeuzoclIG5mN3w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ac8K9YrMEeuzoclIG5mN3w" x="-4" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ac7j74rMEeuzoclIG5mN3w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ac7j8IrMEeuzoclIG5mN3w" fontName=".AppleSystemUIFont" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ac7j8YrMEeuzoclIG5mN3w" points="[-173, 73, 404, -171]$[-577, 244, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac8K9orMEeuzoclIG5mN3w" id="(0.5012165450121655,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ac8K94rMEeuzoclIG5mN3w" id="(0.5013123359580053,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_ac2rZIrMEeuzoclIG5mN3w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_ac2rZYrMEeuzoclIG5mN3w"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_acrFMIrMEeuzoclIG5mN3w" name="«mission:Objective»&#xA;characterize-liquid-ocean" tooltipText="objectives:characterize-liquid-ocean" incomingEdges="_acwkwIrMEeuzoclIG5mN3w _aczoFIrMEeuzoclIG5mN3w _ac2EUorMEeuzoclIG5mN3w">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-liquid-ocean"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_acsTUIrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acuIgIrMEeuzoclIG5mN3w" name="hasIdentifier : O.02">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.1/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.1/@ownedPropertyValues.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acuIgYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acuvkIrMEeuzoclIG5mN3w" name="hasCanonicalName : Characterize the liquid ocean of Kepler 16-b">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.1/@ownedPropertyValues.1"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.1/@ownedPropertyValues.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acuvkYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_acsTUorMEeuzoclIG5mN3w" name="«mission:Objective»&#xA;characterize-environment" tooltipText="objectives:characterize-environment" outgoingEdges="_acwkwIrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-environment"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_acsTU4rMEeuzoclIG5mN3w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acuvlIrMEeuzoclIG5mN3w" name="hasIdentifier : O.07">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.6/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.6/@ownedPropertyValues.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acuvlYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acuvkorMEeuzoclIG5mN3w" name="hasCanonicalName : Characterize the energetic particule environment of the Kepler 16-b binary star system">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.6/@ownedPropertyValues.1"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.6/@ownedPropertyValues.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acuvk4rMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_acsTVYrMEeuzoclIG5mN3w" name="«mission:Objective»&#xA;characterize-atmosphere" tooltipText="objectives:characterize-atmosphere" outgoingEdges="_aczoFIrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-atmosphere"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_acsTVorMEeuzoclIG5mN3w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acuvlorMEeuzoclIG5mN3w" name="hasIdentifier : O.01">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.0/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.0/@ownedPropertyValues.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acuvl4rMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acuvmIrMEeuzoclIG5mN3w" name="hasCanonicalName : Characterize the atmosphere of Kepler 16-b">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.0/@ownedPropertyValues.1"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.0/@ownedPropertyValues.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acuvmYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_acsTWIrMEeuzoclIG5mN3w" name="«mission:Objective»&#xA;characterize-rocky-core-density" tooltipText="objectives:characterize-rocky-core-density" incomingEdges="_acxy5IrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-density"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_acs6YIrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acuvnIrMEeuzoclIG5mN3w" name="hasIdentifier : O.05">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.4/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.4/@ownedPropertyValues.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acuvnYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acuvmorMEeuzoclIG5mN3w" name="hasCanonicalName : Characterize the core density of Kepler 16-b">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.4/@ownedPropertyValues.1"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.4/@ownedPropertyValues.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acuvm4rMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_acs6YorMEeuzoclIG5mN3w" name="«mission:Objective»&#xA;characterize-rocky-core" tooltipText="objectives:characterize-rocky-core" outgoingEdges="_acxy5IrMEeuzoclIG5mN3w _ac02NIrMEeuzoclIG5mN3w" incomingEdges="_acyZ9IrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_acs6Y4rMEeuzoclIG5mN3w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acvWoorMEeuzoclIG5mN3w" name="hasIdentifier : O.04">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.3/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.3/@ownedPropertyValues.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acvWo4rMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acvWoIrMEeuzoclIG5mN3w" name="hasCanonicalName : Characterize the rocky core of Kepler 16-b">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.3/@ownedPropertyValues.1"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.3/@ownedPropertyValues.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acvWoYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_acs6ZYrMEeuzoclIG5mN3w" name="«mission:Objective»&#xA;characterize-gravitational-field" tooltipText="objectives:characterize-gravitational-field" outgoingEdges="_acyZ9IrMEeuzoclIG5mN3w _ac2EUorMEeuzoclIG5mN3w">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-gravitational-field"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_acs6ZorMEeuzoclIG5mN3w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acvWpIrMEeuzoclIG5mN3w" name="hasIdentifier : O.03">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.2/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.2/@ownedPropertyValues.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acvWpYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acvWporMEeuzoclIG5mN3w" name="hasCanonicalName : Characterize the gravitational field of Kepler 16-b">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.2/@ownedPropertyValues.1"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.2/@ownedPropertyValues.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acvWp4rMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_acs6aIrMEeuzoclIG5mN3w" name="«mission:Objective»&#xA;characterize-rocky-core-shape" tooltipText="objectives:characterize-rocky-core-shape" incomingEdges="_ac02NIrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#characterize-rocky-core-shape"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_acs6aYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acvWqIrMEeuzoclIG5mN3w" name="hasIdentifier : O.06">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.5/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.5/@ownedPropertyValues.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acvWqYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_acvWqorMEeuzoclIG5mN3w" name="hasCanonicalName : Characterize the core shape of Kepler 16-b">
+        <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.5/@ownedPropertyValues.1"/>
+        <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.5/@ownedPropertyValues.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_acvWq4rMEeuzoclIG5mN3w" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_2:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_acwkwIrMEeuzoclIG5mN3w" name="«aggregates»" sourceNode="_acsTUorMEeuzoclIG5mN3w" targetNode="_acrFMIrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.6/@ownedLinks.0"/>
+      <semanticElements xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.6/@ownedLinks.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_acxy4IrMEeuzoclIG5mN3w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_acxy4YrMEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_acxy5IrMEeuzoclIG5mN3w" name="«aggregates»" sourceNode="_acs6YorMEeuzoclIG5mN3w" targetNode="_acsTWIrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.3/@ownedLinks.0"/>
+      <semanticElements xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.3/@ownedLinks.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_acyZ8IrMEeuzoclIG5mN3w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_acyZ8YrMEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_acyZ9IrMEeuzoclIG5mN3w" name="«aggregates»" sourceNode="_acs6ZYrMEeuzoclIG5mN3w" targetNode="_acs6YorMEeuzoclIG5mN3w">
+      <target xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.2/@ownedLinks.1"/>
+      <semanticElements xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.2/@ownedLinks.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_aczoEIrMEeuzoclIG5mN3w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_aczoEYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_aczoFIrMEeuzoclIG5mN3w" name="«aggregates»" sourceNode="_acsTVYrMEeuzoclIG5mN3w" targetNode="_acrFMIrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.0/@ownedLinks.0"/>
+      <semanticElements xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.0/@ownedLinks.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ac02MIrMEeuzoclIG5mN3w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ac02MYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ac02NIrMEeuzoclIG5mN3w" name="«aggregates»" sourceNode="_acs6YorMEeuzoclIG5mN3w" targetNode="_acs6aIrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.3/@ownedLinks.1"/>
+      <semanticElements xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.3/@ownedLinks.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ac1dQIrMEeuzoclIG5mN3w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ac1dQYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ac2EUorMEeuzoclIG5mN3w" name="«aggregates»" sourceNode="_acs6ZYrMEeuzoclIG5mN3w" targetNode="_acrFMIrMEeuzoclIG5mN3w">
+      <target xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.2/@ownedLinks.0"/>
+      <semanticElements xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#//@ownedStatements.2/@ownedLinks.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ac2rYIrMEeuzoclIG5mN3w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ac2rYYrMEeuzoclIG5mN3w" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_2:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_acoB4YrMEeuzoclIG5mN3w"/>
+    <activatedLayers xmi:type="description_2:Layer" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer"/>
+    <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
