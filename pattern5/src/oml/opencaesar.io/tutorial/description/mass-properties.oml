@@ -3,11 +3,13 @@
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/mass-properties> with # as mass-properties {
  
-  uses <http://opencaesar.io/tutorial/vocabulary/mechanical>
-
   extends <http://opencaesar.io/tutorial/description/components>
 
-  ci orbiter-launch-system.mass.quantity : mechanical:MassQuantity [
+  uses <http://opencaesar.io/tutorial/vocabulary/mechanical>
+
+  ref ci components:orbiter-launch-system : mechanical:MechanicalComponent
+
+  ci orbiter-launch-system.mass.quantity : 80000-4-quantities:mass [
     metrology:isQuantityOf components:orbiter-launch-system
   ]
 
@@ -16,8 +18,11 @@ description <http://opencaesar.io/tutorial/description/mass-properties> with # a
     metrology:isMagnitudeOf orbiter-launch-system.mass.quantity 
   ]
 
-  ci orbiter-spacecraft.mass.quantity : mechanical:MassQuantity [
-    metrology:isQuantityOf components:orbiter-spacecraft
+  // Note that mechanical:isMassOf effectively forces components:orbiter-spacecraft
+  // to be classified as a mechanical:MechanicalComponent even though no such assertion
+  // was made.
+  ci orbiter-spacecraft.mass.quantity : 80000-4-quantities:mass [
+    mechanical:isMassOf components:orbiter-spacecraft
   ]
 
   ci orbiter-spacecraft.mass.magnitude : mechanical:MassMagnitude [
@@ -25,8 +30,8 @@ description <http://opencaesar.io/tutorial/description/mass-properties> with # a
     metrology:isMagnitudeOf orbiter-spacecraft.mass.quantity
   ]
 
-  ci lander-launch-system.mass.quantity : mechanical:MassQuantity [
-    metrology:isQuantityOf components:lander-launch-system
+  ci lander-launch-system.mass.quantity : 80000-4-quantities:mass [
+   mechanical:isMassOf components:lander-launch-system
   ]
 
   ci lander-launch-system.mass.magnitude : mechanical:MassMagnitude [
@@ -34,8 +39,8 @@ description <http://opencaesar.io/tutorial/description/mass-properties> with # a
     metrology:isMagnitudeOf lander-launch-system.mass.quantity
   ]
 
-  ci lander-spacecraft.mass.quantity : mechanical:MassQuantity [
-    metrology:isQuantityOf components:lander-spacecraft
+  ci lander-spacecraft.mass.quantity : 80000-4-quantities:mass [
+    mechanical:isMassOf components:lander-spacecraft
   ]
 
   ci lander-spacecraft.mass.magnitude : mechanical:MassMagnitude [

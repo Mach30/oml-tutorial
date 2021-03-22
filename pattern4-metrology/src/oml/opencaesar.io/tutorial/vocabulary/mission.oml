@@ -2,23 +2,20 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by ModelWare"
 vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission {
-	 
-	extends <http://opencaesar.io/tutorial/vocabulary/base>
 
+	extends <http://opencaesar.io/tutorial/vocabulary/base>
+	
   @rdfs:label "Objective"
 	@dc:^description """An [=Objective=] represents a specific interest 
-  that one or more stakeholders have in the successful execution of a mission.
-	
-	[=Objective=]s can be aggregated in homeomeric trees. 
-	"""
-	concept Objective :> base:AggregatedElement [
+  that one or more stakeholders have in the successful execution of a mission."""
+	concept Objective :> base:IdentifiedIndividual, base:AggregatedIndividual [
 		restricts all relation base:aggregates to Objective
 		restricts all relation base:isAggregatedIn to Objective
-	]
+  ]
 
   @rdfs:label "Mission"
 	@dc:^description """A [=Mission=] [=pursue=]s [=Objective=]s."""
-	concept Mission
+	concept Mission :> base:IdentifiedIndividual
 
 	@rdfs:label "Pursues"
 	@dc:^description """A [=Mission=] [=pursues=] zero or more [=Objective=]s."""
@@ -41,7 +38,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
     flight software, attitude control software, and mission operations team.
 	
 	  [=Component=]s can be organized hierarchically by containment of other [=Component=]s. """
-	concept Component :> base:ContainedElement, base:Container [
+	concept Component :> base:ContainedIndividual [
 		restricts all relation base:contains to Component
 		restricts all relation base:isContainedIn to Component
 	]

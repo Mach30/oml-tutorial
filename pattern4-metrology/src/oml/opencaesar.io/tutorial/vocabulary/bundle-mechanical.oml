@@ -1,4 +1,4 @@
-@dc:title "Example Vocabulary Bundle"
+@dc:title "Example Mechanical Vocabulary Bundle"
 @dc:creator "Example Company"
 @dc:rights "Copyright 2019, by Example Company"
 vocabulary bundle <http://opencaesar.io/tutorial/vocabulary/bundle-mechanical> with # as vocabulary-bundle-mechanical {
