@@ -1,0 +1,11 @@
+@dc:title "Kepler 16-b Example Commands"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/commands> with # as commands {
+  extends <http://opencaesar.io/tutorial/description/interfaces>
+
+  ci SpacecraftBootCommand : kepler16b:SpacecraftAvionicsCommand [
+
+  ]
+  
+}
