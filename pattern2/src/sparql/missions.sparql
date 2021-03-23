@@ -1,8 +1,9 @@
-PREFIX mission:   <http://opencaesar.io/tutorial/vocabulary/mission#>
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
+PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
 
-SELECT DISTINCT ?x ?y
+SELECT DISTINCT ?m 
 
 WHERE {
-	?x mission:aggregates ?y
+	?m a mission:Mission ;
 }
-ORDER BY ?x ?y
+ORDER BY ?m

@@ -1,11 +1,12 @@
-PREFIX dc:          <http://purl.org/dc/elements/1.1/>
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
 PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
 
-SELECT DISTINCT ?obj ?desc
+SELECT DISTINCT ?o_id ?o_name
 
 WHERE {
 	?obj 
       a mission:Objective ;
-      dc:description ?desc .
+      base:hasIdentifier ?o_id ;
+      base:hasCanonicalName ?o_name ;
 }
-ORDER BY ?obj
+ORDER BY ?id
