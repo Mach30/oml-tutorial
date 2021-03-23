@@ -1,12 +1,9 @@
 PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
 PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
 
-SELECT DISTINCT ?o_id ?o_name
+SELECT DISTINCT ?m 
 
 WHERE {
-	?obj 
-      a mission:Objective ;
-      base:hasIdentifier ?o_id ;
-      base:hasCanonicalName ?o_name ;
+	?m a mission:Mission ;
 }
-ORDER BY ?id
+ORDER BY ?m
