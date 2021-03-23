@@ -2,23 +2,20 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by ModelWare"
 vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission {
-	 
+
 	extends <http://opencaesar.io/tutorial/vocabulary/base>
 
   @rdfs:label "Objective"
 	@dc:^description """An [=Objective=] represents a specific interest 
-  that one or more stakeholders have in the successful execution of a mission.
-	
-	[=Objective=]s can be aggregated in homeomeric trees. 
-	"""
-	concept Objective :> base:AggregatedElement [
+  that one or more stakeholders have in the successful execution of a mission."""
+	concept Objective :> base:IdentifiedIndividual, base:AggregatedIndividual [
 		restricts all relation base:aggregates to Objective
 		restricts all relation base:isAggregatedIn to Objective
-	]
+  ]
 
   @rdfs:label "Mission"
 	@dc:^description """A [=Mission=] [=pursue=]s [=Objective=]s."""
-	concept Mission
+	concept Mission :> base:IdentifiedIndividual
 
 	@rdfs:label "Pursues"
 	@dc:^description """A [=Mission=] [=pursues=] zero or more [=Objective=]s."""
@@ -41,7 +38,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
     flight software, attitude control software, and mission operations team.
 	
 	  [=Component=]s can be organized hierarchically by containment of other [=Component=]s. """
-	concept Component :> base:ContainedElement, base:Container [
+	concept Component :> base:ContainedIndividual [
 		restricts all relation base:contains to Component
 		restricts all relation base:isContainedIn to Component
 	]
@@ -79,7 +76,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 		asymmetric
 		irreflexive
 	]
-
+	
 	@rdfs:label "Presents"
 	@dc:^description "A [=Component=] [=presents=] zero or more [=Interface=]s."
 	relation entity Presents :> SpecifiedElement [
@@ -98,8 +95,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	@dc:^description """An [=Junction=] represents a set of mechanical, electrical, signal, 
 	or other properties that are common to a set of mutually connected [=Interface=]s."""
 	concept Junction
-
-	@rdfs:label "Joins"
+		@rdfs:label "Joins"
 	@dc:^description """A [=Junction=] [=joins=] zero or more [=Interface=]s."""
 	relation entity Joins [
 		from Junction
@@ -144,7 +140,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 
 	@rdfs:label "Specified Element"
 	@dc:^description """[=SpecifiedElement=] is the range of [=specifies=].
-	Any concept or reified relation that [=isSpecifiedBy=] a [=Requirement=] should
+	Any concept or reified relation that [=isSpecifiedBy=] a [=Requirement=] should 
 	specialize [=SpecifiedElement=]."""
 	aspect SpecifiedElement
 
