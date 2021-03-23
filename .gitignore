@@ -12,3 +12,13 @@ build
 
 # Fuseki output directory
 .fuseki
+
+# HTML output
+*.html
+
+# R caches
+.RData
+.Rhistory
+.Rproj.user
+*.Rproj
+
