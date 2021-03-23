@@ -13,7 +13,7 @@ description <http://opencaesar.io/tutorial/description/components> with # as com
  
 	ci orbiter-spacecraft : mission:Component [
 		base:hasIdentifier "C.02"
-		base:hasCanonicalName "Orbiter Spacecraft"
+		base:hasCanonicalName "Orbiter Orbiter"
 		base:contains orbiter-power-subsystem
 		base:contains orbiter-harness
 		base:contains orbiter-thermal-subsystem
@@ -87,7 +87,7 @@ description <http://opencaesar.io/tutorial/description/components> with # as com
 
 	ci lander-spacecraft : mission:Component [
 		base:hasIdentifier "C.06"
-		base:hasCanonicalName "Lander Spacecraft"
+		base:hasCanonicalName "Lander Orbiter"
 	]
 
 	ci lander-ground-data-system : mission:Component [

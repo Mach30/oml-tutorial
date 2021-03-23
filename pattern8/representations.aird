@@ -2913,7 +2913,7 @@
         </computedStyleDescriptions>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3tTg84q8EeuzoclIG5mN3w" name="«kepler16b:SpacecraftCommandInInterface»&#xA;orbiter-spacecraft.commandIn" tooltipText="interfaces:orbiter-spacecraft.commandIn" incomingEdges="_PnqEforBEeuzoclIG5mN3w">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3tTg84q8EeuzoclIG5mN3w" name="«kepler16b:OrbiterCommandInInterface»&#xA;orbiter-spacecraft.commandIn" tooltipText="interfaces:orbiter-spacecraft.commandIn" incomingEdges="_PnqEforBEeuzoclIG5mN3w">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-spacecraft.commandIn"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-spacecraft.commandIn"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2924,7 +2924,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3tUIAoq8EeuzoclIG5mN3w" name="«kepler16b:SpacecraftTelemetryOutInterface»&#xA;orbiter-spacecraft.telemetryOut" tooltipText="interfaces:orbiter-spacecraft.telemetryOut" incomingEdges="_PnpdZIrBEeuzoclIG5mN3w">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3tUIAoq8EeuzoclIG5mN3w" name="«kepler16b:OrbiterTelemetryOutInterface»&#xA;orbiter-spacecraft.telemetryOut" tooltipText="interfaces:orbiter-spacecraft.telemetryOut" incomingEdges="_PnpdZIrBEeuzoclIG5mN3w">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-spacecraft.telemetryOut"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-spacecraft.telemetryOut"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_3tUIA4q8EeuzoclIG5mN3w" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
@@ -2932,7 +2932,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3tUIBYq8EeuzoclIG5mN3w" name="«kepler16b:SpacecraftCommandOutInterface»&#xA;orbiter-ground-data-system.commandOut" tooltipText="interfaces:orbiter-ground-data-system.commandOut" incomingEdges="_PnpdborBEeuzoclIG5mN3w">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3tUIBYq8EeuzoclIG5mN3w" name="«kepler16b:OrbiterCommandOutInterface»&#xA;orbiter-ground-data-system.commandOut" tooltipText="interfaces:orbiter-ground-data-system.commandOut" incomingEdges="_PnpdborBEeuzoclIG5mN3w">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-ground-data-system.commandOut"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-ground-data-system.commandOut"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2943,7 +2943,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3tUICIq8EeuzoclIG5mN3w" name="«kepler16b:SpacecraftTelemetryInInterface»&#xA;orbiter-ground-data-system.telemetryIn" tooltipText="interfaces:orbiter-ground-data-system.telemetryIn" incomingEdges="_PnqEdIrBEeuzoclIG5mN3w">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_3tUICIq8EeuzoclIG5mN3w" name="«kepler16b:OrbiterTelemetryInInterface»&#xA;orbiter-ground-data-system.telemetryIn" tooltipText="interfaces:orbiter-ground-data-system.telemetryIn" incomingEdges="_PnqEdIrBEeuzoclIG5mN3w">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-ground-data-system.telemetryIn"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-ground-data-system.telemetryIn"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3385,7 +3385,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_dJ7rw4rDEeuzoclIG5mN3w" name="«kepler16b:SpacecraftCommandUplink»&#xA;orbiter-ground-data-system.orbiter-spacecraft.command.uplink" tooltipText="junctions:orbiter-ground-data-system.orbiter-spacecraft.command.uplink" outgoingEdges="_ANvXVIrFEeuzoclIG5mN3w _ANxMhIrFEeuzoclIG5mN3w">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_dJ7rw4rDEeuzoclIG5mN3w" name="«kepler16b:OrbiterCommandUplink»&#xA;orbiter-ground-data-system.orbiter-spacecraft.command.uplink" tooltipText="junctions:orbiter-ground-data-system.orbiter-spacecraft.command.uplink" outgoingEdges="_ANvXVIrFEeuzoclIG5mN3w _ANxMhIrFEeuzoclIG5mN3w">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/junctions.oml#orbiter-ground-data-system.orbiter-spacecraft.command.uplink"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/junctions.oml#orbiter-ground-data-system.orbiter-spacecraft.command.uplink"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3396,7 +3396,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_dJ7rxorDEeuzoclIG5mN3w" name="«kepler16b:SpacecraftTelemetryDownlink»&#xA;orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink" tooltipText="junctions:orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink" outgoingEdges="_ANv-ZIrFEeuzoclIG5mN3w _ANxzlIrFEeuzoclIG5mN3w">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_dJ7rxorDEeuzoclIG5mN3w" name="«kepler16b:OrbiterTelemetryDownlink»&#xA;orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink" tooltipText="junctions:orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink" outgoingEdges="_ANv-ZIrFEeuzoclIG5mN3w _ANxzlIrFEeuzoclIG5mN3w">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/junctions.oml#orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/junctions.oml#orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

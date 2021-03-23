@@ -9,13 +9,13 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler
   // interfaces according to the intended recipient (Command)
   // or source (Telemetry).
 
-  concept SpacecraftCommandInterface :> operations:CommandInterface
-  concept SpacecraftCommandOutInterface :> SpacecraftCommandInterface, operations:CommandOutInterface
-  concept SpacecraftCommandInInterface :> SpacecraftCommandInterface, operations:CommandInInterface
+  concept OrbiterCommandInterface :> operations:CommandInterface
+  concept OrbiterCommandOutInterface :> OrbiterCommandInterface, operations:CommandOutInterface
+  concept OrbiterCommandInInterface :> OrbiterCommandInterface, operations:CommandInInterface
 
-  concept SpacecraftTelemetryInterface :> operations:TelemetryInterface
-  concept SpacecraftTelemetryOutInterface :> SpacecraftTelemetryInterface, operations:TelemetryOutInterface
-  concept SpacecraftTelemetryInInterface :> SpacecraftTelemetryInterface, operations:TelemetryInInterface
+  concept OrbiterTelemetryInterface :> operations:TelemetryInterface
+  concept OrbiterTelemetryOutInterface :> OrbiterTelemetryInterface, operations:TelemetryOutInterface
+  concept OrbiterTelemetryInInterface :> OrbiterTelemetryInterface, operations:TelemetryInInterface
 
   concept LanderCommandInterface :> operations:CommandInterface
   concept LanderCommandOutInterface :> LanderCommandInterface, operations:CommandOutInterface
@@ -28,16 +28,16 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler
 
   // And specialize these junctions according to the information conveyed.
 
-  concept SpacecraftCommandUplink :> operations:CommandUplink [
-    restricts all relation mission:joins to SpacecraftCommandInterface
-    restricts all relation mission:joins1 to SpacecraftCommandOutInterface
-    restricts all relation mission:joins2 to SpacecraftCommandInInterface
+  concept OrbiterCommandUplink :> operations:CommandUplink [
+    restricts all relation mission:joins to OrbiterCommandInterface
+    restricts all relation mission:joins1 to OrbiterCommandOutInterface
+    restricts all relation mission:joins2 to OrbiterCommandInInterface
   ]
 
-  concept SpacecraftTelemetryDownlink :> operations:TelemetryDownlink [
-    restricts all relation mission:joins to SpacecraftTelemetryInterface
-    restricts all relation mission:joins1 to SpacecraftTelemetryOutInterface
-    restricts all relation mission:joins2 to SpacecraftTelemetryInInterface
+  concept OrbiterTelemetryDownlink :> operations:TelemetryDownlink [
+    restricts all relation mission:joins to OrbiterTelemetryInterface
+    restricts all relation mission:joins1 to OrbiterTelemetryOutInterface
+    restricts all relation mission:joins2 to OrbiterTelemetryInInterface
   ]
 
   concept LanderCommandUplink :> operations:CommandUplink [
@@ -58,29 +58,29 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler
   concept AvionicsTelemetry :> mission:Message
   concept ScienceTelemetry :> mission:Message
 
-  concept SpacecraftCommand :> mission:Message
+  concept OrbiterCommand :> mission:Message
 
-  concept SpacecraftAvionicsCommand :> SpacecraftCommand, AvionicsCommand
-  concept SpacecraftScienceCommand :> SpacecraftCommand, ScienceCommand
-  concept SpacecraftLanderCoordinatedScienceCommand :> SpacecraftCommand, ScienceCommand
-  concept SpacecraftRelayedLanderAvionicsCommand :> SpacecraftCommand, AvionicsCommand
-  concept SpacecraftRelayedLanderScienceCommand :> SpacecraftCommand, ScienceCommand
+  concept OrbiterAvionicsCommand :> OrbiterCommand, AvionicsCommand
+  concept OrbiterScienceCommand :> OrbiterCommand, ScienceCommand
+  concept OrbiterLanderCoordinatedScienceCommand :> OrbiterCommand, ScienceCommand
+  concept OrbiterRelayedLanderAvionicsCommand :> OrbiterCommand, AvionicsCommand
+  concept OrbiterRelayedLanderScienceCommand :> OrbiterCommand, ScienceCommand
 
-  concept SpacecraftTelemetry :> mission:Message
-  concept SpacecraftAvionicsTelemetry :> SpacecraftTelemetry, AvionicsTelemetry
-  concept SpacecraftScienceTelemetry :> SpacecraftTelemetry, ScienceTelemetry
-  concept SpacecraftLanderCoordinatedScienceTelemetry :> SpacecraftTelemetry, ScienceTelemetry
-  concept SpacecraftRelayedLanderAvionicsTelemetry :> SpacecraftTelemetry, AvionicsTelemetry
-  concept SpacecraftRelayedLanderScienceTelemetry :> SpacecraftTelemetry, ScienceTelemetry
+  concept OrbiterTelemetry :> mission:Message
+  concept OrbiterAvionicsTelemetry :> OrbiterTelemetry, AvionicsTelemetry
+  concept OrbiterScienceTelemetry :> OrbiterTelemetry, ScienceTelemetry
+  concept OrbiterLanderCoordinatedScienceTelemetry :> OrbiterTelemetry, ScienceTelemetry
+  concept OrbiterRelayedLanderAvionicsTelemetry :> OrbiterTelemetry, AvionicsTelemetry
+  concept OrbiterRelayedLanderScienceTelemetry :> OrbiterTelemetry, ScienceTelemetry
 
   concept LanderCommand :> mission:Message
   concept LanderAvionicsCommand :> LanderCommand, AvionicsCommand
   concept LanderScienceCommand :> LanderCommand, ScienceCommand
-  concept LanderSpacecraftCoordinatedScienceCommand :> LanderCommand, ScienceCommand
+  concept LanderOrbiterCoordinatedScienceCommand :> LanderCommand, ScienceCommand
 
   concept LanderTelemetry :> mission:Message
   concept LanderAvionicsTelemetry :> LanderTelemetry, AvionicsTelemetry
   concept LanderScienceTelemetry :> LanderTelemetry, ScienceTelemetry
-  concept LanderSpacecraftCoordinatedScienceTelemetry :> LanderTelemetry, ScienceTelemetry
+  concept LanderOrbiterCoordinatedScienceTelemetry :> LanderTelemetry, ScienceTelemetry
 
 }

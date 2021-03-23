@@ -4,12 +4,12 @@
 description <http://opencaesar.io/tutorial/description/junctions> with # as junctions {
   extends <http://opencaesar.io/tutorial/description/interfaces>
 
-  ci orbiter-ground-data-system.orbiter-spacecraft.command.uplink : kepler16b:SpacecraftCommandUplink [
+  ci orbiter-ground-data-system.orbiter-spacecraft.command.uplink : kepler16b:OrbiterCommandUplink [
     mission:joins1 interfaces:orbiter-ground-data-system.commandOut
     mission:joins2 interfaces:orbiter-spacecraft.commandIn
   ]
 
-  ci orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink : kepler16b:SpacecraftTelemetryDownlink [
+  ci orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink : kepler16b:OrbiterTelemetryDownlink [
     mission:joins1 interfaces:orbiter-spacecraft.telemetryOut
     mission:joins2 interfaces:orbiter-ground-data-system.telemetryIn
   ]

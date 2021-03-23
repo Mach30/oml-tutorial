@@ -4,7 +4,7 @@
 description <http://opencaesar.io/tutorial/description/commands> with # as commands {
   extends <http://opencaesar.io/tutorial/description/interfaces>
 
-  ci SpacecraftBootCommand : kepler16b:SpacecraftAvionicsCommand [
+  ci OrbiterBootCommand : kepler16b:OrbiterAvionicsCommand [
 
   ]
   

@@ -9,13 +9,13 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler
   // interfaces according to the intended recipient (Command)
   // or source (Telemetry).
 
-  concept SpacecraftCommandInterface :> operations:CommandInterface
-  concept SpacecraftCommandOutInterface :> SpacecraftCommandInterface, operations:CommandOutInterface
-  concept SpacecraftCommandInInterface :> SpacecraftCommandInterface, operations:CommandInInterface
+  concept OrbiterCommandInterface :> operations:CommandInterface
+  concept OrbiterCommandOutInterface :> OrbiterCommandInterface, operations:CommandOutInterface
+  concept OrbiterCommandInInterface :> OrbiterCommandInterface, operations:CommandInInterface
 
-  concept SpacecraftTelemetryInterface :> operations:TelemetryInterface
-  concept SpacecraftTelemetryOutInterface :> SpacecraftTelemetryInterface, operations:TelemetryOutInterface
-  concept SpacecraftTelemetryInInterface :> SpacecraftTelemetryInterface, operations:TelemetryInInterface
+  concept OrbiterTelemetryInterface :> operations:TelemetryInterface
+  concept OrbiterTelemetryOutInterface :> OrbiterTelemetryInterface, operations:TelemetryOutInterface
+  concept OrbiterTelemetryInInterface :> OrbiterTelemetryInterface, operations:TelemetryInInterface
 
   concept LanderCommandInterface :> operations:CommandInterface
   concept LanderCommandOutInterface :> LanderCommandInterface, operations:CommandOutInterface

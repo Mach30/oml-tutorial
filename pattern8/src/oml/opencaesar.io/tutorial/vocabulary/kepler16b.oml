@@ -9,13 +9,13 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler
   // interfaces according to the intended recipient (Command)
   // or source (Telemetry).
 
-  concept SpacecraftCommandInterface :> operations:CommandInterface
-  concept SpacecraftCommandOutInterface :> SpacecraftCommandInterface, operations:CommandOutInterface
-  concept SpacecraftCommandInInterface :> SpacecraftCommandInterface, operations:CommandInInterface
+  concept OrbiterCommandInterface :> operations:CommandInterface
+  concept OrbiterCommandOutInterface :> OrbiterCommandInterface, operations:CommandOutInterface
+  concept OrbiterCommandInInterface :> OrbiterCommandInterface, operations:CommandInInterface
 
-  concept SpacecraftTelemetryInterface :> operations:TelemetryInterface
-  concept SpacecraftTelemetryOutInterface :> SpacecraftTelemetryInterface, operations:TelemetryOutInterface
-  concept SpacecraftTelemetryInInterface :> SpacecraftTelemetryInterface, operations:TelemetryInInterface
+  concept OrbiterTelemetryInterface :> operations:TelemetryInterface
+  concept OrbiterTelemetryOutInterface :> OrbiterTelemetryInterface, operations:TelemetryOutInterface
+  concept OrbiterTelemetryInInterface :> OrbiterTelemetryInterface, operations:TelemetryInInterface
 
   concept LanderCommandInterface :> operations:CommandInterface
   concept LanderCommandOutInterface :> LanderCommandInterface, operations:CommandOutInterface
@@ -28,16 +28,16 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler
 
   // And specialize these junctions according to the information conveyed.
 
-  concept SpacecraftCommandUplink :> operations:CommandUplink [
-    restricts all relation mission:joins to SpacecraftCommandInterface
-    restricts all relation mission:joins1 to SpacecraftCommandOutInterface
-    restricts all relation mission:joins2 to SpacecraftCommandInInterface
+  concept OrbiterCommandUplink :> operations:CommandUplink [
+    restricts all relation mission:joins to OrbiterCommandInterface
+    restricts all relation mission:joins1 to OrbiterCommandOutInterface
+    restricts all relation mission:joins2 to OrbiterCommandInInterface
   ]
 
-  concept SpacecraftTelemetryDownlink :> operations:TelemetryDownlink [
-    restricts all relation mission:joins to SpacecraftTelemetryInterface
-    restricts all relation mission:joins1 to SpacecraftTelemetryOutInterface
-    restricts all relation mission:joins2 to SpacecraftTelemetryInInterface
+  concept OrbiterTelemetryDownlink :> operations:TelemetryDownlink [
+    restricts all relation mission:joins to OrbiterTelemetryInterface
+    restricts all relation mission:joins1 to OrbiterTelemetryOutInterface
+    restricts all relation mission:joins2 to OrbiterTelemetryInInterface
   ]
 
   concept LanderCommandUplink :> operations:CommandUplink [

@@ -85,7 +85,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_YDuDkIv6EeugIfwuPG0Z5Q">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_iDSEAIv6EeugIfwuPG0Z5Q" name="Pattern9 Traversing Vocabulary" repPath="#_iDEooIv6EeugIfwuPG0Z5Q" changeId="7784ab7d-e093-4685-bccc-63b44af2f1ba">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_iDSEAIv6EeugIfwuPG0Z5Q" name="Pattern9 Traversing Vocabulary" repPath="#_iDEooIv6EeugIfwuPG0Z5Q" changeId="d31bae65-90b0-4fa4-a2e3-8905ae3e574e">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']"/>
         <target xmi:type="oml:Vocabulary" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#/"/>
       </ownedRepresentationDescriptors>
@@ -280,19 +280,19 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_iGnr6Iv6EeugIfwuPG0Z5Q" type="4001" element="_iE2xUIv6EeugIfwuPG0Z5Q" source="_iGAA1Iv6EeugIfwuPG0Z5Q" target="_iGCdFIv6EeugIfwuPG0Z5Q">
           <children xmi:type="notation:Node" xmi:id="_iGnr7Iv6EeugIfwuPG0Z5Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iGnr7Yv6EeugIfwuPG0Z5Q" x="-27" y="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iGnr7Yv6EeugIfwuPG0Z5Q" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_iGoS8Iv6EeugIfwuPG0Z5Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iGoS8Yv6EeugIfwuPG0Z5Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iGoS8Yv6EeugIfwuPG0Z5Q" x="1" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_iGoS8ov6EeugIfwuPG0Z5Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iGoS84v6EeugIfwuPG0Z5Q" x="-74" y="-6"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iGoS84v6EeugIfwuPG0Z5Q" x="1" y="-10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_iGnr6Yv6EeugIfwuPG0Z5Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_iGnr6ov6EeugIfwuPG0Z5Q" fontName="Noto Sans" fontHeight="12"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iGnr64v6EeugIfwuPG0Z5Q" points="[-10, 13, 178, 5]$[-10, 13, 178, 5]$[-122, 13, 66, 5]$[-179, 13, 9, 5]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iGnr64v6EeugIfwuPG0Z5Q" points="[-10, -2, 177, 1]$[-179, -2, 8, 1]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iGoS9Iv6EeugIfwuPG0Z5Q" id="(0.05714285714285714,0.3780487804878049)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iGoS9Yv6EeugIfwuPG0Z5Q" id="(0.9419354838709677,0.2556390977443609)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iGoS9Yv6EeugIfwuPG0Z5Q" id="(0.9483870967741935,0.17293233082706766)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_iGoS9ov6EeugIfwuPG0Z5Q" type="4001" element="_iE3YYIv6EeugIfwuPG0Z5Q" source="_iF-yuov6EeugIfwuPG0Z5Q" target="_iGB2C4v6EeugIfwuPG0Z5Q">
           <children xmi:type="notation:Node" xmi:id="_iGoS-ov6EeugIfwuPG0Z5Q" type="6001">
@@ -312,7 +312,7 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_iGo6Aov6EeugIfwuPG0Z5Q" type="4001" element="_iE3_cIv6EeugIfwuPG0Z5Q" source="_iGAA1Iv6EeugIfwuPG0Z5Q" target="_iGCdFIv6EeugIfwuPG0Z5Q">
           <children xmi:type="notation:Node" xmi:id="_iGo6Bov6EeugIfwuPG0Z5Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iGo6B4v6EeugIfwuPG0Z5Q" x="-55" y="-5"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iGo6B4v6EeugIfwuPG0Z5Q" x="-35" y="17"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_iGo6CIv6EeugIfwuPG0Z5Q" type="6002">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iGo6CYv6EeugIfwuPG0Z5Q" x="2" y="-9"/>
@@ -1837,7 +1837,7 @@
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_VHLSkIv9EeugIfwuPG0Z5Q" labelSize="12" showIcon="false" description="_VHJdYov9EeugIfwuPG0Z5Q" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="204,242,166"/>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_VHL5oIv9EeugIfwuPG0Z5Q" name="«kepler16b:SpacecraftCommandOutInterface»&#xA;orbiter-ground-data-system.commandOut" tooltipText="interfaces:orbiter-ground-data-system.commandOut" incomingEdges="_VHVDnov9EeugIfwuPG0Z5Q">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_VHL5oIv9EeugIfwuPG0Z5Q" name="«kepler16b:OrbiterCommandOutInterface»&#xA;orbiter-ground-data-system.commandOut" tooltipText="interfaces:orbiter-ground-data-system.commandOut" incomingEdges="_VHVDnov9EeugIfwuPG0Z5Q">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-ground-data-system.commandOut"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-ground-data-system.commandOut"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1848,7 +1848,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_VHMgsov9EeugIfwuPG0Z5Q" name="«kepler16b:SpacecraftTelemetryInInterface»&#xA;orbiter-ground-data-system.telemetryIn" tooltipText="interfaces:orbiter-ground-data-system.telemetryIn" incomingEdges="_VHVDmYv9EeugIfwuPG0Z5Q">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_VHMgsov9EeugIfwuPG0Z5Q" name="«kepler16b:OrbiterTelemetryInInterface»&#xA;orbiter-ground-data-system.telemetryIn" tooltipText="interfaces:orbiter-ground-data-system.telemetryIn" incomingEdges="_VHVDmYv9EeugIfwuPG0Z5Q">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-ground-data-system.telemetryIn"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-ground-data-system.telemetryIn"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1868,7 +1868,7 @@
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_VHNHwYv9EeugIfwuPG0Z5Q" labelSize="12" showIcon="false" description="_VHJdYov9EeugIfwuPG0Z5Q" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="204,242,166"/>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_VHNHw4v9EeugIfwuPG0Z5Q" name="«kepler16b:SpacecraftCommandInInterface»&#xA;orbiter-spacecraft.commandIn" tooltipText="interfaces:orbiter-spacecraft.commandIn" incomingEdges="_VHTOYIv9EeugIfwuPG0Z5Q">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_VHNHw4v9EeugIfwuPG0Z5Q" name="«kepler16b:OrbiterCommandInInterface»&#xA;orbiter-spacecraft.commandIn" tooltipText="interfaces:orbiter-spacecraft.commandIn" incomingEdges="_VHTOYIv9EeugIfwuPG0Z5Q">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-spacecraft.commandIn"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-spacecraft.commandIn"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1899,7 +1899,7 @@
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_VHOV4Iv9EeugIfwuPG0Z5Q" labelSize="12" showIcon="false" description="_VHJdYov9EeugIfwuPG0Z5Q" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="204,242,166"/>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_VHOV4ov9EeugIfwuPG0Z5Q" name="«kepler16b:SpacecraftTelemetryOutInterface»&#xA;orbiter-spacecraft.telemetryOut" tooltipText="interfaces:orbiter-spacecraft.telemetryOut" incomingEdges="_VHVDlIv9EeugIfwuPG0Z5Q">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_VHOV4ov9EeugIfwuPG0Z5Q" name="«kepler16b:OrbiterTelemetryOutInterface»&#xA;orbiter-spacecraft.telemetryOut" tooltipText="interfaces:orbiter-spacecraft.telemetryOut" incomingEdges="_VHVDlIv9EeugIfwuPG0Z5Q">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-spacecraft.telemetryOut"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#orbiter-spacecraft.telemetryOut"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2683,7 +2683,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_STBEsowEEeugIfwuPG0Z5Q" name="hasCanonicalName : Orbiter Spacecraft">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_STBEsowEEeugIfwuPG0Z5Q" name="hasCanonicalName : Orbiter Orbiter">
         <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/components.oml#//@ownedStatements.2/@ownedPropertyValues.1"/>
         <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/components.oml#//@ownedStatements.2/@ownedPropertyValues.1"/>
         <ownedStyle xmi:type="diagram:Square" uid="_STBEs4wEEeugIfwuPG0Z5Q" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
@@ -2872,7 +2872,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_STBryYwEEeugIfwuPG0Z5Q" name="hasCanonicalName : Lander Spacecraft">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_STBryYwEEeugIfwuPG0Z5Q" name="hasCanonicalName : Lander Orbiter">
         <target xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/components.oml#//@ownedStatements.15/@ownedPropertyValues.1"/>
         <semanticElements xmi:type="oml:ScalarPropertyValueAssertion" href="src/oml/opencaesar.io/tutorial/description/components.oml#//@ownedStatements.15/@ownedPropertyValues.1"/>
         <ownedStyle xmi:type="diagram:Square" uid="_STCS0IwEEeugIfwuPG0Z5Q" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
@@ -3489,7 +3489,7 @@
         </computedStyleDescriptions>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_p1rQAIv_EeugIfwuPG0Z5Q" name="«kepler16b:SpacecraftTelemetryDownlink»&#xA;orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink" tooltipText="junctions:orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink" outgoingEdges="_p12PIov_EeugIfwuPG0Z5Q _p14EVIv_EeugIfwuPG0Z5Q">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_p1rQAIv_EeugIfwuPG0Z5Q" name="«kepler16b:OrbiterTelemetryDownlink»&#xA;orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink" tooltipText="junctions:orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink" outgoingEdges="_p12PIov_EeugIfwuPG0Z5Q _p14EVIv_EeugIfwuPG0Z5Q">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/junctions.oml#orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/junctions.oml#orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3547,7 +3547,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_p1seJ4v_EeugIfwuPG0Z5Q" name="«kepler16b:SpacecraftCommandUplink»&#xA;orbiter-ground-data-system.orbiter-spacecraft.command.uplink" tooltipText="junctions:orbiter-ground-data-system.orbiter-spacecraft.command.uplink" outgoingEdges="_p1uTUIv_EeugIfwuPG0Z5Q _p11BBIv_EeugIfwuPG0Z5Q">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_p1seJ4v_EeugIfwuPG0Z5Q" name="«kepler16b:OrbiterCommandUplink»&#xA;orbiter-ground-data-system.orbiter-spacecraft.command.uplink" tooltipText="junctions:orbiter-ground-data-system.orbiter-spacecraft.command.uplink" outgoingEdges="_p1uTUIv_EeugIfwuPG0Z5Q _p11BBIv_EeugIfwuPG0Z5Q">
       <target xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/junctions.oml#orbiter-ground-data-system.orbiter-spacecraft.command.uplink"/>
       <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/opencaesar.io/tutorial/description/junctions.oml#orbiter-ground-data-system.orbiter-spacecraft.command.uplink"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

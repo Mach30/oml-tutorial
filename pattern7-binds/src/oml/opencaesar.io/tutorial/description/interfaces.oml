@@ -6,8 +6,8 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   uses <http://opencaesar.io/tutorial/vocabulary/kepler16b>
   extends  <http://opencaesar.io/tutorial/description/components>
 
-  ci orbiter-spacecraft.commandIn : kepler16b:SpacecraftCommandInInterface
-  ci orbiter-spacecraft.telemetryOut : kepler16b:SpacecraftTelemetryOutInterface
+  ci orbiter-spacecraft.commandIn : kepler16b:OrbiterCommandInInterface
+  ci orbiter-spacecraft.telemetryOut : kepler16b:OrbiterTelemetryOutInterface
 
   ri orbiter-spacecraft.presents.commandIn : mission:Presents [
     from components:orbiter-spacecraft
@@ -19,8 +19,8 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
     to orbiter-spacecraft.telemetryOut
   ]
 
-  ci orbiter-ground-data-system.commandOut : kepler16b:SpacecraftCommandOutInterface
-  ci orbiter-ground-data-system.telemetryIn : kepler16b:SpacecraftTelemetryInInterface
+  ci orbiter-ground-data-system.commandOut : kepler16b:OrbiterCommandOutInterface
+  ci orbiter-ground-data-system.telemetryIn : kepler16b:OrbiterTelemetryInInterface
 
   ri orbiter-ground-data-system.presents.commandOut : mission:Presents [
     from components:orbiter-ground-data-system
