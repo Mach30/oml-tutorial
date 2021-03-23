@@ -3,7 +3,7 @@
 @dc:rights "Copyright 2021, by ModelWare"
 vocabulary <http://opencaesar.io/tutorial/vocabulary/operations> with # as operations {
 
-  extends <http://opencaesar.io/tutorial/vocabulary/mission>
+	extends <http://opencaesar.io/tutorial/vocabulary/mission>
 
   concept CommandInterface :> mission:Interface
   concept CommandOutInterface :> CommandInterface

@@ -2,7 +2,7 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/mass-properties> with # as mass-properties {
- 
+
   extends <http://opencaesar.io/tutorial/description/components>
 
   uses <http://opencaesar.io/tutorial/vocabulary/mechanical>
