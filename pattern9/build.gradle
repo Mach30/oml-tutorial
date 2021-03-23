@@ -147,7 +147,7 @@ task owlReasonL1Operations(type:io.opencaesar.owl.reason.OwlReasonTask, group:"o
 	// OWL catalog
 	catalogPath = file('build/owl/catalog.xml')
 	// Input ontology IRI to reason on
-	inputOntologyIri = "$dataset.rootOperationsOntologyIri".toString()
+	inputOntologyIri = "$dataset.rootL1OperationsOntologyIri".toString()
 	// Entailment statements to generate and the ontologies to persist them in
 	specs = [
 		"$dataset.rootL1OperationsOntologyIri/classes = ALL_SUBCLASS".toString(),
@@ -165,7 +165,7 @@ task owlReasonL1(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", depen
 	// OWL catalog
 	catalogPath = file('build/owl/catalog.xml')
 	// Input ontology IRI to reason on
-	inputOntologyIri = "$dataset.rootOperationsOntologyIri".toString()
+	inputOntologyIri = "$dataset.rootL1OntologyIri".toString()
 	// Entailment statements to generate and the ontologies to persist them in
 	specs = [
 			"$dataset.rootL1OntologyIri/classes = ALL_SUBCLASS".toString(),
