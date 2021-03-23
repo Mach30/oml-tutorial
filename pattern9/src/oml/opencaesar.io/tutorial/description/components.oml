@@ -11,6 +11,11 @@ description <http://opencaesar.io/tutorial/description/components> with # as com
 		base:hasCanonicalName "Orbiter Launch System"
 	]
  
+  ci orbiter-commandable-subsystem : mission:Component [
+  	base:hasIdentifier "C.02.00"
+		base:hasCanonicalName "Orbiter Commandable Subsystem"
+  ]
+  
 	ci orbiter-spacecraft : mission:Component [
 		base:hasIdentifier "C.02"
 		base:hasCanonicalName "Orbiter Spacecraft"
@@ -90,8 +95,23 @@ description <http://opencaesar.io/tutorial/description/components> with # as com
 		base:hasCanonicalName "Lander Spacecraft"
 	]
 
+  ci lander-commandable-subsystem : mission:Component [
+  	base:hasIdentifier "C.06.00"
+		base:hasCanonicalName "Lander Commandable Subsystem"
+  ]
+  
 	ci lander-ground-data-system : mission:Component [
 		base:hasIdentifier "C.07"
 		base:hasCanonicalName "Lander Ground Data System"
+	]
+	
+	ci orbiter-operator : mission:Component [
+		base:hasIdentifier "C.08"
+		base:hasCanonicalName "Orbiter Operator"
+	]
+	
+	ci lander-operator : mission:Component [
+		base:hasIdentifier "C.09"
+		base:hasCanonicalName "Lander Operator"
 	]
 }

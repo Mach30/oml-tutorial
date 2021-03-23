@@ -58,4 +58,29 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
     to lander-ground-data-system.telemetryIn
   ]
   
+  ci mission-operations-system.commandIn : operations:CommandInInterface
+  ci mission-operations-system.commandOut : operations:CommandOutInterface
+  
+  ri mission-operations-system.presents.commandIn : mission:Presents [
+  	from components:mission-operations-system
+  	to mission-operations-system.commandIn
+  ]
+  
+  ri mission-operations-system.presents.commandOut : mission:Presents [
+  	from components:mission-operations-system
+  	to mission-operations-system.commandOut
+  ]
+  
+  ci mission-operations-system.telemetryIn : operations:TelemetryInInterface
+  ci mission-operations-system.telemetryOut : operations:TelemetryOutInterface
+  
+  ri mission-operations-system.presents.telemetryIn : mission:Presents [
+  	from components:mission-operations-system
+  	to mission-operations-system.telemetryIn
+  ]
+  
+  ri mission-operations-system.presents.telemetryOut : mission:Presents [
+  	from components:mission-operations-system
+  	to mission-operations-system.telemetryOut
+  ]
 }
