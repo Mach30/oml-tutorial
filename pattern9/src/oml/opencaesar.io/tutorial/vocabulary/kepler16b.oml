@@ -52,4 +52,35 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler
     restricts all relation mission:joins2 to LanderTelemetryInInterface
   ]
 
+  concept AvionicsCommand :> mission:Message
+  concept ScienceCommand :> mission:Message
+
+  concept AvionicsTelemetry :> mission:Message
+  concept ScienceTelemetry :> mission:Message
+
+  concept SpacecraftCommand :> mission:Message
+
+  concept SpacecraftAvionicsCommand :> SpacecraftCommand, AvionicsCommand
+  concept SpacecraftScienceCommand :> SpacecraftCommand, ScienceCommand
+  concept SpacecraftLanderCoordinatedScienceCommand :> SpacecraftCommand, ScienceCommand
+  concept SpacecraftRelayedLanderAvionicsCommand :> SpacecraftCommand, AvionicsCommand
+  concept SpacecraftRelayedLanderScienceCommand :> SpacecraftCommand, ScienceCommand
+
+  concept SpacecraftTelemetry :> mission:Message
+  concept SpacecraftAvionicsTelemetry :> SpacecraftTelemetry, AvionicsTelemetry
+  concept SpacecraftScienceTelemetry :> SpacecraftTelemetry, ScienceTelemetry
+  concept SpacecraftLanderCoordinatedScienceTelemetry :> SpacecraftTelemetry, ScienceTelemetry
+  concept SpacecraftRelayedLanderAvionicsTelemetry :> SpacecraftTelemetry, AvionicsTelemetry
+  concept SpacecraftRelayedLanderScienceTelemetry :> SpacecraftTelemetry, ScienceTelemetry
+
+  concept LanderCommand :> mission:Message
+  concept LanderAvionicsCommand :> LanderCommand, AvionicsCommand
+  concept LanderScienceCommand :> LanderCommand, ScienceCommand
+  concept LanderSpacecraftCoordinatedScienceCommand :> LanderCommand, ScienceCommand
+
+  concept LanderTelemetry :> mission:Message
+  concept LanderAvionicsTelemetry :> LanderTelemetry, AvionicsTelemetry
+  concept LanderScienceTelemetry :> LanderTelemetry, ScienceTelemetry
+  concept LanderSpacecraftCoordinatedScienceTelemetry :> LanderTelemetry, ScienceTelemetry
+
 }
