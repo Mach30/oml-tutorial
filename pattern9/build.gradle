@@ -18,7 +18,6 @@ ext.dataset = [
 	rootL2OrbiterOperationsOntologyIri: 'http://opencaesar.io/tutorial/description/bundle-kepler16b-L2-orbiter-operations',
 	rootL2LanderOperationsOntologyIri: 'http://opencaesar.io/tutorial/description/bundle-kepler16b-L2-lander-operations',
 	rootL2OntologyIri: 'http://opencaesar.io/tutorial/description/bundle-kepler16b-L2',
-	rootAllOntologiesIri: 'http://opencaesar.io/tutorial/description/bundle-all',
 	// URL for publishing dataset documentation
 	publishUrl: 'https://modelware.github.io/oml-tutorial'
 ]
@@ -184,7 +183,7 @@ task owlReasonL2Orbiter(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml"
 	// OWL catalog
 	catalogPath = file('build/owl/catalog.xml')
 	// Input ontology IRI to reason on
-	inputOntologyIri = "$dataset.rootAllOntologiesIri".toString()
+	inputOntologyIri = "$dataset.rootL2OrbiterOperationsOntologyIri".toString()
 	// Entailment statements to generate and the ontologies to persist them in
 	specs = [
 			"$dataset.rootL2OrbiterOperationsOntologyIri/classes = ALL_SUBCLASS".toString(),
@@ -202,7 +201,7 @@ task owlReasonL2Lander(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml",
 	// OWL catalog
 	catalogPath = file('build/owl/catalog.xml')
 	// Input ontology IRI to reason on
-	inputOntologyIri = "$dataset.rootAllOntologiesIri".toString()
+	inputOntologyIri = "$dataset.rootL2LanderOperationsOntologyIri".toString()
 	// Entailment statements to generate and the ontologies to persist them in
 	specs = [
 			"$dataset.rootL2LanderOperationsOntologyIri/classes = ALL_SUBCLASS".toString(),
@@ -220,7 +219,7 @@ task owlReasonL2(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", depen
 	// OWL catalog
 	catalogPath = file('build/owl/catalog.xml')
 	// Input ontology IRI to reason on
-	inputOntologyIri = "$dataset.rootAllOntologiesIri".toString()
+	inputOntologyIri = "$dataset.rootL2OntologyIri".toString()
 	// Entailment statements to generate and the ontologies to persist them in
 	specs = [
 		"$dataset.rootL2OntologyIri/classes = ALL_SUBCLASS".toString(),
