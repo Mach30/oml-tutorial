@@ -1,0 +1,18 @@
+@dc:title "Kepler 16-b Example L2 end-to-end Orbiter Operations"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-operations> with # as L2-end-to-end-orbiter-operations {
+	extends <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>
+	extends <http://opencaesar.io/tutorial/description/L2-shared-operations>
+    
+  ci orbiter-ground-data-system.orbiter-spacecraft.command.uplink : kepler16b:OrbiterCommandUplink [
+    mission:joins1 interfaces:orbiter-ground-data-system.commandOut
+    mission:joins2 interfaces:orbiter-spacecraft.commandIn
+  ]
+
+  ci orbiter-ground-data-system.orbiter-spacecraft.telemetry.downlink : kepler16b:OrbiterTelemetryDownlink [
+    mission:joins1 interfaces:orbiter-spacecraft.telemetryOut
+    mission:joins2 interfaces:orbiter-ground-data-system.telemetryIn
+  ]
+  
+}

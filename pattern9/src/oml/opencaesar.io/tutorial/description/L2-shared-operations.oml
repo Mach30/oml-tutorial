@@ -1,0 +1,7 @@
+@dc:title "Kepler 16-b Example L2 Shared Operations"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/L2-shared-operations> with # as L2-shared-operations {
+    extends <http://opencaesar.io/tutorial/description/interfaces>
+    
+}

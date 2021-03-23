@@ -1,0 +1,36 @@
+@dc:title "Kepler 16-b Example L1 end-to-end Orbiter Operation"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation> with # as L1-end-to-end-orbiter-operation {
+    extends <http://opencaesar.io/tutorial/description/interfaces>
+    
+    ci orbiter-operator-to-orbiter-commandable-subsystem.command.uplink : kepler16b:OrbiterCommandUplink [
+    	mission:joins1 interfaces:orbiter-operator.commandOut
+    	mission:joins2 interfaces:orbiter-commandable-subsystem.commandIn
+    ]
+    
+    ci orbiter-operator-to-orbiter-commandable-subsystem.telemetry.downlink: kepler16b:OrbiterTelemetryDownlink [
+    	mission:joins1 interfaces:orbiter-commandable-subsystem.telemetryOut
+    	mission:joins2 interfaces:orbiter-operator.telemetryIn
+    ]
+    
+    
+	ci orbiter-operator-end-to-end-operation-with-orbiter-commandable-subsystem : mission:Requirement [
+		base:hasIdentifier "R.15"
+		base:hasCanonicalName "The components:orbiter-operator shall have end-to-end command uplink and telemetry downlink capabilities to and from any components:orbiter-commandable-subsystem."
+	]
+	
+	ci orbiter-operator-commands-uplink-to-orbiter-commandable-subsystem : mission:Requirement [
+		base:hasIdentifier "R.15.01"
+		base:hasCanonicalName "The components:orbiter-operator shall have end-to-end command uplink capability o any components:orbiter-commandable-subsystem."
+		mission:specifies orbiter-operator-to-orbiter-commandable-subsystem.command.uplink
+		mission:refines orbiter-operator-end-to-end-operation-with-orbiter-commandable-subsystem
+	]
+	
+	ci orbiter-operator-telemetry-downlink-from-orbiter-commandable-subsystem : mission:Requirement [
+		base:hasIdentifier "R.15.02"
+		base:hasCanonicalName "The components:orbiter-operator shall have end-to-end telemetry downlink capability from any components:orbiter-commandable-subsystem."
+		mission:specifies orbiter-operator-to-orbiter-commandable-subsystem.telemetry.downlink
+		mission:refines orbiter-operator-end-to-end-operation-with-orbiter-commandable-subsystem
+	]
+}
