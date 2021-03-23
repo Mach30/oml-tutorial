@@ -1,0 +1,18 @@
+@dc:title "Kepler 16-b Example L2 end-to-end Lander Operations"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-operations> with # as L2-end-to-end-lander-operations {
+	extends <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
+	extends <http://opencaesar.io/tutorial/description/L2-shared-operations>
+    
+  ci lander-ground-data-system.lander-spacecraft.command.uplink : kepler16b:LanderCommandUplink [
+    mission:joins1 interfaces:lander-ground-data-system.commandOut
+    mission:joins2 interfaces:lander-spacecraft.commandIn
+  ]
+
+  ci lander-ground-data-system.lander-spacecraft.telemetry.downlink : kepler16b:LanderTelemetryDownlink [
+    mission:joins1 interfaces:lander-spacecraft.telemetryOut
+    mission:joins2 interfaces:lander-ground-data-system.telemetryIn
+  ]
+    
+}

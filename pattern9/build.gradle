@@ -13,7 +13,11 @@ ext.dataset = [
 	// Root ontology IRI of the dataset
 	rootOntologyIri: 'http://opencaesar.io/tutorial/description/bundle',
 	rootMechanicalOntologyIri: 'http://opencaesar.io/tutorial/description/bundle-mechanical',
-	rootOperationsOntologyIri: 'http://opencaesar.io/tutorial/description/bundle-kepler16b-operations',
+	rootL1OperationsOntologyIri: 'http://opencaesar.io/tutorial/description/bundle-kepler16b-L1-operations',
+	rootL1OntologyIri: 'http://opencaesar.io/tutorial/description/bundle-kepler16b-L1',
+	rootL2OrbiterOperationsOntologyIri: 'http://opencaesar.io/tutorial/description/bundle-kepler16b-L2-orbiter-operations',
+	rootL2LanderOperationsOntologyIri: 'http://opencaesar.io/tutorial/description/bundle-kepler16b-L2-lander-operations',
+	rootL2OntologyIri: 'http://opencaesar.io/tutorial/description/bundle-kepler16b-L2',
 	rootAllOntologiesIri: 'http://opencaesar.io/tutorial/description/bundle-all',
 	// URL for publishing dataset documentation
 	publishUrl: 'https://modelware.github.io/oml-tutorial'
@@ -133,44 +137,98 @@ task owlReasonMechanical(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml
 		"$dataset.rootMechanicalOntologyIri/individuals = ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS".toString()
 	]
 	// Junit error report
-	reportPath = file('build/reports/mechanical/reasoning.xml')
+	reportPath = file('build/reports/l1/mechanical/reasoning.xml')
 }
 
 
 /*
  * A task to run the Openllet reasoner on the OWL catalog
  */
-task owlReasonOperations(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", dependsOn: omlToOwl) {
+task owlReasonL1Operations(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", dependsOn: omlToOwl) {
 	// OWL catalog
 	catalogPath = file('build/owl/catalog.xml')
 	// Input ontology IRI to reason on
 	inputOntologyIri = "$dataset.rootOperationsOntologyIri".toString()
 	// Entailment statements to generate and the ontologies to persist them in
 	specs = [
-		"$dataset.rootOperationsOntologyIri/classes = ALL_SUBCLASS".toString(),
-		"$dataset.rootOperationsOntologyIri/properties = INVERSE_PROPERTY | ALL_SUBPROPERTY".toString(),
-		"$dataset.rootOperationsOntologyIri/individuals = ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS".toString()
+		"$dataset.rootL1OperationsOntologyIri/classes = ALL_SUBCLASS".toString(),
+		"$dataset.rootL1OperationsOntologyIri/properties = INVERSE_PROPERTY | ALL_SUBPROPERTY".toString(),
+		"$dataset.rootL1OperationsOntologyIri/individuals = ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS".toString()
 	]
 	// Junit error report
-	reportPath = file('build/reports/operations/reasoning.xml')
+	reportPath = file('build/reports/l1/operations/reasoning.xml')
 }
 
 /*
  * A task to run the Openllet reasoner on the OWL catalog
  */
-task owlReasonAll(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", dependsOn: omlToOwl) {
+task owlReasonL1(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", dependsOn: omlToOwl) {
+	// OWL catalog
+	catalogPath = file('build/owl/catalog.xml')
+	// Input ontology IRI to reason on
+	inputOntologyIri = "$dataset.rootOperationsOntologyIri".toString()
+	// Entailment statements to generate and the ontologies to persist them in
+	specs = [
+			"$dataset.rootL1OntologyIri/classes = ALL_SUBCLASS".toString(),
+			"$dataset.rootL1OntologyIri/properties = INVERSE_PROPERTY | ALL_SUBPROPERTY".toString(),
+			"$dataset.rootL1OntologyIri/individuals = ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS".toString()
+	]
+	// Junit error report
+	reportPath = file('build/reports/l1/reasoning.xml')
+}
+
+/*
+ * A task to run the Openllet reasoner on the OWL catalog
+ */
+task owlReasonL2Orbiter(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", dependsOn: omlToOwl) {
 	// OWL catalog
 	catalogPath = file('build/owl/catalog.xml')
 	// Input ontology IRI to reason on
 	inputOntologyIri = "$dataset.rootAllOntologiesIri".toString()
 	// Entailment statements to generate and the ontologies to persist them in
 	specs = [
-		"$dataset.rootAllOntologiesIri/classes = ALL_SUBCLASS".toString(),
-		"$dataset.rootAllOntologiesIri/properties = INVERSE_PROPERTY | ALL_SUBPROPERTY".toString(),
-		"$dataset.rootAllOntologiesIri/individuals = ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS".toString()
+			"$dataset.rootL2OrbiterOperationsOntologyIri/classes = ALL_SUBCLASS".toString(),
+			"$dataset.rootL2OrbiterOperationsOntologyIri/properties = INVERSE_PROPERTY | ALL_SUBPROPERTY".toString(),
+			"$dataset.rootL2OrbiterOperationsOntologyIri/individuals = ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS".toString()
 	]
 	// Junit error report
-	reportPath = file('build/reports/all/reasoning.xml')
+	reportPath = file('build/reports/l2/orbiter/reasoning.xml')
+}
+
+/*
+ * A task to run the Openllet reasoner on the OWL catalog
+ */
+task owlReasonL2Lander(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", dependsOn: omlToOwl) {
+	// OWL catalog
+	catalogPath = file('build/owl/catalog.xml')
+	// Input ontology IRI to reason on
+	inputOntologyIri = "$dataset.rootAllOntologiesIri".toString()
+	// Entailment statements to generate and the ontologies to persist them in
+	specs = [
+			"$dataset.rootL2LanderOperationsOntologyIri/classes = ALL_SUBCLASS".toString(),
+			"$dataset.rootL2LanderOperationsOntologyIri/properties = INVERSE_PROPERTY | ALL_SUBPROPERTY".toString(),
+			"$dataset.rootL2LanderOperationsOntologyIri/individuals = ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS".toString()
+	]
+	// Junit error report
+	reportPath = file('build/reports/l2/lander/reasoning.xml')
+}
+
+/*
+ * A task to run the Openllet reasoner on the OWL catalog
+ */
+task owlReasonL2(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", dependsOn: omlToOwl) {
+	// OWL catalog
+	catalogPath = file('build/owl/catalog.xml')
+	// Input ontology IRI to reason on
+	inputOntologyIri = "$dataset.rootAllOntologiesIri".toString()
+	// Entailment statements to generate and the ontologies to persist them in
+	specs = [
+		"$dataset.rootL2OntologyIri/classes = ALL_SUBCLASS".toString(),
+		"$dataset.rootL2OntologyIri/properties = INVERSE_PROPERTY | ALL_SUBPROPERTY".toString(),
+		"$dataset.rootL2OntologyIri/individuals = ALL_INSTANCE | DATA_PROPERTY_VALUE | OBJECT_PROPERTY_VALUE | SAME_AS".toString()
+	]
+	// Junit error report
+	reportPath = file('build/reports/l2/reasoning.xml')
 }
 
 /*
@@ -219,8 +277,11 @@ task owlShacl(type:io.opencaesar.owl.shacl.fuseki.OwlShaclFusekiTask, group:"oml
 task build(group:"oml") {
 	dependsOn owlReason
 	dependsOn owlReasonMechanical
-	dependsOn owlReasonOperations
-	dependsOn owlReasonAll
+	dependsOn owlReasonL1Operations
+	dependsOn owlReasonL1
+	dependsOn owlReasonL2Orbiter
+	dependsOn owlReasonL2Lander
+	dependsOn owlReasonL2
 }
 
 /*
