@@ -1,0 +1,61 @@
+@dc:title "Kepler 16-b Example Interfaces"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/interfaces> with # as interfaces {
+
+  uses <http://opencaesar.io/tutorial/vocabulary/kepler16b>
+  extends  <http://opencaesar.io/tutorial/description/components>
+
+  ci orbiter-spacecraft.commandIn : kepler16b:SpacecraftCommandInInterface
+  ci orbiter-spacecraft.telemetryOut : kepler16b:SpacecraftTelemetryOutInterface
+
+  ri orbiter-spacecraft.presents.commandIn : mission:Presents [
+    from components:orbiter-spacecraft
+    to orbiter-spacecraft.commandIn
+  ]
+
+  ri orbiter-spacecraft.presents.telemetryOut : mission:Presents [
+    from components:orbiter-spacecraft
+    to orbiter-spacecraft.telemetryOut
+  ]
+
+  ci orbiter-ground-data-system.commandOut : kepler16b:SpacecraftCommandOutInterface
+  ci orbiter-ground-data-system.telemetryIn : kepler16b:SpacecraftTelemetryInInterface
+
+  ri orbiter-ground-data-system.presents.commandOut : mission:Presents [
+    from components:orbiter-ground-data-system
+    to orbiter-ground-data-system.commandOut
+  ]
+
+  ri orbiter-ground-data-system.presents.telemetryIn : mission:Presents [
+    from components:orbiter-ground-data-system
+    to orbiter-ground-data-system.telemetryIn
+  ]
+  
+  ci lander-spacecraft.commandIn : kepler16b:LanderCommandInInterface
+  ci lander-spacecraft.telemetryOut : kepler16b:LanderTelemetryOutInterface
+
+  ri lander-spacecraft.presents.commandIn : mission:Presents [
+    from components:lander-spacecraft
+    to lander-spacecraft.commandIn
+  ]
+
+  ri lander-spacecraft.presents.telemetryOut : mission:Presents [
+    from components:lander-spacecraft
+    to lander-spacecraft.telemetryOut
+  ]
+
+  ci lander-ground-data-system.commandOut : kepler16b:LanderCommandOutInterface
+  ci lander-ground-data-system.telemetryIn : kepler16b:LanderTelemetryInInterface
+
+  ri lander-ground-data-system.presents.commandOut : mission:Presents [
+    from components:lander-ground-data-system
+    to lander-ground-data-system.commandOut
+  ]
+
+  ri lander-ground-data-system.presents.telemetryIn : mission:Presents [
+    from components:lander-ground-data-system
+    to lander-ground-data-system.telemetryIn
+  ]
+  
+}
