@@ -6,7 +6,10 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   uses <http://opencaesar.io/tutorial/vocabulary/kepler16b>
   extends  <http://opencaesar.io/tutorial/description/components>
 
-  ci orbiter-spacecraft.commandIn : kepler16b:OrbiterCommandInInterface
+  ci orbiter-spacecraft.commandIn : kepler16b:OrbiterCommandInInterface [
+  	base:hasIdentifier "I.01"
+  	base:hasCanonicalName "Orbiter Spacecraft Command In"
+  ]
   ci orbiter-spacecraft.telemetryOut : kepler16b:OrbiterTelemetryOutInterface
 
   ref ci components:orbiter-spacecraft [
