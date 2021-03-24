@@ -73,7 +73,7 @@ length(which(degree(g, mode="in") == 0)) == 1
 
 ```{r}
 endpointURL = "http://localhost:3030/oml-tutorial"
-queryString2 = "
+queryString2 = '
 PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
 PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
 PREFIX mechanical:  <http://opencaesar.io/tutorial/vocabulary/mechanical#>
@@ -81,22 +81,34 @@ PREFIX metrology:   <http://iupac.org/metrology#>
 
 SELECT DISTINCT ?c_id ?mass
 WHERE {
-  [] a mechanical:MassMagnitude ;
-    metrology:hasDoubleNumber ?mass ;
-    metrology:isMagnitudeOf [
-      mechanical:isMassOf [
-        base:hasIdentifier ?c_id
+  [] base:hasCanonicalName "Orbiter Orbiter" ;
+    base:contains* ?c .
+  ?c base:hasIdentifier ?c_id
+  optional {
+    [] a mechanical:MassMagnitude ;
+      metrology:hasDoubleNumber ?mass ;
+      metrology:isMagnitudeOf [
+        mechanical:isMassOf ?c 
       ]
-    ]
+  }
 }
 ORDER BY ?c_id
-"
+'
 d2 <- SPARQL(url=endpointURL, query=queryString2)
 d2$results
 ```
 
-## Depth-First Traversal
+## Mass Roll-up Using Depth-First Traversal
 
 ```{r}
-dfs(g, V(g)["C.02"], order=FALSE, order.out=TRUE)
+df <- d2$results
+order <- dfs(g, V(g)["C.02"], order=FALSE, order.out=TRUE)$order.out
+for (v in order) {
+  children <- neighbors(g, v, mode="out")
+  if (length(children) > 0) {
+    mass <- sum(df[is.element(df$c_id, names(children)), "mass"])
+    df[df$c_id == names(V(g)[v]), "mass"] <- mass
+  }
+}
+df
 ```
