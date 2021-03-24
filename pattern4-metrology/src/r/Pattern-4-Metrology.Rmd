@@ -81,7 +81,7 @@ PREFIX metrology:   <http://iupac.org/metrology#>
 
 SELECT DISTINCT ?c_id ?mass
 WHERE {
-  [] base:hasCanonicalName "Orbiter Orbiter" ;
+  [] base:hasCanonicalName "Orbiter Spacecraft" ;
     base:contains* ?c .
   ?c base:hasIdentifier ?c_id
   optional {

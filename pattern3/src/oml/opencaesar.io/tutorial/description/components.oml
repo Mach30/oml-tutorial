@@ -13,7 +13,7 @@ description <http://opencaesar.io/tutorial/description/components> with # as com
  
 	ci orbiter-spacecraft : mission:Component [
 		base:hasIdentifier "C.02"
-		base:hasCanonicalName "Orbiter Orbiter"
+		base:hasCanonicalName "Orbiter Spacecraft"
 	]
 
 	ci orbiter-ground-data-system : mission:Component [
@@ -33,7 +33,7 @@ description <http://opencaesar.io/tutorial/description/components> with # as com
 
 	ci lander-spacecraft : mission:Component [
 		base:hasIdentifier "C.06"
-		base:hasCanonicalName "Lander Orbiter"
+		base:hasCanonicalName "Lander Spacecraft"
 	]
 
 	ci lander-ground-data-system : mission:Component [
