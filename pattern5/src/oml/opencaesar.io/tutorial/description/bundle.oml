@@ -10,5 +10,6 @@ description bundle <http://opencaesar.io/tutorial/description/bundle> with # as 
 	includes <http://opencaesar.io/tutorial/description/objectives>
 	includes <http://opencaesar.io/tutorial/description/components>
 	includes <http://opencaesar.io/tutorial/description/missions>
+	includes <http://opencaesar.io/tutorial/description/interfaces>
 
 }
