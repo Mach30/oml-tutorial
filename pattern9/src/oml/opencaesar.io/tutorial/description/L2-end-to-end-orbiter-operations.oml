@@ -7,7 +7,7 @@ description <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-ope
   
   // end-to-end command uplink
   
-  ci orbiter-operator.orbiter-ground-data-system.command.uplink : kepler16b:OrbiterCommandUplink [
+  ci orbiter-operator.orbiter-ground-data-system.command.uplink : kepler16b:OrbiterCommandTransmission [
     mission:joins1 interfaces:orbiter-operator.commandOut
     mission:joins2 interfaces:orbiter-ground-data-system.commandIn
   ]
@@ -17,14 +17,14 @@ description <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-ope
   	mission:joins2 interfaces:orbiter-ground-data-system.commandOut
   ]
   
-  ci orbiter-ground-data-system.mission-operations-system.command.uplink : kepler16b:OrbiterCommandUplink [
+  ci orbiter-ground-data-system.mission-operations-system.command.uplink : operations:CommandTransmission [
     mission:joins1 interfaces:orbiter-ground-data-system.commandOut
     mission:joins2 interfaces:mission-operations-system.commandIn
   ]
 
   // See L2-shared-operations for mission-operations-system command processing
   
-  ci mission-operations-system.orbiter-spacecraft.command.uplink : kepler16b:OrbiterCommandUplink [
+  ci mission-operations-system.orbiter-spacecraft.command.uplink : operations:CommandTransmission [
     mission:joins1 interfaces:mission-operations-system.commandOut
     mission:joins2 interfaces:orbiter-spacecraft.commandIn
   ]
@@ -34,41 +34,41 @@ description <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-ope
   	mission:joins2 interfaces:orbiter-spacecraft.commandOut
   ]
   
-  ci orbiter-spacecraft.orbiter-commandable-subsystem.command.uplink : kepler16b:OrbiterCommandUplink [
+  ci orbiter-spacecraft.orbiter-commandable-subsystem.command.uplink : kepler16b:OrbiterCommandTransmission [
     mission:joins1 interfaces:orbiter-spacecraft.commandOut
     mission:joins2 interfaces:orbiter-commandable-subsystem.commandIn
   ]
 
   // end-to-end telemetry downlink
   
-  ci orbiter-commandable-subsystem.orbiter-spacecraft.telemetry.downlink : kepler16b:OrbiterTelemetryDownlink [
+  ci orbiter-commandable-subsystem.orbiter-spacecraft.telemetry.downlink : kepler16b:OrbiterTelemetryTransmission [
 		mission:joins1 interfaces:orbiter-commandable-subsystem.telemetryOut
 		mission:joins2 interfaces:orbiter-spacecraft.telemetryIn
-	]
+  ]
 
-	ci orbiter-spacecraft.telemetry.processing : operations:TelemetryProcessing [
+  ci orbiter-spacecraft.telemetry.processing : operations:TelemetryProcessing [
 		mission:joins1 interfaces:orbiter-spacecraft.telemetryIn
 		mission:joins2 interfaces:orbiter-spacecraft.telemetryOut
-	]
-
-	ci orbiter-spacecraft.mission-operations-system.telemetry.downlink : kepler16b:OrbiterTelemetryDownlink [
+  ]
+	
+  ci orbiter-spacecraft.mission-operations-system.telemetry.downlink : operations:TelemetryTransmission [
 		mission:joins1 interfaces:orbiter-spacecraft.telemetryOut
 		mission:joins2 interfaces:mission-operations-system.telemetryIn
-	]
+  ]
 
-	// See L2-shared-operations for mission-operations-system telemetry processing
+  // See L2-shared-operations for mission-operations-system telemetry processing
 	
-	ci mission-operations-system.orbiter-ground-data-system.telemetry.downlink : kepler16b:OrbiterTelemetryDownlink [
+  ci mission-operations-system.orbiter-ground-data-system.telemetry.downlink : operations:TelemetryTransmission [
 		mission:joins1 interfaces:mission-operations-system.telemetryOut
 		mission:joins2 interfaces:orbiter-ground-data-system.telemetryIn
-	]
+  ]
 
 	ci orbiter-ground-data-system.telemetry.processing : operations:TelemetryProcessing [
 		mission:joins1 interfaces:orbiter-ground-data-system.telemetryIn
 		mission:joins2 interfaces:orbiter-ground-data-system.telemetryOut
 	]
 
-	ci orbiter-ground-data-system.orbiter-operator.telemetry.downlink : kepler16b:OrbiterTelemetryDownlink [
+	ci orbiter-ground-data-system.orbiter-operator.telemetry.downlink : kepler16b:OrbiterTelemetryTransmission [
 		mission:joins1 interfaces:orbiter-ground-data-system.telemetryOut
 		mission:joins2 interfaces:orbiter-operator.telemetryIn
 	]

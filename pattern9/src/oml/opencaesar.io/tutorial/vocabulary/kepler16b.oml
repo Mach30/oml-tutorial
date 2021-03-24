@@ -28,25 +28,25 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler
 
   // And specialize these junctions according to the information conveyed.
 
-  concept OrbiterCommandUplink :> operations:CommandUplink [
+  concept OrbiterCommandTransmission :> operations:CommandTransmission [
     restricts all relation mission:joins to OrbiterCommandInterface
     restricts all relation mission:joins1 to OrbiterCommandOutInterface
     restricts all relation mission:joins2 to OrbiterCommandInInterface
   ]
 
-  concept OrbiterTelemetryDownlink :> operations:TelemetryDownlink [
+  concept OrbiterTelemetryTransmission :> operations:TelemetryTransmission [
     restricts all relation mission:joins to OrbiterTelemetryInterface
     restricts all relation mission:joins1 to OrbiterTelemetryOutInterface
     restricts all relation mission:joins2 to OrbiterTelemetryInInterface
   ]
 
-  concept LanderCommandUplink :> operations:CommandUplink [
+  concept LanderCommandTransmission :> operations:CommandTransmission [
     restricts all relation mission:joins to LanderCommandInterface
     restricts all relation mission:joins1 to LanderCommandOutInterface
     restricts all relation mission:joins2 to LanderCommandInInterface
   ]
 
-  concept LanderTelemetryDownlink :> operations:TelemetryDownlink [
+  concept LanderTelemetryTransmission :> operations:TelemetryTransmission [
     restricts all relation mission:joins to LanderTelemetryInterface
     restricts all relation mission:joins1 to LanderTelemetryOutInterface
     restricts all relation mission:joins2 to LanderTelemetryInInterface

@@ -4,12 +4,12 @@
 description <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation> with # as L1-end-to-end-lander-operation {
 	extends <http://opencaesar.io/tutorial/description/interfaces>
 	
-	ci lander-operator-to-lander-commandable-subsystem.command.uplink : kepler16b:LanderCommandUplink [
+	ci lander-operator-to-lander-commandable-subsystem.command.uplink : kepler16b:LanderCommandTransmission [
 		mission:joins1 interfaces:lander-operator.commandOut
 		mission:joins2 interfaces:lander-commandable-subsystem.commandIn
 	]
 	
-	ci lander-operator-to-lander-commandable-subsystem.telemetry.downlink: kepler16b:LanderTelemetryDownlink [
+	ci lander-operator-to-lander-commandable-subsystem.telemetry.downlink: kepler16b:LanderTelemetryTransmission [
 		mission:joins1 interfaces:lander-commandable-subsystem.telemetryOut
 		mission:joins2 interfaces:lander-operator.telemetryIn
 	]
