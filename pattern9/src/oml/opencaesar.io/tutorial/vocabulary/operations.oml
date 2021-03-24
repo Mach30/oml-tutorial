@@ -13,15 +13,43 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/operations> with # as opera
   concept TelemetryOutInterface :> TelemetryInterface
   concept TelemetryInInterface :> TelemetryInterface
 
+  @dc:^description """A [=CommandUplink=] [=Junction=]s transmits commands 
+  from an output [=CommandOutInterface=] to an input [=CommandInInterface=].
+  This junction is intended for the case where output and input interfaces
+  belong to different components."""
   concept CommandUplink :> mission:Junction [
     restricts all relation mission:joins to CommandInterface
     restricts all relation mission:joins1 to CommandOutInterface
     restricts all relation mission:joins2 to CommandInInterface
   ]
- 
+
+  @dc:^description """A [=CommandProcessing=] [=Junction=]s abstracts
+  the internal processing of component that receives input commands via
+  its [=CommandInInterface=] and that sends processed output commands
+  via its [=CommandOutInterface=]."""
+  concept CommandProcessing :> mission:Junction [
+    restricts all relation mission:joins to CommandInterface
+    restricts all relation mission:joins1 to CommandInInterface
+    restricts all relation mission:joins2 to CommandOutInterface
+  ]
+
+  @dc:^description """A [=TelemetryDownlink=] [=Junction=]s transmits telemetry 
+  from an output [=TelemetryOutInterface=] to an input [=TelemetryInInterface=].
+  This junction is intended for the case where output and input interfaces
+  belong to different components."""
   concept TelemetryDownlink :> mission:Junction [
     restricts all relation mission:joins to TelemetryInterface
     restricts all relation mission:joins1 to TelemetryOutInterface
     restricts all relation mission:joins2 to TelemetryInInterface
+  ]
+
+  @dc:^description """A [=TelemetryProcessing=] [=Junction=]s abstracts
+  the internal processing of component that receives input telemetry via
+  its [=TelemetryInInterface=] and that sends processed output commands
+  via its [=TelemetryOutInterface=]."""
+  concept TelemetryProcessing :> mission:Junction [
+    restricts all relation mission:joins to TelemetryInterface
+    restricts all relation mission:joins1 to TelemetryInInterface
+    restricts all relation mission:joins2 to TelemetryOutInterface
   ]
 }

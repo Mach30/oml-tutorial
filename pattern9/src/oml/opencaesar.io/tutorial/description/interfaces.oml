@@ -6,6 +6,8 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   uses <http://opencaesar.io/tutorial/vocabulary/kepler16b>
   extends  <http://opencaesar.io/tutorial/description/components>
 
+  // MOS interfaces
+
   ci orbiter-spacecraft.commandIn : kepler16b:OrbiterCommandInInterface
   ci orbiter-spacecraft.telemetryOut : kepler16b:OrbiterTelemetryOutInterface
 
@@ -18,6 +20,23 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
     from components:orbiter-spacecraft
     to orbiter-spacecraft.telemetryOut
   ]
+
+  // Subsystem interfaces
+
+  ci orbiter-spacecraft.commandOut : kepler16b:OrbiterCommandOutInterface
+  ci orbiter-spacecraft.telemetryIn : kepler16b:OrbiterTelemetryInInterface
+
+  ri orbiter-spacecraft.presents.commandOut : mission:Presents [
+    from components:orbiter-spacecraft
+    to orbiter-spacecraft.commandOut
+  ]
+
+  ri orbiter-spacecraft.presents.telemetryIn : mission:Presents [
+    from components:orbiter-spacecraft
+    to orbiter-spacecraft.telemetryIn
+  ]
+
+  // Subsystem interfaces
 
   ci orbiter-commandable-subsystem.commandIn : kepler16b:OrbiterCommandInInterface
   ci orbiter-commandable-subsystem.telemetryOut : kepler16b:OrbiterTelemetryOutInterface
@@ -32,6 +51,23 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   	to orbiter-commandable-subsystem.telemetryOut
   ]
   
+  // Operator interfaces
+
+  ci orbiter-ground-data-system.commandIn : kepler16b:OrbiterCommandInInterface
+  ci orbiter-ground-data-system.telemetryOut : kepler16b:OrbiterTelemetryOutInterface
+
+  ri orbiter-ground-data-system.presents.commandIn : mission:Presents [
+    from components:orbiter-ground-data-system
+    to orbiter-ground-data-system.commandIn
+  ]
+
+  ri orbiter-ground-data-system.presents.telemetryOut : mission:Presents [
+    from components:orbiter-ground-data-system
+    to orbiter-ground-data-system.telemetryOut
+  ]
+  
+  // MOS interfaces
+
   ci orbiter-ground-data-system.commandOut : kepler16b:OrbiterCommandOutInterface
   ci orbiter-ground-data-system.telemetryIn : kepler16b:OrbiterTelemetryInInterface
 
@@ -45,6 +81,8 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
     to orbiter-ground-data-system.telemetryIn
   ]
   
+  // GDS interfaces
+
   ci orbiter-operator.commandOut : kepler16b:OrbiterCommandOutInterface
   ci orbiter-operator.telemetryIn : kepler16b:OrbiterTelemetryInInterface
   
@@ -58,6 +96,8 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   	to orbiter-operator.telemetryIn
   ]
   
+  // MOS interfaces
+
   ci lander-spacecraft.commandIn : kepler16b:LanderCommandInInterface
   ci lander-spacecraft.telemetryOut : kepler16b:LanderTelemetryOutInterface
 
@@ -71,6 +111,23 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
     to lander-spacecraft.telemetryOut
   ]
 
+  // Subsystem interfaces
+
+  ci lander-spacecraft.commandOut : kepler16b:LanderCommandOutInterface
+  ci lander-spacecraft.telemetryIn : kepler16b:LanderTelemetryInInterface
+
+  ri lander-spacecraft.presents.commandOut : mission:Presents [
+    from components:lander-spacecraft
+    to lander-spacecraft.commandOut
+  ]
+
+  ri lander-spacecraft.presents.telemetryIn : mission:Presents [
+    from components:lander-spacecraft
+    to lander-spacecraft.telemetryIn
+  ]
+
+  // Subsystem interfaces
+
   ci lander-commandable-subsystem.commandIn : kepler16b:LanderCommandInInterface
   ci lander-commandable-subsystem.telemetryOut : kepler16b:LanderTelemetryOutInterface
   
@@ -83,6 +140,24 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   	from components:lander-commandable-subsystem
   	to lander-commandable-subsystem.telemetryOut
   ]
+
+  // Operator interfaces
+
+  ci lander-ground-data-system.commandIn : kepler16b:LanderCommandInInterface
+  ci lander-ground-data-system.telemetryOut : kepler16b:LanderTelemetryOutInterface
+
+  ri lander-ground-data-system.presents.commandIn : mission:Presents [
+    from components:lander-ground-data-system
+    to lander-ground-data-system.commandIn
+  ]
+
+  ri lander-ground-data-system.presents.telemetryOut : mission:Presents [
+    from components:lander-ground-data-system
+    to lander-ground-data-system.telemetryOut
+  ]
+  
+  // MOS interfaces
+
   ci lander-ground-data-system.commandOut : kepler16b:LanderCommandOutInterface
   ci lander-ground-data-system.telemetryIn : kepler16b:LanderTelemetryInInterface
 
@@ -95,7 +170,9 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
     from components:lander-ground-data-system
     to lander-ground-data-system.telemetryIn
   ]
-  
+
+  // GDS interfaces
+
   ci lander-operator.commandOut : kepler16b:LanderCommandOutInterface
   ci lander-operator.telemetryIn : kepler16b:LanderTelemetryInInterface
   
@@ -109,6 +186,8 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   	to lander-operator.telemetryIn
   ]
   
+  // GDS interfaces
+
   ci mission-operations-system.commandIn : operations:CommandInInterface
   ci mission-operations-system.commandOut : operations:CommandOutInterface
   
@@ -121,6 +200,8 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   	from components:mission-operations-system
   	to mission-operations-system.commandOut
   ]
+  
+  // Spacelink interfaces
   
   ci mission-operations-system.telemetryIn : operations:TelemetryInInterface
   ci mission-operations-system.telemetryOut : operations:TelemetryOutInterface

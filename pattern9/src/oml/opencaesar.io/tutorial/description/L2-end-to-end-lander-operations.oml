@@ -5,14 +5,73 @@ description <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-oper
 	extends <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
 	extends <http://opencaesar.io/tutorial/description/L2-shared-operations>
     
-  ci lander-ground-data-system.lander-spacecraft.command.uplink : kepler16b:LanderCommandUplink [
+  // end-to-end command uplink
+  
+  ci lander-operator.lander-ground-data-system.command.uplink : kepler16b:LanderCommandUplink [
+    mission:joins1 interfaces:lander-operator.commandOut
+    mission:joins2 interfaces:lander-ground-data-system.commandIn
+  ]
+  
+  ci lander-ground-data-system.command.processing : operations:CommandProcessing [
+  	mission:joins1 interfaces:lander-ground-data-system.commandIn
+  	mission:joins2 interfaces:lander-ground-data-system.commandOut
+  ]
+  
+  ci lander-ground-data-system.mission-operations-system.command.uplink : kepler16b:LanderCommandUplink [
     mission:joins1 interfaces:lander-ground-data-system.commandOut
+    mission:joins2 interfaces:mission-operations-system.commandIn
+  ]
+
+  // See L2-shared-operations for mission-operations-system command processing
+  
+  ci mission-operations-system.lander-spacecraft.command.uplink : kepler16b:LanderCommandUplink [
+    mission:joins1 interfaces:mission-operations-system.commandOut
     mission:joins2 interfaces:lander-spacecraft.commandIn
   ]
 
-  ci lander-ground-data-system.lander-spacecraft.telemetry.downlink : kepler16b:LanderTelemetryDownlink [
-    mission:joins1 interfaces:lander-spacecraft.telemetryOut
-    mission:joins2 interfaces:lander-ground-data-system.telemetryIn
+  ci lander-spacecraft.command.processing : operations:CommandProcessing [
+  	mission:joins1 interfaces:lander-spacecraft.commandIn
+  	mission:joins2 interfaces:lander-spacecraft.commandOut
   ]
-    
+  
+  ci lander-spacecraft.lander-commandable-subsystem.command.uplink : kepler16b:LanderCommandUplink [
+    mission:joins1 interfaces:lander-spacecraft.commandOut
+    mission:joins2 interfaces:lander-commandable-subsystem.commandIn
+  ]
+ 
+  
+  // end-to-end telemetry downlink
+  
+  ci lander-commandable-subsystem.lander-spacecraft.telemetry.downlink : kepler16b:LanderTelemetryDownlink [
+  	mission:joins1 interfaces:lander-commandable-subsystem.telemetryOut
+  	mission:joins2 interfaces:lander-spacecraft.telemetryIn
+  ]
+  
+  ci lander-spacecraft.telemetry.processing : operations:TelemetryProcessing [
+  	mission:joins1 interfaces:lander-spacecraft.telemetryIn
+  	mission:joins2 interfaces:lander-spacecraft.telemetryOut
+  ]
+  
+  ci lander-spacecraft.mission-operations-system.telemetry.downlink : kepler16b:LanderTelemetryDownlink [
+  	mission:joins1 interfaces:lander-spacecraft.telemetryOut
+  	mission:joins2 interfaces:mission-operations-system.telemetryIn
+  ]
+  
+  // See L2-shared-operations for mission-operations-system telemetry processing
+  
+  ci mission-operations-system.lander-ground-data-system.telemetry.downlink : kepler16b:LanderTelemetryDownlink [
+  	mission:joins1 interfaces:mission-operations-system.telemetryOut
+  	mission:joins2 interfaces:lander-ground-data-system.telemetryIn
+  ]
+  
+  ci lander-ground-data-system.telemetry.processing : operations:TelemetryProcessing [
+  	mission:joins1 interfaces:lander-ground-data-system.telemetryIn
+  	mission:joins2 interfaces:lander-ground-data-system.telemetryOut
+  ]
+  
+  ci lander-ground-data-system.lander-operator.telemetry.downlink : kepler16b:LanderTelemetryDownlink [
+  	mission:joins1 interfaces:lander-ground-data-system.telemetryOut
+  	mission:joins2 interfaces:lander-operator.telemetryIn
+  ]
+
 }

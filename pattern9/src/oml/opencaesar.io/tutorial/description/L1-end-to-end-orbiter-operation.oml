@@ -2,18 +2,17 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation> with # as L1-end-to-end-orbiter-operation {
-    extends <http://opencaesar.io/tutorial/description/interfaces>
-    
-    ci orbiter-operator-to-orbiter-commandable-subsystem.command.uplink : kepler16b:OrbiterCommandUplink [
-    	mission:joins1 interfaces:orbiter-operator.commandOut
-    	mission:joins2 interfaces:orbiter-commandable-subsystem.commandIn
-    ]
-    
-    ci orbiter-operator-to-orbiter-commandable-subsystem.telemetry.downlink: kepler16b:OrbiterTelemetryDownlink [
-    	mission:joins1 interfaces:orbiter-commandable-subsystem.telemetryOut
-    	mission:joins2 interfaces:orbiter-operator.telemetryIn
-    ]
-    
+	extends <http://opencaesar.io/tutorial/description/interfaces>
+	
+	ci orbiter-operator-to-orbiter-commandable-subsystem.command.uplink : kepler16b:OrbiterCommandUplink [
+		mission:joins1 interfaces:orbiter-operator.commandOut
+		mission:joins2 interfaces:orbiter-commandable-subsystem.commandIn
+	]
+	
+	ci orbiter-operator-to-orbiter-commandable-subsystem.telemetry.downlink: kepler16b:OrbiterTelemetryDownlink [
+		mission:joins1 interfaces:orbiter-commandable-subsystem.telemetryOut
+		mission:joins2 interfaces:orbiter-operator.telemetryIn
+	]
     
 	ci orbiter-operator-end-to-end-operation-with-orbiter-commandable-subsystem : mission:Requirement [
 		base:hasIdentifier "R.15"

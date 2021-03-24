@@ -2,19 +2,18 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation> with # as L1-end-to-end-lander-operation {
-    extends <http://opencaesar.io/tutorial/description/interfaces>
-    
-    ci lander-operator-to-lander-commandable-subsystem.command.uplink : kepler16b:LanderCommandUplink [
-    	mission:joins1 interfaces:lander-operator.commandOut
-    	mission:joins2 interfaces:lander-commandable-subsystem.commandIn
-    ]
-    
-    ci lander-operator-to-lander-commandable-subsystem.telemetry.downlink: kepler16b:LanderTelemetryDownlink [
-    	mission:joins1 interfaces:lander-commandable-subsystem.telemetryOut
-    	mission:joins2 interfaces:lander-operator.telemetryIn
-    ]
-    
-    
+	extends <http://opencaesar.io/tutorial/description/interfaces>
+	
+	ci lander-operator-to-lander-commandable-subsystem.command.uplink : kepler16b:LanderCommandUplink [
+		mission:joins1 interfaces:lander-operator.commandOut
+		mission:joins2 interfaces:lander-commandable-subsystem.commandIn
+	]
+	
+	ci lander-operator-to-lander-commandable-subsystem.telemetry.downlink: kepler16b:LanderTelemetryDownlink [
+		mission:joins1 interfaces:lander-commandable-subsystem.telemetryOut
+		mission:joins2 interfaces:lander-operator.telemetryIn
+	]
+
 	ci lander-operator-end-to-end-operation-with-lander-commandable-subsystem : mission:Requirement [
 		base:hasIdentifier "R.15"
 		base:hasCanonicalName "The components:lander-operator shall have end-to-end command uplink and telemetry downlink capabilities to and from any components:lander-commandable-subsystem."

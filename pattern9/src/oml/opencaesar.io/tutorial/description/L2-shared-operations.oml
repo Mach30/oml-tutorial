@@ -2,6 +2,16 @@
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/L2-shared-operations> with # as L2-shared-operations {
-    extends <http://opencaesar.io/tutorial/description/interfaces>
-    
+  extends <http://opencaesar.io/tutorial/description/interfaces>
+
+  ci mission-operations-system.command.processing : operations:CommandProcessing [
+    mission:joins1 interfaces:mission-operations-system.commandIn
+    mission:joins2 interfaces:mission-operations-system.commandOut
+  ]
+
+  ci mission-operations-system.telemetry.processing : operations:TelemetryProcessing [
+    mission:joins1 interfaces:mission-operations-system.telemetryIn
+    mission:joins2 interfaces:mission-operations-system.telemetryOut
+  ]
+  
 }
