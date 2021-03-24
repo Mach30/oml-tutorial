@@ -5,7 +5,7 @@ output:
     df_print: paged
 ---
 
-# Objectives Only
+# Missions and Objectives
 
 ## Raw Query
 
