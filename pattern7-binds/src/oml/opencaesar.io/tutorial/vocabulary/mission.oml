@@ -8,14 +8,14 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
   @rdfs:label "Objective"
 	@dc:^description """An [=Objective=] represents a specific interest 
   that one or more stakeholders have in the successful execution of a mission."""
-	concept Objective :> base:IdentifiedIndividual, base:AggregatedIndividual [
+	concept Objective :> base:IdentifiedThing, base:AggregatedThing [
 		restricts all relation base:aggregates to Objective
 		restricts all relation base:isAggregatedIn to Objective
   ]
 
   @rdfs:label "Mission"
 	@dc:^description """A [=Mission=] [=pursue=]s [=Objective=]s."""
-	concept Mission :> base:IdentifiedIndividual
+	concept Mission :> base:IdentifiedThing
 
 	@rdfs:label "Pursues"
 	@dc:^description """A [=Mission=] [=pursues=] zero or more [=Objective=]s."""
@@ -38,7 +38,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
     flight software, attitude control software, and mission operations team.
 	
 	  [=Component=]s can be organized hierarchically by containment of other [=Component=]s. """
-	concept Component :> base:ContainedIndividual [
+	concept Component :> base:ContainedThing [
 		restricts all relation base:contains to Component
 		restricts all relation base:isContainedIn to Component
 	]
@@ -64,10 +64,10 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 
 	@rdfs:label "Specifies"
 	@dc:^description """A [=Requirement=] [=specifies=] zero or more
-	[=SpecifiedElement=]s."""
+	[=SpecifiedThing=]s."""
 	relation entity Specifies [
 		from Requirement
-		to SpecifiedElement
+		to SpecifiedThing
 		@rdfs:label "specifies"
 		forward specifies
 		@rdfs:label "is specified by"
@@ -79,7 +79,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	
 	@rdfs:label "Presents"
 	@dc:^description "A [=Component=] [=presents=] zero or more [=Interface=]s."
-	relation entity Presents :> SpecifiedElement [
+	relation entity Presents :> SpecifiedThing [
 		from Component
 		to Interface
 		@rdfs:label "presents"
@@ -138,15 +138,15 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 		irreflexive
 	]
 
-	@rdfs:label "Specified Element"
-	@dc:^description """[=SpecifiedElement=] is the range of [=specifies=].
+	@rdfs:label "Specified Thing"
+	@dc:^description """[=SpecifiedThing=] is the range of [=specifies=].
 	Any concept or reified relation that [=isSpecifiedBy=] a [=Requirement=] should 
-	specialize [=SpecifiedElement=]."""
-	aspect SpecifiedElement
+	specialize [=SpecifiedThing=]."""
+	aspect SpecifiedThing
 
 	@rdfs:label "Requirement"
-	@dc:^description """A [=Requirement=] specifies an assertion about a [=Junction=] 
-	that must be true for every acceptable realization of that element."""
+	@dc:^description """A [=Requirement=] specifies an assertion about a [=SpecifiedThing=] 
+	that must be true for every acceptable realization of that thing."""
 	concept Requirement
 
 }

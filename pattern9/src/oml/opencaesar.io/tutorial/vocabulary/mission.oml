@@ -8,14 +8,14 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
   @rdfs:label "Objective"
 	@dc:^description """An [=Objective=] represents a specific interest 
   that one or more stakeholders have in the successful execution of a mission."""
-	concept Objective :> base:IdentifiedIndividual, base:AggregatedIndividual [
+	concept Objective :> base:IdentifiedThing, base:AggregatedThing [
 		restricts all relation base:aggregates to Objective
 		restricts all relation base:isAggregatedIn to Objective
   ]
 
   @rdfs:label "Mission"
 	@dc:^description """A [=Mission=] [=pursue=]s [=Objective=]s."""
-	concept Mission :> base:IdentifiedIndividual
+	concept Mission :> base:IdentifiedThing
 
 	@rdfs:label "Pursues"
 	@dc:^description """A [=Mission=] [=pursues=] zero or more [=Objective=]s."""
@@ -38,7 +38,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
     flight software, attitude control software, and mission operations team.
 	
 	  [=Component=]s can be organized hierarchically by containment of other [=Component=]s. """
-	concept Component :> base:ContainedIndividual [
+	concept Component :> base:ContainedThing [
 		restricts all relation base:contains to Component
 		restricts all relation base:isContainedIn to Component
 	]
@@ -64,10 +64,10 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 
 	@rdfs:label "Specifies"
 	@dc:^description """A [=Requirement=] [=specifies=] zero or more
-	[=SpecifiedElement=]s."""
+	[=SpecifiedThing=]s."""
 	relation entity Specifies [
 		from Requirement
-		to SpecifiedElement
+		to SpecifiedThing
 		@rdfs:label "specifies"
 		forward specifies
 		@rdfs:label "is specified by"
@@ -79,7 +79,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	
 	@rdfs:label "Presents"
 	@dc:^description "A [=Component=] [=presents=] zero or more [=Interface=]s."
-	relation entity Presents :> SpecifiedElement [
+	relation entity Presents :> SpecifiedThing [
 		from Component
 		to Interface
 		@rdfs:label "presents"
@@ -138,16 +138,16 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 		irreflexive
 	]
 
-	@rdfs:label "Specified Element"
-	@dc:^description """[=SpecifiedElement=] is the range of [=specifies=].
+	@rdfs:label "Specified Thing"
+	@dc:^description """[=SpecifiedThing=] is the range of [=specifies=].
 	Any concept or reified relation that [=isSpecifiedBy=] a [=Requirement=] should 
-	specialize [=SpecifiedElement=]."""
-	aspect SpecifiedElement
+	specialize [=SpecifiedThing=]."""
+	aspect SpecifiedThing
 
 	@rdfs:label "Requirement"
 	@dc:^description """A [=Requirement=] specifies an assertion about a [=Junction=] 
-	that must be true for every acceptable realization of that element."""
-	concept Requirement :> base:IdentifiedIndividual
+	that must be true for every acceptable realization of that thing."""
+	concept Requirement :> base:IdentifiedThing
 
 	@rdfs:label "Refines"
 	@dc:^description """A [=Requirement=] [=refines=] zero or more [=Requirement=]s."""
@@ -162,17 +162,17 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 		irreflexive
 	]
 
-	@rdfs:label "Traversing Element"
-	@dc:^description """"[=TraversingElement=] is the domain of [=traverses=].
-		Any concept that [=traverses=] an [=Interface=] should specialize [=TraversingElement=]."""
-	@rdfs:label "Traversing Element"
-	aspect TraversingElement
+	@rdfs:label "Traversing Thing"
+	@dc:^description """"[=TraversingThing=] is the domain of [=traverses=].
+		Any concept that [=traverses=] an [=Interface=] should specialize [=TraversingThing=]."""
+	@rdfs:label "Traversing Thing"
+	aspect TraversingThing
 
 	@rdfs:label "Transfers"
-	@dc:^description """An [=Interface=] [=transfers=] zero or more [=TraversingElement=]s."""
+	@dc:^description """An [=Interface=] [=transfers=] zero or more [=TraversingThing=]s."""
 	relation entity Transfers [
 		from Interface
-		to TraversingElement
+		to TraversingThing
 		@rdfs:label "transfers"
 		forward transfers
 		asymmetric
@@ -180,10 +180,10 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	]
 
 	@rdfs:label "Transfers In"
-	@dc:^description """An [=Interface=] [=transfersIn=] zero or more [=TraversingElement=]s."""
-	relation entity TransfersIn :> Transfers, SpecifiedElement [
+	@dc:^description """An [=Interface=] [=transfersIn=] zero or more [=TraversingThing=]s."""
+	relation entity TransfersIn :> Transfers, SpecifiedThing [
 		from Interface
-		to TraversingElement
+		to TraversingThing
 		@rdfs:label "transfers in"
 		forward transfersIn
 		asymmetric
@@ -191,10 +191,10 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	]
 
 	@rdfs:label "Transfers Out"
-	@dc:^description """An [=Interface=] [=transfersOut=] zero or more [=TraversingElement=]s."""
-	relation entity TransfersOut :> Transfers, SpecifiedElement [
+	@dc:^description """An [=Interface=] [=transfersOut=] zero or more [=TraversingThing=]s."""
+	relation entity TransfersOut :> Transfers, SpecifiedThing [
 		from Interface
-		to TraversingElement
+		to TraversingThing
 		@rdfs:label "transfers out"
 		forward transfersOut
 		asymmetric
@@ -205,14 +205,14 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	@dc:^description """A [=Flow=] is a non-discrete transfer of substance or energy between [=Component=]s.
 		<emphasis role="italic">Non-discrete</emphasis> implies that the substance or energy
 		has no natural boundaries. Examples of [=Flow=] include electric current, propellant, and heat."""
-	concept Flow :> base:ContainedIndividual, base:IdentifiedIndividual, TraversingElement [
+	concept Flow :> base:ContainedThing, base:IdentifiedThing, TraversingThing [
 		restricts all relation base:isContainedIn to Flow
 		restricts all relation base:contains to Flow
 	]
 
 	@rdfs:label "Item"
-	@dc:^description "An [=Item=] is a discrete unit of material or information exchanged between two [=PresentingElement=]s."
-	concept Item :> base:ContainedIndividual, base:IdentifiedIndividual, TraversingElement [
+	@dc:^description "An [=Item=] is a discrete unit of material or information exchanged between two [=PresentingThing=]s."
+	concept Item :> base:ContainedThing, base:IdentifiedThing, TraversingThing [
 		restricts all relation base:isContainedIn to Item
 		restricts all relation base:contains to Item
 	]

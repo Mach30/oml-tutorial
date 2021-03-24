@@ -8,15 +8,15 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/project> with # as project 
 	@dc:^description "A [=Policy=] represents a specific exercise of authority that [=binds=] one or more model elements."
 	concept Policy  
 
-	@rdfs:label "Bound Element"
-	@dc:^description "[=BoundElement=] is the domain of [=binds=]."
-	aspect BoundElement
+	@rdfs:label "Bound Thing"
+	@dc:^description "[=BoundThing=] is the domain of [=binds=]."
+	aspect BoundThing
 
 	@rdfs:label "Binds"
-	@dc:^description """A [=Policy=] [=binds=] zero or more [=BoundElement=]s."""
+	@dc:^description """A [=Policy=] [=binds=] zero or more [=BoundThing=]s."""
 	relation entity Binds [
 		from Policy
-		to BoundElement
+		to BoundThing
 		@rdfs:label "binds"
 		forward binds
 		@rdfs:label "is bound by"
@@ -28,8 +28,8 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/project> with # as project 
   @dc:^description """From a project management perspective, a [=Requirement=] has the force of a [=Policy=]."""
   ref concept mission:Requirement :> Policy
 
-  @dc:^description """From a project management perspective, an [=Interface=] can be a [=BoundElement=]."""
-  ref concept mission:Interface :> BoundElement
+  @dc:^description """From a project management perspective, an [=Interface=] can be a [=BoundThing=]."""
+  ref concept mission:Interface :> BoundThing
 
   @dc:^description """From a project management perspective, a [=Requirement=] r specifying that 
   a [=Component=] c [=presents=] an [=Interface=] i means that r [=binds=] c."""

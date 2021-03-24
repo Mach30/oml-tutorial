@@ -5,38 +5,38 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/base> with # as base {
 
 	extends <http://www.w3.org/2002/07/owl>
 	
- 	@rdfs:label "IdentifiedIndividual"
-	@dc:^description """An [=IdentifiedIndividual=] is an individual with identity and identifying properties."""
-	aspect IdentifiedIndividual
+ 	@rdfs:label "IdentifiedThing"
+	@dc:^description """An [=IdentifiedThing=] is a thing with identity and identifying properties."""
+	aspect IdentifiedThing
 
 	@rdfs:label "hasCanonicalName"
 	scalar property hasCanonicalName [
-		domain IdentifiedIndividual
+		domain IdentifiedThing
 		range xsd:string
 	]
 
 	@rdfs:label "hasIdentifier"
 	scalar property hasIdentifier [
-		domain IdentifiedIndividual
+		domain IdentifiedThing
 		range xsd:string
 	]
 
 	@rdfs:label "hasDescription"
 	scalar property hasDescription [
-		domain IdentifiedIndividual
+		domain IdentifiedThing
 		range xsd:string
 	]
 
- 	@rdfs:label "AggregatedIndividual"
-	@dc:^description """An [=AggregatedIndividual=] is an individual that can participate in homeomeric aggregation relationships."""
-	aspect AggregatedIndividual
+ 	@rdfs:label "AggregatedThing"
+	@dc:^description """An [=AggregatedThing=] is a thing that can participate in homeomeric aggregation relationships."""
+	aspect AggregatedThing
 
 	@rdfs:label "Aggregates"
 	@dc:^description """[=aggregates=] is a many-to-many relation used
 	to represent homeomeric relations that form directed acyclic graphs."""
     relation entity Aggregates [
-		from AggregatedIndividual
-    	to AggregatedIndividual
+		from AggregatedThing
+    	to AggregatedThing
     	forward aggregates
     	reverse isAggregatedIn
     	asymmetric

@@ -8,7 +8,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
   @rdfs:label "Objective"
 	@dc:^description """An [=Objective=] represents a specific interest 
   that one or more stakeholders have in the successful execution of a mission."""
-	concept Objective :> base:IdentifiedIndividual, base:AggregatedIndividual [
+	concept Objective :> base:IdentifiedThing, base:AggregatedThing [
 		restricts all relation base:aggregates to Objective
 		restricts all relation base:isAggregatedIn to Objective
   ]
