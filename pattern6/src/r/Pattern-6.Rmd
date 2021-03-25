@@ -4,7 +4,11 @@ output:
   html_document:
     df_print: paged
 ---
-
+<style type="text/css">
+  body{
+  font-size: 8pt;
+}
+</style>
 # Mission Presents Interface
 
 ## Raw Query
@@ -50,6 +54,7 @@ t1
 ## Displayed By Interface 1
 
 ```{r}
+options(width = 100)
 t2 <- df[order(df$`I1 ID`), c("I1 ID", "Interface 1", "J ID", "Junction", "I2 ID", "Interface 2") ]
 t2
 ```
