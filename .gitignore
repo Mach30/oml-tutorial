@@ -21,6 +21,3 @@ build
 .Rhistory
 .Rproj.user
 *.Rproj
-
-# Eclipse
-.settings
