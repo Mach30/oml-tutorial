@@ -9,5 +9,10 @@ description bundle <http://opencaesar.io/tutorial/description/bundle> with # as 
 	// All the descriptions included in this description bundle
 	includes <http://opencaesar.io/tutorial/description/objectives>
 	includes <http://opencaesar.io/tutorial/description/components>
-
+	includes <http://opencaesar.io/tutorial/description/missions>
+	includes <http://opencaesar.io/tutorial/description/mass-properties>
+	includes <http://opencaesar.io/tutorial/description/junctions>
+	includes <http://opencaesar.io/tutorial/description/interfaces>
+	includes <http://opencaesar.io/tutorial/description/requirements>
+	
 }
