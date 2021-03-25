@@ -1,62 +1,45 @@
 # OML Tutorial
 
-[![Gitpod](https://img.shields.io/badge/gitpod-open-blue?logo=gitpod)](https://gitpod.io/#https://github.com/modelware/oml-tutorial) 
 [![Build Status](https://travis-ci.org/opencaesar/oml-template.svg?branch=master)](https://travis-ci.org/opencaesar/oml-template)
-[![Documentation](https://img.shields.io/badge/Documentation-HTML-orange)](https://opencaesar.github.io/oml-template/) 
 
-## Clone
-```
-  git clone https://github.com/modelware/oml-tutorial.git
-  cd oml-tutorial
-```
+## Browse with the Gitpod IDE
 
-## Build
-Equivalent to owlReason task
-```
-./gradlew build
-```
+1. [Click this badge: ![Gitpod](https://img.shields.io/badge/gitpod-open-blue?logo=gitpod)](https://gitpod.io/#https://github.com/modelware/oml-tutorial) 
 
-## Generate Docs
-You must first have Bikeshed (the app itself) installed from [here](https://tabatkins.github.io/bikeshed/#install-final)
-```
-./gradlew generateDocs
-```
-Note: if bikeshed is not in the PATH, you can add -pBIKESHED=path/to/bikeshed argument
+1. Wait until the Gradle build is finished, then you can browse the `src/oml` folders of the different patterns projects.
 
-## Run OWL Reasoner
-```
-./gradlew owlReason
-```
+## Browse with the Rosetta IDE
 
-## Start Fuseki Server
-```
-./gradlew startFuseki
-```
+1. Download the [Rosetta IDE](https://github.com/opencaesar/oml-rosetta/releases) suitable to your operating system
+1. Clone this repo to your machine
+   ```
+     git clone https://github.com/modelware/oml-tutorial.git
+   ```
+1. Build the repo by invoking the gradle build script
+   ```
+   cd oml-tutorial
+   ./gradlew build
+   ```
+   >NOTE: If you are on Windows, replace ./gradlew with gradlew.bat (also in the instructions below)
 
-## Stop Fuseki Server
-```
-./gradlew stopFuseki
-```
+1. Double click to open Rosetta and then import the root project (Import -> Existing Project)
 
-## Load to Fuseki Dataset
-```
-./gradlew owlLoad
-```
-Pre-req: A Fuseki server with a firesat dataset must be running at http://localhost:3030/firesat (see below)  
+## Run R analysis notebooks (when using Rosetta only)
+1. Start Fuseki Server
+   ```
+   ./gradlew startFuseki
+   ```
+1. Load to Fuseki Dataset
+   ```
+   ./gradlew owlLoad
+   ```
+1. Double click on the R notebooks (*.rmd files) that are found under `src/r` folder of the pattern projects to run in R Studio.
 
-## Run SPARQL Queries
-```
-./gradlew owlQuery
-```
-Pre-req: A Fuseki server with a firesat dataset must be running at http://localhost:3030/firesat (see below)  
+   > Pre-requisite: [R Studio](https://rstudio.com/products/rstudio/download/) is installed
 
-## Run SHACL Rules
-```
-./gradlew owlShacl
-```
-Pre-req: A Fuseki server with a firesat dataset must be running at http://localhost:3030/firesat (see below) 
+1. Render the notebook in the R studio using the UI
 
-## Publish to Maven Local
-```
-./gradlew publishToMavenLocal
-```
+1. When done, stop Fuseki Server
+   ```
+   ./gradlew stopFuseki
+   ```
