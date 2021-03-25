@@ -7,5 +7,5 @@ description bundle <http://opencaesar.io/tutorial/description/bundle-kepler16b-L
 	extends <http://opencaesar.io/tutorial/description/bundle-kepler16b-L1-operations>
 
 	includes <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-operations>
-
+	includes <http://opencaesar.io/tutorial/description/L2-orbiter-message>
 }

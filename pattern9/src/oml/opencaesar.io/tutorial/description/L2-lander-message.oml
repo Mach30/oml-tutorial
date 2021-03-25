@@ -1,0 +1,32 @@
+@dc:title "Kepler 16-b Example L2 end-to-end Lander Operations"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/L2-lander-message> with # as L2-lander-message {
+	extends <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-operations>
+    
+  ci lander-tlm-example : kepler16b:LanderScienceTelemetry
+  
+  @dc:^description """Rer requirement R.15.02 in <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>:
+
+  ci lander-operator-telemetry-downlink-from-lander-commandable-subsystem : mission:Requirement [
+		base:hasIdentifier "R.15.02"
+		base:hasCanonicalName "The components:lander-operator shall have end-to-end telemetry downlink capability from any components:lander-commandable-subsystem."
+		mission:specifies lander-operator-to-lander-commandable-subsystem.telemetry.downlink
+		mission:refines lander-operator-end-to-end-operation-with-lander-commandable-subsystem
+	]
+
+  and:
+
+  ci lander-operator-to-lander-commandable-subsystem.telemetry.downlink: kepler16b:LanderTelemetryTransmission [
+		mission:joins1 interfaces:lander-commandable-subsystem.telemetryOut
+		mission:joins2 interfaces:lander-operator.telemetryIn
+	]
+
+  the lander-tlm-example should be available on interfaces:lander-operator.telemetryIn
+  """ 
+  ri lander-commandable-subsystem.sends.lander-tlm-example : mission:TransfersOut [
+    from interfaces:lander-commandable-subsystem.telemetryOut
+    to lander-tlm-example
+  ]
+
+}
