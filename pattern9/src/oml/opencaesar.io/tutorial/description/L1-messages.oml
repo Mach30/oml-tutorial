@@ -1,0 +1,58 @@
+@dc:title "Kepler 16-b Example L1 messages"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/L1-messages> with # as L1-messages {
+	extends <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
+  extends <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>
+
+  ci orbiter-cmd-example : kepler16b:OrbiterAvionicsCommand
+
+  @dc:^description """Per requirement R.15.01 in <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>:
+
+  ci orbiter-operator-commands-uplink-to-orbiter-commandable-subsystem : mission:Requirement [
+		base:hasIdentifier "R.15.01"
+		base:hasCanonicalName "The components:orbiter-operator shall have end-to-end command uplink capability o any components:orbiter-commandable-subsystem."
+		mission:specifies orbiter-operator-to-orbiter-commandable-subsystem.command.uplink
+		mission:refines orbiter-operator-end-to-end-operation-with-orbiter-commandable-subsystem
+	]
+
+  and:
+
+  ci orbiter-operator-to-orbiter-commandable-subsystem.command.uplink : kepler16b:OrbiterCommandTransmission [
+		mission:joins1 interfaces:orbiter-operator.commandOut
+		mission:joins2 interfaces:orbiter-commandable-subsystem.commandIn
+	]
+
+  the orbiter-cmd-example should be available on interfaces:orbiter-commandable-subsystem.commandIn
+  """
+  ri orbiter-operator.sends.orbiter-cmd-example : mission:TransfersOut [
+     from interfaces:orbiter-operator.commandOut
+     to orbiter-cmd-example
+  ]
+
+  ci lander-tlm-example : kepler16b:LanderScienceTelemetry
+
+  @dc:^description """Rer requirement R.15.02 in <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>:
+
+  ci lander-operator-telemetry-downlink-from-lander-commandable-subsystem : mission:Requirement [
+		base:hasIdentifier "R.15.02"
+		base:hasCanonicalName "The components:lander-operator shall have end-to-end telemetry downlink capability from any components:lander-commandable-subsystem."
+		mission:specifies lander-operator-to-lander-commandable-subsystem.telemetry.downlink
+		mission:refines lander-operator-end-to-end-operation-with-lander-commandable-subsystem
+	]
+
+  and:
+
+  ci lander-operator-to-lander-commandable-subsystem.telemetry.downlink: kepler16b:LanderTelemetryTransmission [
+		mission:joins1 interfaces:lander-commandable-subsystem.telemetryOut
+		mission:joins2 interfaces:lander-operator.telemetryIn
+	]
+
+  the lander-tlm-example should be available on interfaces:lander-operator.telemetryIn
+  """ 
+  ri lander-commandable-subsystem.sends.lander-tlm-example : mission:TransfersOut [
+    from interfaces:lander-commandable-subsystem.telemetryOut
+    to lander-tlm-example
+  ]
+
+}

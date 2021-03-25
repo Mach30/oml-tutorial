@@ -11,5 +11,6 @@ description bundle <http://opencaesar.io/tutorial/description/bundle-kepler16b-L
 	includes <http://opencaesar.io/tutorial/description/requirements>
 	includes <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>
 	includes <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
+	includes <http://opencaesar.io/tutorial/description/L1-messages>
 
 }
