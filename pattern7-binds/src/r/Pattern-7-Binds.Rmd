@@ -21,32 +21,18 @@ queryString1 = "
 PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
 PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
 
-SELECT DISTINCT ?r_id ?c_id ?i_id
+SELECT DISTINCT ?c_id ?c_name ?r_id
 
 WHERE {
   [] a mission:Requirement ;
     base:hasIdentifier ?r_id ;
-    mission:specifies [
-      a mission:Presents ;
-      mission:hasPresentsSource [
-        base:hasIdentifier ?c_id
-      ] ;
-      mission:hasPresentsTarget [
-        base:hasIdentifier ?i_id
-      ] ;
+    mission:binds [
+      base:hasIdentifier ?c_id ;
+      base:hasCanonicalName ?c_name
     ]
 }
-ORDER BY ?r_id ?c_id ?i_id
+ORDER BY ?c_id ?r_id
 "
 d1 <- SPARQL(url=endpointURL, query=queryString1)
 d1$results
-```
-
-## Displayed By Component, Interface, Requirement
-
-```{r}
-df <- d1$results
-colnames(df) <- c("Requirement ID", "Component ID", "Interface ID")
-t1 <- df[order(df$`Component ID`, df$`Interface ID`, df$`Requirement ID`), c("Component ID", "Interface ID", "Requirement ID") ]
-t1
 ```

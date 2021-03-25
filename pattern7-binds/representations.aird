@@ -36,7 +36,7 @@
     <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/bundle-mechanical.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/bundle-operations.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/bundle.oml</semanticResources>
-    <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/project.oml</semanticResources>
+    <semanticResources>build/oml/www.w3.org/1999/02/22-rdf-syntax-ns.oml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_f5MuMI0PEeuDgrQLCd9W0A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']"/>
     </ownedViews>

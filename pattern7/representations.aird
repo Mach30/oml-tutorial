@@ -2,14 +2,11 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:oml="http://opencaesar.io/oml" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_zsxWcIz7EeuDgrQLCd9W0A" selectedViews="_1MljYIz7EeuDgrQLCd9W0A _1MtfMIz7EeuDgrQLCd9W0A" version="14.3.1.202003261200">
     <semanticResources>src/oml/opencaesar.io/tutorial/description/bundle-all.oml</semanticResources>
-    <semanticResources>build/oml/purl.org/dc/elements/1.1.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/bundle-kepler16b-operations.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/bundle-mechanical.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/bundle.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/components.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/base.oml</semanticResources>
-    <semanticResources>build/oml/www.w3.org/2000/01/rdf-schema.oml</semanticResources>
-    <semanticResources>build/oml/www.w3.org/2001/XMLSchema.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/mission.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/interfaces.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/kepler16b.oml</semanticResources>
@@ -17,17 +14,6 @@
     <semanticResources>src/oml/opencaesar.io/tutorial/description/junctions.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/mass-properties.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/vocabulary/mechanical.oml</semanticResources>
-    <semanticResources>build/oml/iupac.org/metrology.oml</semanticResources>
-    <semanticResources>build/oml/www.w3.org/2002/07/owl.oml</semanticResources>
-    <semanticResources>build/oml/iso.org/80000-4-units.oml</semanticResources>
-    <semanticResources>build/oml/iso.org/80000-1.oml</semanticResources>
-    <semanticResources>build/oml/iso.org/80000-1-decimalPrefix.oml</semanticResources>
-    <semanticResources>build/oml/iso.org/80000-4-instances.oml</semanticResources>
-    <semanticResources>build/oml/iso.org/80000-4-quantities.oml</semanticResources>
-    <semanticResources>build/oml/iso.org/80000-3-quantities.oml</semanticResources>
-    <semanticResources>build/oml/iso.org/80000-3-units.oml</semanticResources>
-    <semanticResources>build/oml/iso.org/80000-3-instances.oml</semanticResources>
-    <semanticResources>build/oml/iso.org/80000-instances.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/missions.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/objectives.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/requirements.oml</semanticResources>
