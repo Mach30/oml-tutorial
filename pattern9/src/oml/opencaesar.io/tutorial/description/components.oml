@@ -82,7 +82,7 @@ description <http://opencaesar.io/tutorial/description/components> with # as com
 
 	ci mission-operations-system : mission:Component [
 		base:hasIdentifier "C.04"
-		base:hasCanonicalName "Mission Operations System shared by orbiter and lander missions"
+		base:hasCanonicalName "Mission Operations System"
 	]
 
 	ci lander-launch-system : mission:Component [
