@@ -5,7 +5,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/project> with # as project 
   extends <http://opencaesar.io/tutorial/vocabulary/mission>
 
 	@rdfs:label "Policy"
-	@dc:^description "A [=Policy=] represents a specific exercise of authority that [=binds=] one or more things."
+	@dc:^description "A [=Policy=] represents a specific exercise of authority that [=binds=] one or more mode"
 	concept Policy  
 
 	@rdfs:label "Bound Thing"

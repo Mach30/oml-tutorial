@@ -14,7 +14,6 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   	base:hasIdentifier "I.02"
   	base:hasCanonicalName "Orbiter Spacecraft Telemetry Out"
   ]
-  
 
   ref ci components:orbiter-spacecraft [
     mission:presents orbiter-spacecraft.commandIn

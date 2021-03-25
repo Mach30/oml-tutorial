@@ -4,7 +4,7 @@
 vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission {
 
 	extends <http://opencaesar.io/tutorial/vocabulary/base>
-
+	
   @rdfs:label "Objective"
 	@dc:^description """An [=Objective=] represents a specific interest 
   that one or more stakeholders have in the successful execution of a mission."""
