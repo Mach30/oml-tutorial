@@ -9,4 +9,4 @@ WHERE {
       base:hasIdentifier ?o_id ;
       base:hasCanonicalName ?o_name ;
 }
-ORDER BY ?id
+ORDER BY ?o_id
