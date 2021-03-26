@@ -158,6 +158,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 		forward binds
 		@rdfs:label "is bound by"
 		reverse isBoundBy
+		functional
 		asymmetric
 		irreflexive
 	]

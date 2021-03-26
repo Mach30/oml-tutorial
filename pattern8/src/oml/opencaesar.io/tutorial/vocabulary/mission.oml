@@ -149,8 +149,28 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	that must be true for every acceptable realization of that thing."""
 	concept Requirement
 
+	@rdfs:label "Binds"
+	@dc:^description """A [=Requirement=] [=binds=] zero or one [=Component=]."""
+	relation entity Binds [
+		from Requirement
+		to Component
+		@rdfs:label "binds"
+		forward binds
+		@rdfs:label "is bound by"
+		reverse isBoundBy
+		functional
+		asymmetric
+		irreflexive
+	]
+
+	@dc:^description """A [=Requirement=] r specifying that 
+	  a [=Component=] c [=presents=] an [=Interface=] i means that r [=binds=] c."""
+	rule requirement-binds-interface-presenter [
+		mission:specifies(r, p) ^ mission:Presents(c, p, i) -> binds(r, c)
+	]
+
 	@rdfs:label "Refines"
-	@dc:^description """A [=Requirement=] [=refines=] zero or more [=Requirement=]s."""
+	@dc:^description """A [=Requirement=] [=refines=] zero or more [=Requirements=]s."""
 	relation entity Refines [
 		from Requirement
 		to Requirement
@@ -161,4 +181,5 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 		asymmetric
 		irreflexive
 	]
+
 }
