@@ -8,8 +8,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
 
   // MOS interfaces
 
-  ci orbiter-spacecraft.commandIn : kepler16b:OrbiterCommandInInterface
-  ci orbiter-spacecraft.telemetryOut : kepler16b:OrbiterTelemetryOutInterface
+  ci orbiter-spacecraft.commandIn : kepler16b:OrbiterCommandInInterface [
+  	base:hasIdentifier "I.MOS.01"
+  ]
+  ci orbiter-spacecraft.telemetryOut : kepler16b:OrbiterTelemetryOutInterface [
+  	base:hasIdentifier "I.MOS.02"
+  ]
 
   ri orbiter-spacecraft.presents.commandIn : mission:Presents [
     from components:orbiter-spacecraft
@@ -23,8 +27,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
 
   // Subsystem interfaces
 
-  ci orbiter-spacecraft.commandOut : kepler16b:OrbiterCommandOutInterface
-  ci orbiter-spacecraft.telemetryIn : kepler16b:OrbiterTelemetryInInterface
+  ci orbiter-spacecraft.commandOut : kepler16b:OrbiterCommandOutInterface [
+  	base:hasIdentifier "I.OSC.01"
+  ]
+  ci orbiter-spacecraft.telemetryIn : kepler16b:OrbiterTelemetryInInterface [
+  	base:hasIdentifier "I.OSC.02"
+  ]
 
   ri orbiter-spacecraft.presents.commandOut : mission:Presents [
     from components:orbiter-spacecraft
@@ -38,8 +46,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
 
   // Subsystem interfaces
 
-  ci orbiter-commandable-subsystem.commandIn : kepler16b:OrbiterCommandInInterface
-  ci orbiter-commandable-subsystem.telemetryOut : kepler16b:OrbiterTelemetryOutInterface
+  ci orbiter-commandable-subsystem.commandIn : kepler16b:OrbiterCommandInInterface [
+  	base:hasIdentifier "I.OCS.01"
+  ]
+  ci orbiter-commandable-subsystem.telemetryOut : kepler16b:OrbiterTelemetryOutInterface [
+  	base:hasIdentifier "I.OCS.02"
+  ]
   
   ri orbiter-commandable-subsystem.presents.commandIn : mission:Presents [
   	from components:orbiter-commandable-subsystem
@@ -53,8 +65,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   
   // Operator interfaces
 
-  ci orbiter-ground-data-system.commandIn : kepler16b:OrbiterCommandInInterface
-  ci orbiter-ground-data-system.telemetryOut : kepler16b:OrbiterTelemetryOutInterface
+  ci orbiter-ground-data-system.commandIn : kepler16b:OrbiterCommandInInterface [
+  	base:hasIdentifier "I.OGS.01"
+  ]
+  ci orbiter-ground-data-system.telemetryOut : kepler16b:OrbiterTelemetryOutInterface [
+  	base:hasIdentifier "I.OGS.02"
+  ]
 
   ri orbiter-ground-data-system.presents.commandIn : mission:Presents [
     from components:orbiter-ground-data-system
@@ -68,8 +84,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   
   // MOS interfaces
 
-  ci orbiter-ground-data-system.commandOut : kepler16b:OrbiterCommandOutInterface
-  ci orbiter-ground-data-system.telemetryIn : kepler16b:OrbiterTelemetryInInterface
+  ci orbiter-ground-data-system.commandOut : kepler16b:OrbiterCommandOutInterface [
+  	base:hasIdentifier "I.OGS.03"
+  ]
+  ci orbiter-ground-data-system.telemetryIn : kepler16b:OrbiterTelemetryInInterface [
+  	base:hasIdentifier "I.OGS.04"
+  ]
 
   ri orbiter-ground-data-system.presents.commandOut : mission:Presents [
     from components:orbiter-ground-data-system
@@ -83,8 +103,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   
   // GDS interfaces
 
-  ci orbiter-operator.commandOut : kepler16b:OrbiterCommandOutInterface
-  ci orbiter-operator.telemetryIn : kepler16b:OrbiterTelemetryInInterface
+  ci orbiter-operator.commandOut : kepler16b:OrbiterCommandOutInterface [
+  	base:hasIdentifier "I.OOP.01"
+  ]
+  ci orbiter-operator.telemetryIn : kepler16b:OrbiterTelemetryInInterface [
+  	base:hasIdentifier "I.OOP.02"
+  ]
   
   ri orbiter-operator.presents.commandOut : mission:Presents [
   	from components:orbiter-operator
@@ -98,8 +122,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   
   // MOS interfaces
 
-  ci lander-spacecraft.commandIn : kepler16b:LanderCommandInInterface
-  ci lander-spacecraft.telemetryOut : kepler16b:LanderTelemetryOutInterface
+  ci lander-spacecraft.commandIn : kepler16b:LanderCommandInInterface [
+  	base:hasIdentifier "I.LSC.01"
+  ]
+  ci lander-spacecraft.telemetryOut : kepler16b:LanderTelemetryOutInterface [
+  	base:hasIdentifier "I.LSC.02"
+  ]
 
   ri lander-spacecraft.presents.commandIn : mission:Presents [
     from components:lander-spacecraft
@@ -113,8 +141,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
 
   // Subsystem interfaces
 
-  ci lander-spacecraft.commandOut : kepler16b:LanderCommandOutInterface
-  ci lander-spacecraft.telemetryIn : kepler16b:LanderTelemetryInInterface
+  ci lander-spacecraft.commandOut : kepler16b:LanderCommandOutInterface [
+  	base:hasIdentifier "I.LSC.03"
+  ]
+  ci lander-spacecraft.telemetryIn : kepler16b:LanderTelemetryInInterface [
+  	base:hasIdentifier "I.LSC.04"
+  ]
 
   ri lander-spacecraft.presents.commandOut : mission:Presents [
     from components:lander-spacecraft
@@ -128,8 +160,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
 
   // Subsystem interfaces
 
-  ci lander-commandable-subsystem.commandIn : kepler16b:LanderCommandInInterface
-  ci lander-commandable-subsystem.telemetryOut : kepler16b:LanderTelemetryOutInterface
+  ci lander-commandable-subsystem.commandIn : kepler16b:LanderCommandInInterface [
+  	base:hasIdentifier "I.LCS.01"
+  ]
+  ci lander-commandable-subsystem.telemetryOut : kepler16b:LanderTelemetryOutInterface [
+  	base:hasIdentifier "I.LCS.02"
+  ]
   
   ri lander-commandable-subsystem.presents.commandIn : mission:Presents [
   	from components:lander-commandable-subsystem
@@ -143,8 +179,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
 
   // Operator interfaces
 
-  ci lander-ground-data-system.commandIn : kepler16b:LanderCommandInInterface
-  ci lander-ground-data-system.telemetryOut : kepler16b:LanderTelemetryOutInterface
+  ci lander-ground-data-system.commandIn : kepler16b:LanderCommandInInterface [
+  	base:hasIdentifier "I.LGS.01"
+  ]
+  ci lander-ground-data-system.telemetryOut : kepler16b:LanderTelemetryOutInterface [
+  	base:hasIdentifier "I.LGS.02"
+  ]
 
   ri lander-ground-data-system.presents.commandIn : mission:Presents [
     from components:lander-ground-data-system
@@ -158,8 +198,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   
   // MOS interfaces
 
-  ci lander-ground-data-system.commandOut : kepler16b:LanderCommandOutInterface
-  ci lander-ground-data-system.telemetryIn : kepler16b:LanderTelemetryInInterface
+  ci lander-ground-data-system.commandOut : kepler16b:LanderCommandOutInterface [
+  	base:hasIdentifier "I.LGS.03"
+  ]
+  ci lander-ground-data-system.telemetryIn : kepler16b:LanderTelemetryInInterface [
+  	base:hasIdentifier "I.LGS.04"
+  ]
 
   ri lander-ground-data-system.presents.commandOut : mission:Presents [
     from components:lander-ground-data-system
@@ -173,8 +217,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
 
   // GDS interfaces
 
-  ci lander-operator.commandOut : kepler16b:LanderCommandOutInterface
-  ci lander-operator.telemetryIn : kepler16b:LanderTelemetryInInterface
+  ci lander-operator.commandOut : kepler16b:LanderCommandOutInterface [
+  	base:hasIdentifier "I.LOP.01"
+  ]
+  ci lander-operator.telemetryIn : kepler16b:LanderTelemetryInInterface [
+  	base:hasIdentifier "I.LOP.02"
+  ]
   
   ri lander-operator.presents.commandOut : mission:Presents [
   	from components:lander-operator
@@ -188,8 +236,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   
   // GDS interfaces
 
-  ci mission-operations-system.commandIn : operations:CommandInInterface
-  ci mission-operations-system.commandOut : operations:CommandOutInterface
+  ci mission-operations-system.commandIn : operations:CommandInInterface [
+  	base:hasIdentifier "I.MOS.01"
+  ]
+  ci mission-operations-system.commandOut : operations:CommandOutInterface [
+  	base:hasIdentifier "I.MOS.02"
+  ]
   
   ri mission-operations-system.presents.commandIn : mission:Presents [
   	from components:mission-operations-system
@@ -203,8 +255,12 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   
   // Spacelink interfaces
   
-  ci mission-operations-system.telemetryIn : operations:TelemetryInInterface
-  ci mission-operations-system.telemetryOut : operations:TelemetryOutInterface
+  ci mission-operations-system.telemetryIn : operations:TelemetryInInterface [
+  	base:hasIdentifier "I.MOS.03"
+  ]
+  ci mission-operations-system.telemetryOut : operations:TelemetryOutInterface [
+  	base:hasIdentifier "I.MOS.04"
+  ]
   
   ri mission-operations-system.presents.telemetryIn : mission:Presents [
   	from components:mission-operations-system

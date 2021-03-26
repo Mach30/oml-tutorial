@@ -3,7 +3,9 @@
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/L2-orbiter-message> with # as L2-orbiter-message {
 	extends <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-operations>
-      ci orbiter-cmd-example : kepler16b:OrbiterAvionicsCommand
+      ci orbiter-cmd-example : kepler16b:OrbiterAvionicsCommand [
+      	base:hasIdentifier "CM.02"
+      ]
 
   @dc:^description """Per requirement R.15.01 in <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>:
 
@@ -25,6 +27,11 @@ description <http://opencaesar.io/tutorial/description/L2-orbiter-message> with 
   """
   ri orbiter-operator.sends.orbiter-cmd-example : mission:TransfersOut [
      from interfaces:orbiter-operator.commandOut
+     to orbiter-cmd-example
+  ]
+  
+  ri orbiter-commandable-subsystem.receives.orbiter-cmd-example : mission:TransfersIn [
+     from interfaces:orbiter-commandable-subsystem.commandIn
      to orbiter-cmd-example
   ]
 }

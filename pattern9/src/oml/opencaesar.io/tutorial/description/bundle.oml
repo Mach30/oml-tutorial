@@ -7,7 +7,21 @@ description bundle <http://opencaesar.io/tutorial/description/bundle> with # as 
 	uses <http://opencaesar.io/tutorial/vocabulary/bundle>
 	
 	// All the descriptions included in this description bundle
-	includes <http://opencaesar.io/tutorial/description/objectives>
+	includes <http://opencaesar.io/tutorial/description/L2-orbiter-message>
+	includes <http://opencaesar.io/tutorial/description/L2-shared-operations>
+	includes <http://opencaesar.io/tutorial/description/mass-properties>
+	includes <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-operations>
+	includes <http://opencaesar.io/tutorial/description/L1-messages>
+	includes <http://opencaesar.io/tutorial/description/interfaces>
+	includes <http://opencaesar.io/tutorial/description/L2-lander-message>
 	includes <http://opencaesar.io/tutorial/description/components>
-
+	includes <http://opencaesar.io/tutorial/description/commands>
+	includes <http://opencaesar.io/tutorial/description/requirements>
+	includes <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>
+	includes <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-operations>
+	includes <http://opencaesar.io/tutorial/description/missions>
+	includes <http://opencaesar.io/tutorial/description/objectives>
+	includes <http://opencaesar.io/tutorial/description/junctions>
+	includes <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
+	
 }

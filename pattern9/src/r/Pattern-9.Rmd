@@ -1,0 +1,128 @@
+---
+title: 'Pattern : Messages'
+output:
+  html_document:
+    df_print: paged
+---
+<style type="text/css">
+  body{
+  font-size: 8pt;
+}
+</style>
+# Message Transferred Out/In By Interface
+
+This query finds out/in pairs of interfaces transferring a single message.
+
+## Raw Query
+
+```{r}
+library(SPARQL, quietly=TRUE)
+
+endpointURL = "http://localhost:3030/oml-tutorial"
+queryString1 = "
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
+PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
+
+SELECT DISTINCT ?m_id ?io_id ?ii_id
+
+WHERE {
+ [] a mission:Message ;
+    base:hasIdentifier ?m_id ;
+    ^mission:transfersOut [
+      a mission:Interface ;
+      base:hasIdentifier ?io_id
+    ] ;
+    ^mission:transfersIn [
+      a mission:Interface ;
+      base:hasIdentifier ?ii_id
+    ]
+}
+"
+d1 <- SPARQL(url=endpointURL, query=queryString1)
+df1 <- d1$results
+df1
+```
+
+# Junctions
+
+## Level 1
+
+```{r}
+queryString2 = "
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
+PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
+
+SELECT DISTINCT ?i1_id ?i2_id
+
+WHERE {
+ GRAPH ?l1 { ?j a [] }
+ VALUES ?l1 { <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation> <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>}
+ ?j a mission:Junction ;
+    mission:joins1 [
+      a mission:Interface ;
+      base:hasIdentifier ?i1_id
+    ] ;
+    mission:joins2 [
+      a mission:Interface ;
+      base:hasIdentifier ?i2_id
+    ]
+}
+"
+d2 <- SPARQL(url=endpointURL, query=queryString2)
+df2 <- d2$results
+df2
+```
+
+## Level 2
+
+```{r}
+queryString3 = "
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
+PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
+
+SELECT DISTINCT ?i1_id ?i2_id
+
+WHERE {
+ GRAPH ?l2 { ?j a [] }
+ VALUES ?l2 { <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-operations> <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-operations>}
+ ?j a mission:Junction ;
+    mission:joins1 [
+      a mission:Interface ;
+      base:hasIdentifier ?i1_id
+    ] ;
+    mission:joins2 [
+      a mission:Interface ;
+      base:hasIdentifier ?i2_id
+    ]
+}
+"
+d3 <- SPARQL(url=endpointURL, query=queryString3)
+df3 <- d3$results
+df3
+```
+
+# Graph Analysis
+
+## Reachability at Level 1
+
+```{r}
+library(igraph, warn.conflicts = FALSE)
+g2 <- graph_from_edgelist(as.matrix(df2))
+
+df1$l1_ok <- apply(df1, 1, function(row) {
+ is.element(row[2], names(V(g2))) && is.element(row[3], names(subcomponent(g2, V(g2)[row[2]])))
+})
+df1
+```
+
+## Reachability at Level 2
+
+```{r}
+library(igraph, warn.conflicts = FALSE)
+g3 <- graph_from_edgelist(as.matrix(df3))
+
+df1$l2_ok <- apply(df1, 1, function(row) {
+ is.element(row[2], names(V(g3))) && is.element(row[3], names(subcomponent(g3, V(g3)[row[2]])))
+})
+df1
+```

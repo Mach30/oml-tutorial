@@ -1,0 +1,35 @@
+@dc:title "Kepler 16-b Example Junctions"
+@dc:creator "ModelWare"
+@dc:rights "Copyright 2021, by Modelware"
+description <http://opencaesar.io/tutorial/description/junctions> with # as junctions {
+  extends <http://opencaesar.io/tutorial/description/interfaces>
+
+  ci orbiter-ground-data-system.orbiter-spacecraft.command.transmission : kepler16b:OrbiterCommandTransmission [
+  	base:hasIdentifier "J.01"
+  	base:hasCanonicalName "Orbiter Command Transmission"
+    mission:joins1 interfaces:orbiter-ground-data-system.commandOut
+    mission:joins2 interfaces:orbiter-spacecraft.commandIn
+  ]
+
+  ci orbiter-ground-data-system.orbiter-spacecraft.telemetry.transmission : kepler16b:OrbiterTelemetryTransmission [
+  	base:hasIdentifier "J.02"
+  	base:hasCanonicalName "Orbiter Telemetry Transmission"
+    mission:joins1 interfaces:orbiter-spacecraft.telemetryOut
+    mission:joins2 interfaces:orbiter-ground-data-system.telemetryIn
+  ]
+
+  ci lander-ground-data-system.lander-spacecraft.command.transmission : kepler16b:LanderCommandTransmission [
+   	base:hasIdentifier "J.03"
+  	base:hasCanonicalName "Lander Command Transmission"
+    mission:joins1 interfaces:lander-ground-data-system.commandOut
+    mission:joins2 interfaces:lander-spacecraft.commandIn
+  ]
+
+  ci lander-ground-data-system.lander-spacecraft.telemetry.transmission : kepler16b:LanderTelemetryTransmission [
+   	base:hasIdentifier "J.04"
+  	base:hasCanonicalName "Lander Telemetry Transmission"
+    mission:joins1 interfaces:lander-spacecraft.telemetryOut
+    mission:joins2 interfaces:lander-ground-data-system.telemetryIn
+  ]
+
+}

@@ -5,7 +5,9 @@ description <http://opencaesar.io/tutorial/description/L1-messages> with # as L1
 	extends <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
   extends <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>
 
-  ci orbiter-cmd-example : kepler16b:OrbiterAvionicsCommand
+  ci orbiter-cmd-example : kepler16b:OrbiterAvionicsCommand [
+  	base:hasIdentifier "CM.01"
+  ]
 
   @dc:^description """Per requirement R.15.01 in <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>:
 
@@ -30,7 +32,14 @@ description <http://opencaesar.io/tutorial/description/L1-messages> with # as L1
      to orbiter-cmd-example
   ]
 
-  ci lander-tlm-example : kepler16b:LanderScienceTelemetry
+  ri orbiter-commandable-subsystem.receives.orbiter-cmd-example : mission:TransfersIn [
+     from interfaces:orbiter-commandable-subsystem.commandIn
+     to orbiter-cmd-example
+  ]
+
+  ci lander-tlm-example : kepler16b:LanderScienceTelemetry [
+  	base:hasIdentifier "TM.01"
+  ]
 
   @dc:^description """Rer requirement R.15.02 in <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>:
 
@@ -52,6 +61,11 @@ description <http://opencaesar.io/tutorial/description/L1-messages> with # as L1
   """ 
   ri lander-commandable-subsystem.sends.lander-tlm-example : mission:TransfersOut [
     from interfaces:lander-commandable-subsystem.telemetryOut
+    to lander-tlm-example
+  ]
+
+  ri lander-operator.receives.lander-tlm-example : mission:TransfersIn [
+    from interfaces:lander-operator.telemetryIn
     to lander-tlm-example
   ]
 

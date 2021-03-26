@@ -4,7 +4,9 @@
 description <http://opencaesar.io/tutorial/description/L2-lander-message> with # as L2-lander-message {
 	extends <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-operations>
     
-  ci lander-tlm-example : kepler16b:LanderScienceTelemetry
+  ci lander-tlm-example : kepler16b:LanderScienceTelemetry [
+  	base:hasIdentifier "TM.02"
+  ]
   
   @dc:^description """Rer requirement R.15.02 in <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>:
 
@@ -29,4 +31,8 @@ description <http://opencaesar.io/tutorial/description/L2-lander-message> with #
     to lander-tlm-example
   ]
 
+  ri lander-operator.receives.lander-tlm-example : mission:TransfersIn [
+    from interfaces:lander-operator.telemetryIn
+    to lander-tlm-example
+  ]
 }
