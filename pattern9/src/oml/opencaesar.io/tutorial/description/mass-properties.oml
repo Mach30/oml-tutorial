@@ -3,14 +3,15 @@
 @dc:rights "Copyright 2021, by Modelware"
 description <http://opencaesar.io/tutorial/description/mass-properties> with # as mass-properties {
 
-  extends <http://opencaesar.io/tutorial/description/components>
-
   uses <http://opencaesar.io/tutorial/vocabulary/mechanical>
 
-  ref ci components:orbiter-launch-system : mechanical:MechanicalComponent
+  ci orbiter-launch-system-hardware : mechanical:MechanicalComponent [
+		base:hasIdentifier "C.01"
+		base:hasCanonicalName "Orbiter Launch System Hardware"
+  ]
 
   ci orbiter-launch-system.mass.quantity : 80000-4-quantities:mass [
-    metrology:isQuantityOf components:orbiter-launch-system
+    metrology:isQuantityOf orbiter-launch-system-hardware
   ]
 
   ci orbiter-launch-system.mass.magnitude : mechanical:MassMagnitude [
@@ -18,11 +19,13 @@ description <http://opencaesar.io/tutorial/description/mass-properties> with # a
     metrology:isMagnitudeOf orbiter-launch-system.mass.quantity 
   ]
 
-  // Note that mechanical:isMassOf effectively forces components:orbiter-spacecraft
-  // to be classified as a mechanical:MechanicalComponent even though no such assertion
-  // was made.
+  ci orbiter-spacecraft-hardware  : mechanical:MechanicalComponent [
+		base:hasIdentifier "C.02"
+		base:hasCanonicalName "Orbiter Spacecraft Hardware"
+  ]
+
   ci orbiter-spacecraft.mass.quantity : 80000-4-quantities:mass [
-    mechanical:isMassOf components:orbiter-spacecraft
+    mechanical:isMassOf orbiter-spacecraft-hardware
   ]
 
   ci orbiter-spacecraft.mass.magnitude : mechanical:MassMagnitude [
@@ -30,8 +33,13 @@ description <http://opencaesar.io/tutorial/description/mass-properties> with # a
     metrology:isMagnitudeOf orbiter-spacecraft.mass.quantity
   ]
 
+  ci lander-launch-system-hardware : mechanical:MechanicalComponent [
+      base:hasIdentifier "C.05"
+      base:hasCanonicalName "Lander Launch System Hardware"
+  ]
+
   ci lander-launch-system.mass.quantity : 80000-4-quantities:mass [
-   mechanical:isMassOf components:lander-launch-system
+   mechanical:isMassOf lander-launch-system-hardware
   ]
 
   ci lander-launch-system.mass.magnitude : mechanical:MassMagnitude [
@@ -39,8 +47,13 @@ description <http://opencaesar.io/tutorial/description/mass-properties> with # a
     metrology:isMagnitudeOf lander-launch-system.mass.quantity
   ]
 
+	ci lander-spacecraft-hardware : mechanical:MechanicalComponent [
+		base:hasIdentifier "C.06"
+		base:hasCanonicalName "Lander Spacecraft Hardware"
+	]
+
   ci lander-spacecraft.mass.quantity : 80000-4-quantities:mass [
-    mechanical:isMassOf components:lander-spacecraft
+    mechanical:isMassOf lander-spacecraft-hardware
   ]
 
   ci lander-spacecraft.mass.magnitude : mechanical:MassMagnitude [

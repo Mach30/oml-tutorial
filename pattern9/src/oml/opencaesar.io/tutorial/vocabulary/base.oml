@@ -7,7 +7,9 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/base> with # as base {
 	
  	@rdfs:label "IdentifiedThing"
 	@dc:^description """An [=IdentifiedThing=] is a thing with identity and identifying properties."""
-	aspect IdentifiedThing
+	aspect IdentifiedThing [
+		key hasIdentifier
+	]
 
 	@rdfs:label "hasCanonicalName"
 	scalar property hasCanonicalName [
@@ -19,6 +21,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/base> with # as base {
 	scalar property hasIdentifier [
 		domain IdentifiedThing
 		range xsd:string
+		functional
 	]
 
 	@rdfs:label "hasDescription"
