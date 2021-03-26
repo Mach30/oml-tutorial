@@ -8,10 +8,10 @@ description <http://opencaesar.io/tutorial/description/L2-lander-message> with #
   	base:hasIdentifier "TM.02"
   ]
   
-  @dc:^description """Rer requirement R.15.02 in <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>:
+  @dc:^description """Rer requirement R.15.04 in <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>:
 
   ci lander-operator-telemetry-downlink-from-lander-commandable-subsystem : mission:Requirement [
-		base:hasIdentifier "R.15.02"
+		base:hasIdentifier "R.15.04"
 		base:hasCanonicalName "The components:lander-operator shall have end-to-end telemetry downlink capability from any components:lander-commandable-subsystem."
 		mission:specifies lander-operator-to-lander-commandable-subsystem.telemetry.downlink
 		mission:refines lander-operator-end-to-end-operation-with-lander-commandable-subsystem

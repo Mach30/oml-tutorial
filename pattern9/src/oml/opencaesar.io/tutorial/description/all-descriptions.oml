@@ -1,0 +1,9 @@
+@dc:title "Kepler16b All Descriptions Bundle"
+@dc:creator "Example Company"
+@dc:rights "Copyright 2019, by Example Company"
+description bundle <http://opencaesar.io/tutorial/description/all-descriptions> with # as all-descriptions {
+	 
+	extends <http://opencaesar.io/tutorial/description/bundle-kepler16b-L2>
+  extends <http://opencaesar.io/tutorial/description/bundle-mechanical>
+
+}
