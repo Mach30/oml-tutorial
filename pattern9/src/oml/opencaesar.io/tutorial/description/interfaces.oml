@@ -9,10 +9,10 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   // MOS interfaces
 
   ci orbiter-spacecraft.commandIn : kepler16b:OrbiterCommandInInterface [
-  	base:hasIdentifier "I.MOS.01"
+  	base:hasIdentifier "I.OSC.01"
   ]
   ci orbiter-spacecraft.telemetryOut : kepler16b:OrbiterTelemetryOutInterface [
-  	base:hasIdentifier "I.MOS.02"
+  	base:hasIdentifier "I.OSC.02"
   ]
 
   ri orbiter-spacecraft.presents.commandIn : mission:Presents [
@@ -28,10 +28,10 @@ description <http://opencaesar.io/tutorial/description/interfaces> with # as int
   // Subsystem interfaces
 
   ci orbiter-spacecraft.commandOut : kepler16b:OrbiterCommandOutInterface [
-  	base:hasIdentifier "I.OSC.01"
+  	base:hasIdentifier "I.OSC.03"
   ]
   ci orbiter-spacecraft.telemetryIn : kepler16b:OrbiterTelemetryInInterface [
-  	base:hasIdentifier "I.OSC.02"
+  	base:hasIdentifier "I.OSC.04"
   ]
 
   ri orbiter-spacecraft.presents.commandOut : mission:Presents [

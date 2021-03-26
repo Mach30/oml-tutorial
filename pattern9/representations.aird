@@ -81,6 +81,7 @@
     <semanticResources>src/oml/opencaesar.io/tutorial/description/L2-lander-message.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/L2-orbiter-message.oml</semanticResources>
     <semanticResources>src/oml/opencaesar.io/tutorial/description/junctions.oml</semanticResources>
+    <semanticResources>src/oml/opencaesar.io/tutorial/description/all-descriptions.oml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_YDokAIv6EeugIfwuPG0Z5Q">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_VHEk4Yv9EeugIfwuPG0Z5Q" name="Pattern9 Interfaces" repPath="#_VHDWwIv9EeugIfwuPG0Z5Q" changeId="e54a463c-5c59-444f-9bf3-641e0a0930d4">
