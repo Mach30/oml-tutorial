@@ -31,6 +31,21 @@ plugins {
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 
+/*
+ * Start the headless Fuseki server
+ */
+task startFuseki(type: io.opencaesar.owl.fuseki.StartFusekiTask, group:"fuseki") {
+	configurationPath = file('.fuseki.ttl')
+	outputFolderPath = file('.fuseki')
+}
+
+/*
+ * Stop the headless Fuseki server
+ */
+task stopFuseki(type: io.opencaesar.owl.fuseki.StopFusekiTask, group:"fuseki") {
+	outputFolderPath = file('.fuseki')
+}
+
 subprojects {
 
   group 'io.modelware.oml.tutorial'
@@ -41,21 +56,6 @@ subprojects {
   repositories {
 	  mavenLocal()
 	  maven { url 'https://dl.bintray.com/opencaesar/ontologies' }
-  }
-
-  /*
-   * Start the headless Fuseki server
-   */
-  task startFuseki(type: io.opencaesar.owl.fuseki.StartFusekiTask, group:"fuseki") {
-	  configurationPath = file('.fuseki.ttl')
-	  outputFolderPath = file('.fuseki')
-  }
-
-  /*
-   * Stop the headless Fuseki server
-   */
-  task stopFuseki(type: io.opencaesar.owl.fuseki.StopFusekiTask, group:"fuseki") {
-	  outputFolderPath = file('.fuseki')
   }
 
   /*

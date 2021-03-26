@@ -1,6 +1,6 @@
 # OML Tutorial
 
-[![Build Status](https://travis-ci.org/opencaesar/oml-template.svg?branch=master)](https://travis-ci.org/opencaesar/oml-template)
+[![Build Status](https://travis-ci.org/modelware/oml-tutorial.svg?branch=master)](https://travis-ci.org/modelware/oml-tutorial)
 
 ## Browse with the Gitpod IDE
 
