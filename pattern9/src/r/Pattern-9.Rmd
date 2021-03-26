@@ -116,8 +116,11 @@ df3
 library(igraph, warn.conflicts = FALSE)
 g2 <- graph_from_edgelist(as.matrix(df2), directed=FALSE)
 
-df1$l1_ok <- apply(df1, 1, function(row) {
- is.element(row[2], names(V(g2))) && is.element(row[3], names(subcomponent(g2, V(g2)[row[2]])))
+is_reachable <- function(g, from, to) {
+  is.element(from, names(V(g))) && is.element(to, names(subcomponent(g, V(g)[from])))
+}
+df1$l1_ok <- apply(df1, 1, FUN=function(row) {
+  is_reachable(g2, row["io_id"], row["ii_id"])
 })
 df1
 ```
@@ -129,7 +132,7 @@ library(igraph, warn.conflicts = FALSE)
 g3 <- graph_from_edgelist(as.matrix(df3), directed=FALSE)
 
 df1$l2_ok <- apply(df1, 1, function(row) {
- is.element(row[2], names(V(g3))) && is.element(row[3], names(subcomponent(g3, V(g3)[row[2]])))
+  is_reachable(g3, row["io_id"], row["ii_id"])
 })
 df1
 ```
