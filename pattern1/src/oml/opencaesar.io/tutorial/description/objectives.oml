@@ -63,4 +63,9 @@ description <http://opencaesar.io/tutorial/description/objectives> with # as obj
 		base:aggregates characterize-liquid-ocean
 	]
  
+  ci oceanography : mission:Objective [
+		base:hasIdentifier "O.08"
+		base:hasCanonicalName "Characterize the oceanography"
+		base:aggregates characterize-liquid-ocean
+	]
 }
