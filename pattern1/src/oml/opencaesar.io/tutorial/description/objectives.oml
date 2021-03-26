@@ -55,6 +55,7 @@ description <http://opencaesar.io/tutorial/description/objectives> with # as obj
 	ci characterize-rocky-core-shape : mission:Objective [
 		base:hasIdentifier "O.06"
 		base:hasCanonicalName "Characterize the core shape of Kepler 16-b"
+		base:aggregates characterize-subsurface
 	]
 
 	ci characterize-environment : mission:Objective [
@@ -63,4 +64,10 @@ description <http://opencaesar.io/tutorial/description/objectives> with # as obj
 		base:aggregates characterize-liquid-ocean
 	]
  
+	ci characterize-subsurface : mission:Objective [
+		base:hasIdentifier "O.09"
+		base:hasCanonicalName "Characterize the subsurface geology of Kepler 16-b"
+		base:aggregates characterize-rocky-core-shape
+	]
+
 }
