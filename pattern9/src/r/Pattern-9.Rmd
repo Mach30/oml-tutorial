@@ -56,8 +56,11 @@ SELECT DISTINCT ?i1_id ?i2_id
 
 WHERE {
  GRAPH ?l1 { ?j a [] }
- VALUES ?l1 { <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation> <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>}
- ?j a mission:Junction ;
+ VALUES ?l1 {
+    <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
+    <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>
+  }
+  ?j a mission:Junction ;
     mission:joins1 [
       a mission:Interface ;
       base:hasIdentifier ?i1_id
@@ -84,8 +87,12 @@ SELECT DISTINCT ?i1_id ?i2_id
 
 WHERE {
  GRAPH ?l2 { ?j a [] }
- VALUES ?l2 { <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-operations> <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-operations>}
- ?j a mission:Junction ;
+ VALUES ?l2 {
+    <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-operations>
+    <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-operations>
+    <http://opencaesar.io/tutorial/description/L2-shared-operations> 
+  }
+  ?j a mission:Junction ;
     mission:joins1 [
       a mission:Interface ;
       base:hasIdentifier ?i1_id
