@@ -27,11 +27,11 @@ WHERE {
   [] a mission:Requirement ;
     base:hasIdentifier ?r_id ;
     mission:specifies [
-      a mission:Presents ;
-      mission:hasPresentsSource [
+      a mission:Presents ;           # reified relation
+      mission:hasPresentsSource [    # source
         base:hasIdentifier ?c_id
       ] ;
-      mission:hasPresentsTarget [
+      mission:hasPresentsTarget [    # target
         base:hasIdentifier ?i_id
       ] ;
     ]
