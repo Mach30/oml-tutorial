@@ -88,7 +88,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']"/>
         <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/interfaces.oml#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_nS2Y0Yv9EeugIfwuPG0Z5Q" name="Components" repPath="#_nS1xwIv9EeugIfwuPG0Z5Q" changeId="91f4ef9c-71b1-4892-ba80-e9743e8fad97">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_nS2Y0Yv9EeugIfwuPG0Z5Q" name="Components" repPath="#_nS1xwIv9EeugIfwuPG0Z5Q" changeId="352678b5-9c8e-4ad3-b528-0900bc3341af">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']"/>
         <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/components.oml#/"/>
       </ownedRepresentationDescriptors>
@@ -139,7 +139,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']"/>
         <target xmi:type="oml:Vocabulary" href="src/oml/opencaesar.io/tutorial/vocabulary/kepler16b.oml#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_t5N5E40fEeuDgrQLCd9W0A" name="Mission Vocabulary" repPath="#_t5N5EI0fEeuDgrQLCd9W0A" changeId="8abc524f-9e4b-4e7c-9fdb-679a48b88f1f">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_t5N5E40fEeuDgrQLCd9W0A" name="Mission Vocabulary" repPath="#_t5N5EI0fEeuDgrQLCd9W0A" changeId="64708429-c038-4260-99aa-3784179cee6f">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Vocabularies']/@ownedRepresentations[name='Entity%20Diagram']"/>
         <target xmi:type="oml:Vocabulary" href="src/oml/opencaesar.io/tutorial/vocabulary/mission.oml#/"/>
       </ownedRepresentationDescriptors>
@@ -2393,13 +2393,13 @@
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_STtBMYwEEeugIfwuPG0Z5Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_STtBMowEEeugIfwuPG0Z5Q" type="4001" element="_STJnkIwEEeugIfwuPG0Z5Q" source="_nTeD6ov9EeugIfwuPG0Z5Q" target="_nTdc0Iv9EeugIfwuPG0Z5Q">
-          <children xmi:type="notation:Node" xmi:id="_STtBNowEEeugIfwuPG0Z5Q" visible="false" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STtBN4wEEeugIfwuPG0Z5Q" x="-25" y="51"/>
+          <children xmi:type="notation:Node" xmi:id="_STtBNowEEeugIfwuPG0Z5Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STtBN4wEEeugIfwuPG0Z5Q" x="-40" y="-97"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_STtBOIwEEeugIfwuPG0Z5Q" visible="false" type="6002">
+          <children xmi:type="notation:Node" xmi:id="_STtBOIwEEeugIfwuPG0Z5Q" type="6002">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STtBOYwEEeugIfwuPG0Z5Q" x="-23" y="-12"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_STtBOowEEeugIfwuPG0Z5Q" visible="false" type="6003">
+          <children xmi:type="notation:Node" xmi:id="_STtBOowEEeugIfwuPG0Z5Q" type="6003">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STtBO4wEEeugIfwuPG0Z5Q" x="23" y="8"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_STtBM4wEEeugIfwuPG0Z5Q" routing="Tree"/>
@@ -2995,7 +2995,6 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_STJnkIwEEeugIfwuPG0Z5Q" name="«contains»" sourceNode="_nS3m9Iv9EeugIfwuPG0Z5Q" targetNode="_nS2_4Iv9EeugIfwuPG0Z5Q">
       <target xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/components.oml#//@ownedStatements.2/@ownedLinks.4"/>
       <semanticElements xmi:type="oml:LinkAssertion" href="src/oml/opencaesar.io/tutorial/description/components.oml#//@ownedStatements.2/@ownedLinks.4"/>
-      <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_rmDYF40pEeuDgrQLCd9W0A"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_STJnkYwEEeugIfwuPG0Z5Q" size="2" routingStyle="tree">
         <customFeatures>routingStyle</customFeatures>
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
@@ -6119,7 +6118,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t5dwuY0fEeuDgrQLCd9W0A" x="-3"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_t5dwuo0fEeuDgrQLCd9W0A" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t5dwu40fEeuDgrQLCd9W0A" x="-3" y="-20"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t5dwu40fEeuDgrQLCd9W0A" x="-2" y="-20"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_t5dws40fEeuDgrQLCd9W0A"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_t5dwtI0fEeuDgrQLCd9W0A" fontName=".AppleSystemUIFont" fontHeight="12"/>

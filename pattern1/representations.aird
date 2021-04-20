@@ -24,7 +24,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_lrtKYIuFEeuLCYY9PgJ7XA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_rT8lQIuFEeuLCYY9PgJ7XA" name="Objective aggregation" repPath="#_rT5h8IuFEeuLCYY9PgJ7XA" changeId="4e270b4e-d026-43d5-bf88-2906fbeeea70">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_rT8lQIuFEeuLCYY9PgJ7XA" name="Objective aggregation" repPath="#_rT5h8IuFEeuLCYY9PgJ7XA" changeId="65786559-f7a0-4464-a11e-02fe9d2bf655">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']"/>
         <target xmi:type="oml:Description" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#/"/>
       </ownedRepresentationDescriptors>
@@ -513,7 +513,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/oml-tutorial-viewpoint/description/oml-tutorial-viewpoint.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Instance%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rUvPcIuFEeuLCYY9PgJ7XA" name="«Aggregates»" visible="false" sourceNode="_rUVm1IuFEeuLCYY9PgJ7XA" targetNode="_rUU_xIuFEeuLCYY9PgJ7XA">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rUvPcIuFEeuLCYY9PgJ7XA" name="«aggregates»" visible="false" sourceNode="_rUVm1IuFEeuLCYY9PgJ7XA" targetNode="_rUU_xIuFEeuLCYY9PgJ7XA">
       <target xmi:type="oml:RelationInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#a1"/>
       <semanticElements xmi:type="oml:RelationInstance" href="src/oml/opencaesar.io/tutorial/description/objectives.oml#a1"/>
       <graphicalFilters xmi:type="diagram:HideFilter" uid="_lbmPUIzZEeuDgrQLCd9W0A"/>

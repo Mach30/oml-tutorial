@@ -1,16 +1,9 @@
 buildscript {
   repositories {
     mavenLocal()
-    maven { url 'https://dl.bintray.com/opencaesar/adapters' }
-    maven { url 'https://dl.bintray.com/opencaesar/owl-tools' }
-    maven { url 'https://dl.bintray.com/opencaesar/oml-tools' }
-    maven { url 'https://dl.bintray.com/opencaesar/oml' }
-    maven { url 'https://dl.bintray.com/vermeulen-mp/gradle-plugins' }
     mavenCentral()
-    jcenter()
   }
   dependencies {
-    classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.+'
     classpath 'io.opencaesar.owl:owl-fuseki-gradle:+'
     classpath 'io.opencaesar.owl:owl-shacl-fuseki-gradle:+'
     classpath 'io.opencaesar.owl:owl-query-gradle:+'
@@ -19,9 +12,6 @@ buildscript {
     classpath 'io.opencaesar.adapters:oml2owl-gradle:0.8.+'
     classpath 'io.opencaesar.oml:oml-bikeshed-gradle:0.8.+'
     classpath 'io.opencaesar.oml:oml-merge-gradle:0.8.+'
-    
-    // needed since gradle-bintray-plugin brings an old version of xerces
-    configurations.classpath.exclude group: 'xerces', module: 'xercesImpl'
   }
 }
 plugins {
@@ -35,15 +25,15 @@ apply plugin: 'idea'
  * Start the headless Fuseki server
  */
 task startFuseki(type: io.opencaesar.owl.fuseki.StartFusekiTask, group:"fuseki") {
-	configurationPath = file('.fuseki.ttl')
-	outputFolderPath = file('.fuseki')
+    configurationPath = file('.fuseki.ttl')
+    outputFolderPath = file('.fuseki')
 }
 
 /*
  * Stop the headless Fuseki server
  */
 task stopFuseki(type: io.opencaesar.owl.fuseki.StopFusekiTask, group:"fuseki") {
-	outputFolderPath = file('.fuseki')
+    outputFolderPath = file('.fuseki')
 }
 
 subprojects {
@@ -54,15 +44,15 @@ subprojects {
   apply plugin: 'idea'
 
   repositories {
-	  mavenLocal()
-	  maven { url 'https://dl.bintray.com/opencaesar/ontologies' }
+      mavenLocal()
+      mavenCentral()
   }
 
   /*
    * A task to delete the build artifacts
    */
   task clean(type: Delete, group:"oml") {
-	  delete 'build'
+      delete 'build'
   }
 
   /*
@@ -83,8 +73,8 @@ subprojects {
   publishing {
       publications {
           maven(MavenPublication) {
-              artifact omlZip
-        pom.withXml {
+          artifact omlZip
+          pom.withXml {
                   def dependencies = asNode().appendNode('dependencies')
                   configurations.oml.allDependencies.stream().each {
                       def dependency = dependencies.appendNode('dependency')
