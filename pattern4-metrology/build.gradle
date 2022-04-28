@@ -29,7 +29,8 @@ configurations {
  * Dependency versions
  */
 ext { 
-	coreVersion = '2.+'
+	coreVersion = '3.+'
+    metrologyVersion = '5.+'
 }
 
 /*
@@ -37,6 +38,7 @@ ext {
  */
 dependencies {
 	oml "io.opencaesar.ontologies:core-vocabularies:$coreVersion"
+    oml "io.opencaesar.ontologies:metrology-vocabularies:$metrologyVersion"
 }
 
 /*
@@ -139,6 +141,7 @@ task owlReasonMechanical(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml
  * A task to load an OWL catalog to a Fuseki dataset endpoint
  */
 task owlLoad(type:io.opencaesar.owl.load.OwlLoadTask, group:"oml", dependsOn: owlReason) {
+    outputs.upToDateWhen { false } // forcing rerun since all patterns use same dataset
 	catalogPath = file('build/owl/catalog.xml')
 	endpointURL = "http://localhost:3030/$dataset.name".toString()
     fileExtensions = ['owl', 'ttl']
@@ -153,6 +156,7 @@ task owlLoad(type:io.opencaesar.owl.load.OwlLoadTask, group:"oml", dependsOn: ow
  * A task to run a set of SPARQL queries on a Fuseki dataset endpoint
  */
 task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn: owlLoad) {
+	inputs.files(owlLoad.inputs.files) // rerun when the dataset changes
 	endpointURL = "http://localhost:3030/$dataset.name".toString()
 	queryPath = file('src/sparql')
 	resultPath = file('build/frames')
@@ -160,6 +164,7 @@ task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn:
 }
 
 task renderObjectives(type: Exec, group:"oml", dependsOn: owlQuery) {
+	inputs.files(owlLoad.inputs.files) // rerun when the dataset changes
 	commandLine '/usr/bin/Rscript'
 	args 'src/r/render/objectives.r'
 	args 'build/frames/objectives.frame'

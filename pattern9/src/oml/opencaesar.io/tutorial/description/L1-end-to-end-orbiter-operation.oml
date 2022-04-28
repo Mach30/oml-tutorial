@@ -1,15 +1,24 @@
 @dc:title "Kepler 16-b Example L1 end-to-end Orbiter Operation"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation> with # as L1-end-to-end-orbiter-operation {
-	extends <http://opencaesar.io/tutorial/description/interfaces>
+description <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation#> as L1-end-to-end-orbiter-operation {
 	
+	extends <http://opencaesar.io/tutorial/description/interfaces#> as interfaces
+	
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://opencaesar.io/tutorial/vocabulary/kepler16b#> as kepler16b
+
+	uses <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
+
+	uses <http://opencaesar.io/tutorial/vocabulary/base#> as base
+
 	ci orbiter-operator-to-orbiter-commandable-subsystem.command.uplink : kepler16b:OrbiterCommandTransmission [
 		mission:joins1 interfaces:orbiter-operator.commandOut
 		mission:joins2 interfaces:orbiter-commandable-subsystem.commandIn
 	]
 	
-	ci orbiter-operator-to-orbiter-commandable-subsystem.telemetry.downlink: kepler16b:OrbiterTelemetryTransmission [
+	ci orbiter-operator-to-orbiter-commandable-subsystem.telemetry.downlink : kepler16b:OrbiterTelemetryTransmission [
 		mission:joins1 interfaces:orbiter-commandable-subsystem.telemetryOut
 		mission:joins2 interfaces:orbiter-operator.telemetryIn
 	]

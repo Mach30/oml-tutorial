@@ -1,65 +1,75 @@
 @dc:title "Kepler 16-b Example Interfaces"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/interfaces> with # as interfaces {
+description <http://opencaesar.io/tutorial/description/interfaces#> as interfaces {
 
-  uses <http://opencaesar.io/tutorial/vocabulary/kepler16b>
-  extends  <http://opencaesar.io/tutorial/description/components>
+	extends  <http://opencaesar.io/tutorial/description/components#> as components
 
-  ci orbiter-spacecraft.commandIn : kepler16b:OrbiterCommandInInterface [
-  	base:hasIdentifier "I.01"
-  	base:hasCanonicalName "Orbiter Spacecraft Command In"
-  ]
-  ci orbiter-spacecraft.telemetryOut : kepler16b:OrbiterTelemetryOutInterface [
-  	base:hasIdentifier "I.02"
-  	base:hasCanonicalName "Orbiter Spacecraft Telemetry Out"
-  ]
+	uses <http://opencaesar.io/tutorial/vocabulary/kepler16b#> as kepler16b
 
-  ref ci components:orbiter-spacecraft [
-    mission:presents orbiter-spacecraft.commandIn
-    mission:presents orbiter-spacecraft.telemetryOut
-  ]
+	uses <http://purl.org/dc/elements/1.1/> as dc
 
-  ci orbiter-ground-data-system.commandOut : kepler16b:OrbiterCommandOutInterface [
-  	base:hasIdentifier "I.03"
-  	base:hasCanonicalName "Orbiter Ground Data System Command Out"
-  ] 
-  ci orbiter-ground-data-system.telemetryIn : kepler16b:OrbiterTelemetryInInterface [
-  	base:hasIdentifier "I.04"
-  	base:hasCanonicalName "Orbiter Ground Data System Telemetry In"
-  ]
+	uses <http://opencaesar.io/tutorial/vocabulary/base#> as base
 
-  ref ci components:orbiter-ground-data-system [
-    mission:presents orbiter-ground-data-system.commandOut
-    mission:presents orbiter-ground-data-system.telemetryIn
-  ]
-  
-  ci lander-spacecraft.commandIn : kepler16b:LanderCommandInInterface [
-  	base:hasIdentifier "I.05"
-  	base:hasCanonicalName "Lander Spacecraft Command In"
-  ]
-  ci lander-spacecraft.telemetryOut : kepler16b:LanderTelemetryOutInterface [
-  	base:hasIdentifier "I.06"
-  	base:hasCanonicalName "Lander Spacecraft Telemetry Out"
-  ]
+	uses <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
 
-  ref ci components:lander-spacecraft [
-    mission:presents lander-spacecraft.commandIn
-    mission:presents lander-spacecraft.telemetryOut
-  ]
+	ci orbiter-spacecraft.commandIn : kepler16b:OrbiterCommandInInterface [
+		base:hasIdentifier "I.01"
+		base:hasCanonicalName "Orbiter Spacecraft Command In"
+	]
 
-  ci lander-ground-data-system.commandOut : kepler16b:LanderCommandOutInterface [
-  	base:hasIdentifier "I.07"
-  	base:hasCanonicalName "Lander Ground Data System Command Out"
-  ]
-  ci lander-ground-data-system.telemetryIn : kepler16b:LanderTelemetryInInterface [
-  	base:hasIdentifier "I.08"
-  	base:hasCanonicalName "Lander Ground Data System Telemetry In"
-  ]
+	ci orbiter-spacecraft.telemetryOut : kepler16b:OrbiterTelemetryOutInterface [
+		base:hasIdentifier "I.02"
+		base:hasCanonicalName "Orbiter Spacecraft Telemetry Out"
+	]
 
-  ref ci components:lander-ground-data-system [
-    mission:presents lander-ground-data-system.commandOut
-    mission:presents lander-ground-data-system.telemetryIn
-  ]
-  
+	ref ci components:orbiter-spacecraft [
+		mission:presents orbiter-spacecraft.commandIn
+		mission:presents orbiter-spacecraft.telemetryOut
+	]
+
+	ci orbiter-ground-data-system.commandOut : kepler16b:OrbiterCommandOutInterface [
+		base:hasIdentifier "I.03"
+		base:hasCanonicalName "Orbiter Ground Data System Command Out"
+	]
+
+	ci orbiter-ground-data-system.telemetryIn : kepler16b:OrbiterTelemetryInInterface [
+		base:hasIdentifier "I.04"
+		base:hasCanonicalName "Orbiter Ground Data System Telemetry In"
+	]
+
+	ref ci components:orbiter-ground-data-system [
+		mission:presents orbiter-ground-data-system.commandOut
+		mission:presents orbiter-ground-data-system.telemetryIn
+	]
+
+	ci lander-spacecraft.commandIn : kepler16b:LanderCommandInInterface [
+		base:hasIdentifier "I.05"
+		base:hasCanonicalName "Lander Spacecraft Command In"
+	]
+
+	ci lander-spacecraft.telemetryOut : kepler16b:LanderTelemetryOutInterface [
+		base:hasIdentifier "I.06"
+		base:hasCanonicalName "Lander Spacecraft Telemetry Out"
+	]
+
+	ref ci components:lander-spacecraft [
+		mission:presents lander-spacecraft.commandIn
+		mission:presents lander-spacecraft.telemetryOut
+	]
+
+	ci lander-ground-data-system.commandOut : kepler16b:LanderCommandOutInterface [
+		base:hasIdentifier "I.07"
+		base:hasCanonicalName "Lander Ground Data System Command Out"
+	]
+
+	ci lander-ground-data-system.telemetryIn : kepler16b:LanderTelemetryInInterface [
+		base:hasIdentifier "I.08"
+		base:hasCanonicalName "Lander Ground Data System Telemetry In"
+	]
+
+	ref ci components:lander-ground-data-system [
+		mission:presents lander-ground-data-system.commandOut
+		mission:presents lander-ground-data-system.telemetryIn
+	]
 }

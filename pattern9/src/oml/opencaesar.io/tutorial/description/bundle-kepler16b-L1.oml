@@ -1,9 +1,11 @@
 @dc:title "Kepler16b L1 Description Bundle"
 @dc:creator "Example Company"
 @dc:rights "Copyright 2019, by Example Company"
-description bundle <http://opencaesar.io/tutorial/description/bundle-kepler16b-L1> with # as description-bundle-kepler16b-L1 {
+description bundle <http://opencaesar.io/tutorial/description/bundle-kepler16b-L1#> as description-bundle-kepler16b-L1 {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
 	 
-	extends <http://opencaesar.io/tutorial/description/bundle-kepler16b-L1-operations>
-  extends <http://opencaesar.io/tutorial/description/bundle-mechanical>
+	extends <http://opencaesar.io/tutorial/description/bundle-kepler16b-L1-operations#>
+  	extends <http://opencaesar.io/tutorial/description/bundle-mechanical#>
 
 }

@@ -1,14 +1,16 @@
 @dc:title "Description Bundle"
 @dc:creator "Example Company"
 @dc:rights "Copyright 2019, by Example Company"
-description bundle <http://opencaesar.io/tutorial/description/bundle-mechanical> with # as description-bundle-mechanical {
+description bundle <http://opencaesar.io/tutorial/description/bundle-mechanical#> as description-bundle-mechanical {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
 	
 	// The vocabulary bundle used by this description bundle
-	extends <http://opencaesar.io/tutorial/description/bundle>
+	extends <http://opencaesar.io/tutorial/description/bundle#>
 
-	uses <http://opencaesar.io/tutorial/vocabulary/bundle-mechanical>
+	uses <http://opencaesar.io/tutorial/vocabulary/bundle-mechanical#>
 	
 	// All the descriptions included in this description bundle
-	includes <http://opencaesar.io/tutorial/description/mass-properties>	
+	includes <http://opencaesar.io/tutorial/description/mass-properties#>	
 
 }

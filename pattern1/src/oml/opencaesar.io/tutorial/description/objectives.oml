@@ -1,10 +1,13 @@
 @dc:title "Kepler 16-b Example Objectives"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/objectives> with # as objectives {
+description <http://opencaesar.io/tutorial/description/objectives#> as objectives {
 	
-	// The vocabulary used by this description
-	uses <http://opencaesar.io/tutorial/vocabulary/mission>
+	uses <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://opencaesar.io/tutorial/vocabulary/base#> as base
 	 
 	ci characterize-atmosphere : mission:Objective [
 		base:hasIdentifier "O.01"

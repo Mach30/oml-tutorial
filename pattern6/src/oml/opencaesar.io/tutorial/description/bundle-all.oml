@@ -1,9 +1,10 @@
 @dc:title "All Description Bundle"
 @dc:creator "Example Company"
 @dc:rights "Copyright 2019, by Example Company"
-description bundle <http://opencaesar.io/tutorial/description/bundle-all> with # as description-bundle-all {
-	 
-	extends <http://opencaesar.io/tutorial/description/bundle-kepler16b-operations>
-  extends <http://opencaesar.io/tutorial/description/bundle-mechanical>
+description bundle <http://opencaesar.io/tutorial/description/bundle-all#> as description-bundle-all {
 
+	uses <http://purl.org/dc/elements/1.1/> as dc
+	 
+	extends <http://opencaesar.io/tutorial/description/bundle-kepler16b-operations#>
+  	extends <http://opencaesar.io/tutorial/description/bundle-mechanical#>
 }

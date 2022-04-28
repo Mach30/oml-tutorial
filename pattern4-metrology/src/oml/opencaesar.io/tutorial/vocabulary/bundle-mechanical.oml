@@ -1,11 +1,13 @@
 @dc:title "Example Mechanical Vocabulary Bundle"
 @dc:creator "Example Company"
 @dc:rights "Copyright 2019, by Example Company"
-vocabulary bundle <http://opencaesar.io/tutorial/vocabulary/bundle-mechanical> with # as vocabulary-bundle-mechanical {
+vocabulary bundle <http://opencaesar.io/tutorial/vocabulary/bundle-mechanical#> as vocabulary-bundle-mechanical {
+
+	includes <http://purl.org/dc/elements/1.1/> as dc
 		
-	extends <http://opencaesar.io/tutorial/vocabulary/bundle>
+	extends <http://opencaesar.io/tutorial/vocabulary/bundle#>
 
 	// The vocabularies included in this bundle
-	includes <http://opencaesar.io/tutorial/vocabulary/mechanical>	
+	includes <http://opencaesar.io/tutorial/vocabulary/mechanical#>	
 
 }

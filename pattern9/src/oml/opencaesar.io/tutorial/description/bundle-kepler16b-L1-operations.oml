@@ -1,16 +1,18 @@
 @dc:title "Kepler16b L1 Operations Description Bundle"
 @dc:creator "Example Company"
 @dc:rights "Copyright 2019, by Example Company"
-description bundle <http://opencaesar.io/tutorial/description/bundle-kepler16b-L1-operations> with # as description-bundle-kepler16b-L1-operations {
+description bundle <http://opencaesar.io/tutorial/description/bundle-kepler16b-L1-operations#> as description-bundle-kepler16b-L1-operations {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
 	
 	// The vocabulary bundle used by this description bundle
-	extends <http://opencaesar.io/tutorial/description/bundle>
+	extends <http://opencaesar.io/tutorial/description/bundle#>
 
-	uses <http://opencaesar.io/tutorial/vocabulary/bundle-kepler16b>
+	uses <http://opencaesar.io/tutorial/vocabulary/bundle-kepler16b#>
 
-	includes <http://opencaesar.io/tutorial/description/requirements>
-	includes <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>
-	includes <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
-	includes <http://opencaesar.io/tutorial/description/L1-messages>
+	includes <http://opencaesar.io/tutorial/description/requirements#>
+	includes <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation#>
+	includes <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation#>
+	includes <http://opencaesar.io/tutorial/description/L1-messages#>
 
 }

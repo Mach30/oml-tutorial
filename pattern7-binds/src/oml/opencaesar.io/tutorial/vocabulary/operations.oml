@@ -1,9 +1,11 @@
 @dc:title "Operations Vocabulary Tutorial"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by ModelWare"
-vocabulary <http://opencaesar.io/tutorial/vocabulary/operations> with # as operations {
+vocabulary <http://opencaesar.io/tutorial/vocabulary/operations#> as operations {
 
-	extends <http://opencaesar.io/tutorial/vocabulary/mission>
+  extends <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
+
+  extends <http://purl.org/dc/elements/1.1/> as dc
 
   concept CommandInterface :> mission:Interface
   concept CommandOutInterface :> CommandInterface

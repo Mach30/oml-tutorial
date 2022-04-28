@@ -12,7 +12,7 @@ output:
 ```{r}
 library(SPARQL, quietly=TRUE)
 
-endpointURL = "http://localhost:3030/oml-tutorial"
+endpointURL = "http://localhost:3030/oml-tutorial/sparql"
 queryString1 = "
 PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
 PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
@@ -36,7 +36,7 @@ d1$results
 
 # Mission Deploys/Contains* Component (Transitive Closure)
 ```{r}
-endpointURL = "http://localhost:3030/oml-tutorial"
+endpointURL = "http://localhost:3030/oml-tutorial/sparql"
 queryString1 = "
 PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
 PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>

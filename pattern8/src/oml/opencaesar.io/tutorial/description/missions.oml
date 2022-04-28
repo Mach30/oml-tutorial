@@ -1,11 +1,17 @@
 @dc:title "Kepler 16-b Example Missions"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/missions> with # as missions {
+description <http://opencaesar.io/tutorial/description/missions#> as missions {
   
-  extends <http://opencaesar.io/tutorial/description/objectives>
+  extends <http://opencaesar.io/tutorial/description/objectives#> as objectives
 
-  extends <http://opencaesar.io/tutorial/description/components>
+  extends <http://opencaesar.io/tutorial/description/components#> as components
+
+  uses <http://purl.org/dc/elements/1.1/> as dc
+
+  uses <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
+
+  uses <http://opencaesar.io/tutorial/vocabulary/base#> as base
 
   ci orbiter : mission:Mission [
 		base:hasIdentifier "M.01"

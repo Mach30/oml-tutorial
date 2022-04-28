@@ -1,10 +1,17 @@
 @dc:title "Kepler 16-b Example Interfaces"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/interfaces> with # as interfaces {
+description <http://opencaesar.io/tutorial/description/interfaces#> as interfaces {
 
-  uses <http://opencaesar.io/tutorial/vocabulary/kepler16b>
-  extends  <http://opencaesar.io/tutorial/description/components>
+  extends  <http://opencaesar.io/tutorial/description/components#> as components
+
+  uses <http://opencaesar.io/tutorial/vocabulary/kepler16b#> as kepler16b
+
+  uses <http://purl.org/dc/elements/1.1/> as dc
+
+  uses <http://opencaesar.io/tutorial/vocabulary/base#> as base
+
+  uses <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
 
   ci orbiter-spacecraft.commandIn : kepler16b:OrbiterCommandInInterface [
   	base:hasIdentifier "I.01"

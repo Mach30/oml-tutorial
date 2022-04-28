@@ -21,3 +21,4 @@ build
 .Rhistory
 .Rproj.user
 *.Rproj
+.Rapp.history

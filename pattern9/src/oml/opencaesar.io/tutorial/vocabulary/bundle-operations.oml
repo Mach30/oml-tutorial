@@ -1,11 +1,13 @@
 @dc:title "Example Operations Vocabulary Bundle"
 @dc:creator "Example Company"
 @dc:rights "Copyright 2019, by Example Company"
-vocabulary bundle <http://opencaesar.io/tutorial/vocabulary/bundle-operations> with # as vocabulary-bundle-operations {
+vocabulary bundle <http://opencaesar.io/tutorial/vocabulary/bundle-operations#> as vocabulary-bundle-operations {
+
+	includes <http://purl.org/dc/elements/1.1/> as dc
 		
-	extends <http://opencaesar.io/tutorial/vocabulary/bundle>
+	extends <http://opencaesar.io/tutorial/vocabulary/bundle#>
 
 	// The vocabularies included in this bundle
-	includes <http://opencaesar.io/tutorial/vocabulary/operations>	
+	includes <http://opencaesar.io/tutorial/vocabulary/operations#>	
 
 }

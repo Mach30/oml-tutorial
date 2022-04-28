@@ -1,8 +1,15 @@
 @dc:title "Kepler 16-b Example Requirements"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/requirements> with # as requirements {
-    extends <http://opencaesar.io/tutorial/description/interfaces>
+description <http://opencaesar.io/tutorial/description/requirements#> as requirements {
+    
+    extends <http://opencaesar.io/tutorial/description/interfaces#> as interfaces
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
+
+	uses <http://opencaesar.io/tutorial/vocabulary/base#> as base
 
 	ci orbiter-ground-data-system-spacecraft-operations : mission:Requirement [
 		base:hasIdentifier "R.01"

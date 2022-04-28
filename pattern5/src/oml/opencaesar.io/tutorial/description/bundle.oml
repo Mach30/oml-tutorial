@@ -1,15 +1,17 @@
 @dc:title "Description Bundle"
 @dc:creator "Example Company"
 @dc:rights "Copyright 2019, by Example Company"
-description bundle <http://opencaesar.io/tutorial/description/bundle> with # as description-bundle {
+description bundle <http://opencaesar.io/tutorial/description/bundle#> as description-bundle {
+
+	uses <http://purl.org/dc/elements/1.1/> as dc
 	
 	// The vocabulary bundle used by this description bundle
-	uses <http://opencaesar.io/tutorial/vocabulary/bundle>
+	uses <http://opencaesar.io/tutorial/vocabulary/bundle#>
 	
 	// All the descriptions included in this description bundle
-	includes <http://opencaesar.io/tutorial/description/objectives>
-	includes <http://opencaesar.io/tutorial/description/components>
-	includes <http://opencaesar.io/tutorial/description/missions>
-	includes <http://opencaesar.io/tutorial/description/interfaces>
+	includes <http://opencaesar.io/tutorial/description/objectives#>
+	includes <http://opencaesar.io/tutorial/description/components#>
+	includes <http://opencaesar.io/tutorial/description/missions#>
+	includes <http://opencaesar.io/tutorial/description/interfaces#>
 
 }

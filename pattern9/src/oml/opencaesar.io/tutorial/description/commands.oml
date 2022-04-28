@@ -1,11 +1,13 @@
 @dc:title "Kepler 16-b Example Commands"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/commands> with # as commands {
-  extends <http://opencaesar.io/tutorial/description/interfaces>
+description <http://opencaesar.io/tutorial/description/commands#> as commands {
 
-  ci OrbiterBootCommand : kepler16b:OrbiterAvionicsCommand [
+	extends <http://opencaesar.io/tutorial/description/interfaces#>
 
-  ]
-  
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://opencaesar.io/tutorial/vocabulary/kepler16b#> as kepler16b
+
+	ci OrbiterBootCommand : kepler16b:OrbiterAvionicsCommand
 }

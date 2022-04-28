@@ -1,19 +1,23 @@
 @dc:title "Mission Vocabulary Tutorial"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by ModelWare"
-vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission {
+vocabulary <http://opencaesar.io/tutorial/vocabulary/mission#> as mission {
 
-	extends <http://opencaesar.io/tutorial/vocabulary/base>
-	
-  @rdfs:label "Objective"
+	extends <http://opencaesar.io/tutorial/vocabulary/base#> as base
+
+	extends <http://purl.org/dc/elements/1.1/> as dc
+
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+
+	@rdfs:label "Objective"
 	@dc:^description """An [=Objective=] represents a specific interest 
   that one or more stakeholders have in the successful execution of a mission."""
-	concept Objective :> base:IdentifiedThing, base:AggregatedThing [
+	concept Objective :> base:IdentifiedThing, base:AggregatedElement [
 		restricts all relation base:aggregates to Objective
 		restricts all relation base:isAggregatedIn to Objective
-  ]
+	]
 
-  @rdfs:label "Mission"
+	@rdfs:label "Mission"
 	@dc:^description """A [=Mission=] [=pursue=]s [=Objective=]s."""
 	concept Mission :> base:IdentifiedThing
 
@@ -30,7 +34,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 		irreflexive
 	]
 
-  @rdfs:label "Component"
+	@rdfs:label "Component"
 	@dc:^description """A [=Component=] is a designed entity that exists to 
 		presents one or more [=Interface=](s) in the context of a [=Mission=].
     (The concept of interface will be introduced in pattern 5).
@@ -38,7 +42,7 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
     flight software, attitude control software, and mission operations team.
 	
 	  [=Component=]s can be organized hierarchically by containment of other [=Component=]s. """
-	concept Component :> base:ContainedThing [
+	concept Component :> base:ContainedElement [
 		restricts all relation base:contains to Component
 		restricts all relation base:isContainedIn to Component
 	]
@@ -80,7 +84,8 @@ vocabulary <http://opencaesar.io/tutorial/vocabulary/mission> with # as mission 
 	@dc:^description """An [=Junction=] represents a set of mechanical, electrical, signal, 
 	or other properties that are common to a set of mutually connected [=Interface=]s."""
 	concept Junction
-		@rdfs:label "Joins"
+
+	@rdfs:label "Joins"
 	@dc:^description """A [=Junction=] [=joins=] zero or more [=Interface=]s."""
 	relation entity Joins [
 		from Junction

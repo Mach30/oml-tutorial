@@ -1,19 +1,17 @@
-vocabulary <http://opencaesar.io/tutorial/vocabulary/mechanical> with # as mechanical {
-	  
-	extends <http://iso.org/80000-4-units>
+vocabulary <http://opencaesar.io/tutorial/vocabulary/mechanical#> as mechanical {
 
-	extends <http://opencaesar.io/tutorial/vocabulary/mission>
+	uses <http://iso.org/iso-80000-4.1#> as iso-80000-4.1
 
-	concept MechanicalComponent :> mission:Component, metrology:Object
+	extends <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
 
-	concept MassMagnitude :> 80000-4-units:MassMagnitude
+	extends <http://bipm.org/jcgm/vim4#> as vim4
 
-  relation entity IsMassOf :> metrology:IsQuantityOf [
-		from 80000-4-quantities:mass
-		to MechanicalComponent 
-		forward isMassOf
-		reverse hasMass
-		functional
-		inverse functional
+	concept MechanicalComponent :> mission:Component, vim4:Object
+
+	concept MassConstraint :> vim4:InherentUnitaryQuantityValue [
+		restricts all relation vim4:characterizes to MechanicalComponent
+    	restricts relation vim4:instantiates to iso-80000-4.1:mass
+    	restricts relation vim4:unit to iso-80000-4.1:kilogram
 	]
+
 }

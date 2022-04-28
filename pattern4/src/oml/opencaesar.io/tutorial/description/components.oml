@@ -1,16 +1,19 @@
 @dc:title "Kepler 16-b Example Components"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/components> with # as components {
+description <http://opencaesar.io/tutorial/description/components#> as components {
 
+	uses <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
 
-	uses <http://opencaesar.io/tutorial/vocabulary/mission>
+	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://opencaesar.io/tutorial/vocabulary/base#> as base
 
 	ci orbiter-launch-system : mission:Component [
 		base:hasIdentifier "C.01"
 		base:hasCanonicalName "Orbiter Launch System"
 	]
- 
+
 	ci orbiter-spacecraft : mission:Component [
 		base:hasIdentifier "C.02"
 		base:hasCanonicalName "Orbiter Spacecraft"

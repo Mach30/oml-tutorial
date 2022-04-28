@@ -1,27 +1,37 @@
 @dc:title "Kepler16b Vocabulary Tutorial"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by ModelWare"
-vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler16b {
-	 
-  extends <http://opencaesar.io/tutorial/vocabulary/operations>
+vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b#> as kepler16b {
 
-  // To ensure proper connections, we specialize Command and Telemetry
-  // interfaces according to the intended recipient (Command)
-  // or source (Telemetry).
+	extends <http://opencaesar.io/tutorial/vocabulary/operations#> as operations
 
-  concept OrbiterCommandInterface :> operations:CommandInterface
-  concept OrbiterCommandOutInterface :> OrbiterCommandInterface, operations:CommandOutInterface
-  concept OrbiterCommandInInterface :> OrbiterCommandInterface, operations:CommandInInterface
+	extends <http://purl.org/dc/elements/1.1/> as dc
 
-  concept OrbiterTelemetryInterface :> operations:TelemetryInterface
-  concept OrbiterTelemetryOutInterface :> OrbiterTelemetryInterface, operations:TelemetryOutInterface
-  concept OrbiterTelemetryInInterface :> OrbiterTelemetryInterface, operations:TelemetryInInterface
+	// To ensure proper connections, we specialize Command and Telemetry
+	// interfaces according to the intended recipient (Command)
+	// or source (Telemetry).
 
-  concept LanderCommandInterface :> operations:CommandInterface
-  concept LanderCommandOutInterface :> LanderCommandInterface, operations:CommandOutInterface
-  concept LanderCommandInInterface :> LanderCommandInterface, operations:CommandInInterface
+	concept OrbiterCommandInterface :> operations:CommandInterface
 
-  concept LanderTelemetryInterface :> operations:TelemetryInterface
-  concept LanderTelemetryOutInterface :> LanderTelemetryInterface, operations:TelemetryOutInterface
-  concept LanderTelemetryInInterface :> LanderTelemetryInterface, operations:TelemetryInInterface
+	concept OrbiterCommandOutInterface :> OrbiterCommandInterface, operations:CommandOutInterface
+
+	concept OrbiterCommandInInterface :> OrbiterCommandInterface, operations:CommandInInterface
+
+	concept OrbiterTelemetryInterface :> operations:TelemetryInterface
+
+	concept OrbiterTelemetryOutInterface :> OrbiterTelemetryInterface, operations:TelemetryOutInterface
+
+	concept OrbiterTelemetryInInterface :> OrbiterTelemetryInterface, operations:TelemetryInInterface
+
+	concept LanderCommandInterface :> operations:CommandInterface
+
+	concept LanderCommandOutInterface :> LanderCommandInterface, operations:CommandOutInterface
+
+	concept LanderCommandInInterface :> LanderCommandInterface, operations:CommandInInterface
+
+	concept LanderTelemetryInterface :> operations:TelemetryInterface
+
+	concept LanderTelemetryOutInterface :> LanderTelemetryInterface, operations:TelemetryOutInterface
+
+	concept LanderTelemetryInInterface :> LanderTelemetryInterface, operations:TelemetryInInterface
 }

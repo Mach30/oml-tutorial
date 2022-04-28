@@ -28,7 +28,7 @@ configurations {
  * Dependency versions
  */
 ext { 
-	coreVersion = '2.+'
+	coreVersion = '3.+'
 }
 
 /*
@@ -120,6 +120,7 @@ task owlReason(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", depends
  * A task to load an OWL catalog to a Fuseki dataset endpoint
  */
 task owlLoad(type:io.opencaesar.owl.load.OwlLoadTask, group:"oml", dependsOn: owlReason) {
+    outputs.upToDateWhen { false } // forcing rerun since all patterns use same dataset
 	catalogPath = file('build/owl/catalog.xml')
 	endpointURL = "http://localhost:3030/$dataset.name".toString()
     fileExtensions = ['owl', 'ttl']
@@ -134,6 +135,7 @@ task owlLoad(type:io.opencaesar.owl.load.OwlLoadTask, group:"oml", dependsOn: ow
  * A task to run a set of SPARQL queries on a Fuseki dataset endpoint
  */
 task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn: owlLoad) {
+	inputs.files(owlLoad.inputs.files) // rerun when the dataset changes
 	endpointURL = "http://localhost:3030/$dataset.name".toString()
 	queryPath = file('src/sparql')
 	resultPath = file('build/frames')
@@ -151,6 +153,7 @@ task renderObjectives(type: Exec, group:"oml", dependsOn: owlQuery) {
  * A task to run a set of SHACL validation rules on a Fuseki dataset endpoint
  */
 task owlShacl(type:io.opencaesar.owl.shacl.fuseki.OwlShaclFusekiTask, group:"oml", dependsOn: owlLoad) {
+	inputs.files(owlLoad.inputs.files) // rerun when the dataset changes
 	endpointURL = "http://localhost:3030/$dataset.name".toString()
 	queryPath = file('src/shacl')
 	resultPath = file('build/reports')

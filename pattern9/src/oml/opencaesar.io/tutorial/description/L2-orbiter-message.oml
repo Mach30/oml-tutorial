@@ -1,9 +1,19 @@
 @dc:title "Kepler 16-b Example L2 end-to-end Lander Operations"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/L2-orbiter-message> with # as L2-orbiter-message {
-	extends <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-operations>
-      ci orbiter-cmd-example : kepler16b:OrbiterAvionicsCommand [
+description <http://opencaesar.io/tutorial/description/L2-orbiter-message#> as L2-orbiter-message {
+		
+  uses <http://purl.org/dc/elements/1.1/> as dc
+
+  uses <http://opencaesar.io/tutorial/vocabulary/kepler16b#> as kepler16b
+
+  uses <http://opencaesar.io/tutorial/vocabulary/base#> as base
+
+  uses <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
+
+  extends <http://opencaesar.io/tutorial/description/interfaces#> as interfaces
+
+  ci orbiter-cmd-example : kepler16b:OrbiterAvionicsCommand [
       	base:hasIdentifier "CM.02"
       ]
 

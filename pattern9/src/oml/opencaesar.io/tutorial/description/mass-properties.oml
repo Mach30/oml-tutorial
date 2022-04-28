@@ -1,64 +1,84 @@
 @dc:title "Kepler 16-b Example Component Mass Quantities"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/mass-properties> with # as mass-properties {
+description <http://opencaesar.io/tutorial/description/mass-properties#> as mass-properties {
 
-  uses <http://opencaesar.io/tutorial/vocabulary/mechanical>
+	uses <http://opencaesar.io/tutorial/vocabulary/mechanical#> as mechanical
 
-  ci orbiter-launch-system-hardware : mechanical:MechanicalComponent [
-		base:hasIdentifier "C.01"
-		base:hasCanonicalName "Orbiter Launch System Hardware"
-  ]
+	uses <http://purl.org/dc/elements/1.1/> as dc
 
-  ci orbiter-launch-system.mass.quantity : 80000-4-quantities:mass [
-    metrology:isQuantityOf orbiter-launch-system-hardware
-  ]
+	uses <http://bipm.org/jcgm/vim4#> as vim4
 
-  ci orbiter-launch-system.mass.magnitude : mechanical:MassMagnitude [
-    metrology:hasDoubleNumber "2000"^^xsd:double
-    metrology:isMagnitudeOf orbiter-launch-system.mass.quantity 
-  ]
+	uses <http://www.w3.org/2001/XMLSchema#> as xsd
 
-  ci orbiter-spacecraft-hardware  : mechanical:MechanicalComponent [
-		base:hasIdentifier "C.02"
-		base:hasCanonicalName "Orbiter Spacecraft Hardware"
-  ]
+	extends <http://opencaesar.io/tutorial/description/components#> as components
 
-  ci orbiter-spacecraft.mass.quantity : 80000-4-quantities:mass [
-    mechanical:isMassOf orbiter-spacecraft-hardware
-  ]
+	ref ci components:orbiter-launch-system : mechanical:MechanicalComponent
 
-  ci orbiter-spacecraft.mass.magnitude : mechanical:MassMagnitude [
-    metrology:hasDoubleNumber "700"^^xsd:double
-    metrology:isMagnitudeOf orbiter-spacecraft.mass.quantity
-  ]
-
-  ci lander-launch-system-hardware : mechanical:MechanicalComponent [
-      base:hasIdentifier "C.05"
-      base:hasCanonicalName "Lander Launch System Hardware"
-  ]
-
-  ci lander-launch-system.mass.quantity : 80000-4-quantities:mass [
-   mechanical:isMassOf lander-launch-system-hardware
-  ]
-
-  ci lander-launch-system.mass.magnitude : mechanical:MassMagnitude [
-    metrology:hasDoubleNumber "3000"^^xsd:double
-    metrology:isMagnitudeOf lander-launch-system.mass.quantity
-  ]
-
-	ci lander-spacecraft-hardware : mechanical:MechanicalComponent [
-		base:hasIdentifier "C.06"
-		base:hasCanonicalName "Lander Spacecraft Hardware"
+	ci orbiter-launch-system.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "2000"^^xsd:double
+		vim4:characterizes components:orbiter-launch-system
 	]
 
-  ci lander-spacecraft.mass.quantity : 80000-4-quantities:mass [
-    mechanical:isMassOf lander-spacecraft-hardware
-  ]
+	// Note that vim4:characterizes effectively forces components:orbiter-spacecraft
+	// to be classified as a mechanical:MechanicalComponent even though no such assertion
+	// was made.
+	ci orbiter-spacecraft.mass : mechanical:MassConstraint [
+		vim4:characterizes components:orbiter-spacecraft
+	]
 
-  ci lander-spacecraft.mass.magnitude : mechanical:MassMagnitude [
-    metrology:hasDoubleNumber "1200"^^xsd:double
-    metrology:isMagnitudeOf lander-spacecraft.mass.quantity
-  ]
+	ci lander-launch-system.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "3000"^^xsd:double
+		vim4:characterizes components:lander-launch-system
+	]
 
+	ci lander-spacecraft.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "1200"^^xsd:double
+		vim4:characterizes components:lander-spacecraft
+	]
+
+	ci orbiter-power-subsystem.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "297"^^xsd:double
+		vim4:characterizes components:orbiter-power-subsystem
+	]
+
+	ci orbiter-harness.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "138"^^xsd:double
+		vim4:characterizes components:orbiter-harness
+	]
+
+	ci orbiter-thermal-subsystem.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "307"^^xsd:double
+		vim4:characterizes components:orbiter-thermal-subsystem
+	]
+
+	ci orbiter-command-and-data-handling-subsystem.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "147"^^xsd:double
+		vim4:characterizes components:orbiter-command-and-data-handling-subsystem
+	]
+
+	ci orbiter-telecom-subsystem.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "316"^^xsd:double
+		vim4:characterizes components:orbiter-telecom-subsystem
+	]
+
+	ci orbiter-guidance-navigation-control-subsystem.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "156"^^xsd:double
+		vim4:characterizes components:orbiter-guidance-navigation-control-subsystem
+	]
+
+	ci orbiter-mechanical-subsystem.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "325"^^xsd:double
+		vim4:characterizes components:orbiter-mechanical-subsystem
+	]
+
+	ci orbiter-spacraft-flight-software.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "165"^^xsd:double
+		vim4:characterizes components:orbiter-spacraft-flight-software
+	]
+
+	ci orbiter-propulsion-subsystem.mass : mechanical:MassConstraint [
+		vim4:hasDoubleNumber "6"^^xsd:double
+		vim4:characterizes components:orbiter-propulsion-subsystem
+	]
 }

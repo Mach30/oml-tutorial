@@ -1,9 +1,13 @@
 @dc:title "Kepler16b Vocabulary Tutorial"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by ModelWare"
-vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b> with # as kepler16b {
+vocabulary <http://opencaesar.io/tutorial/vocabulary/kepler16b#> as kepler16b {
 	 
-  extends <http://opencaesar.io/tutorial/vocabulary/operations>
+  extends <http://opencaesar.io/tutorial/vocabulary/operations#> as operations
+
+  extends <http://purl.org/dc/elements/1.1/> as dc
+
+	extends <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
 
   // To ensure proper connections, we specialize Command and Telemetry
   // interfaces according to the intended recipient (Command)

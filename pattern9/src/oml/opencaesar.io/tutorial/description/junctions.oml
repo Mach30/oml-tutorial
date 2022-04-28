@@ -1,8 +1,17 @@
 @dc:title "Kepler 16-b Example Junctions"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/junctions> with # as junctions {
-  extends <http://opencaesar.io/tutorial/description/interfaces>
+description <http://opencaesar.io/tutorial/description/junctions#> as junctions {
+	
+  extends <http://opencaesar.io/tutorial/description/interfaces#> as interfaces
+
+  uses <http://purl.org/dc/elements/1.1/> as dc
+
+  uses <http://opencaesar.io/tutorial/vocabulary/kepler16b#> as kepler16b
+
+  uses <http://opencaesar.io/tutorial/vocabulary/base#> as base
+
+  uses <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
 
   ci orbiter-ground-data-system.orbiter-spacecraft.command.transmission : kepler16b:OrbiterCommandTransmission [
   	base:hasIdentifier "J.01"

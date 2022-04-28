@@ -1,10 +1,18 @@
 @dc:title "Kepler 16-b Example L2 end-to-end Lander Operations"
 @dc:creator "ModelWare"
 @dc:rights "Copyright 2021, by Modelware"
-description <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-operations> with # as L2-end-to-end-lander-operations {
-	extends <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
-	extends <http://opencaesar.io/tutorial/description/L2-shared-operations>
-    
+description <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-operations#> as L2-end-to-end-lander-operations {
+	
+  extends <http://opencaesar.io/tutorial/description/interfaces#> as interfaces
+
+  uses <http://purl.org/dc/elements/1.1/> as dc
+
+  uses <http://opencaesar.io/tutorial/vocabulary/kepler16b#> as kepler16b
+
+  uses <http://opencaesar.io/tutorial/vocabulary/mission#> as mission
+
+  uses <http://opencaesar.io/tutorial/vocabulary/operations#> as operations
+
   // end-to-end command uplink
   
   ci lander-operator.lander-ground-data-system.command.uplink : kepler16b:LanderCommandTransmission [

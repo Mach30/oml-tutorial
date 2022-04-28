@@ -12,10 +12,9 @@ output:
 ```{r}
 library(SPARQL, quietly=TRUE)
 
-endpointURL = "http://localhost:3030/oml-tutorial"
+endpointURL = "http://localhost:3030/oml-tutorial/sparql"
 queryString1 = "
 PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
-PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
 
 SELECT DISTINCT ?p_id ?c_id
 WHERE {
@@ -72,12 +71,11 @@ length(which(degree(g, mode="in") == 0)) == 1
 ## Leaf Component Masses
 
 ```{r}
-endpointURL = "http://localhost:3030/oml-tutorial"
+endpointURL = "http://localhost:3030/oml-tutorial/sparql"
 queryString2 = '
 PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
-PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
 PREFIX mechanical:  <http://opencaesar.io/tutorial/vocabulary/mechanical#>
-PREFIX metrology:   <http://iupac.org/metrology#>
+PREFIX vim4:        <http://bipm.org/jcgm/vim4#>
 
 SELECT DISTINCT ?c_id ?mass
 WHERE {
@@ -85,11 +83,9 @@ WHERE {
     base:contains* ?c .
   ?c base:hasIdentifier ?c_id
   optional {
-    [] a mechanical:MassMagnitude ;
-      metrology:hasDoubleNumber ?mass ;
-      metrology:isMagnitudeOf [
-        mechanical:isMassOf ?c 
-      ]
+    [] a mechanical:MassConstraint ;
+      vim4:hasDoubleNumber ?mass ;
+      vim4:characterizes ?c .
   }
 }
 ORDER BY ?c_id
