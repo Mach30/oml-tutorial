@@ -1,0 +1,8 @@
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
+
+SELECT DISTINCT ?p_id ?c_id
+WHERE {
+  [] base:hasIdentifier ?p_id ;
+     base:contains [ base:hasIdentifier ?c_id ]
+}
+ORDER BY ?p_id ?c_id

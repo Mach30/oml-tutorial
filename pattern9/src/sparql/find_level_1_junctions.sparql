@@ -1,0 +1,21 @@
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
+PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
+
+SELECT DISTINCT ?i1_id ?i2_id
+
+WHERE {
+ GRAPH ?l1 { ?j a [] }
+ VALUES ?l1 {
+    <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
+    <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>
+  }
+  ?j a mission:Junction ;
+    mission:joins1 [
+      a mission:Interface ;
+      base:hasIdentifier ?i1_id
+    ] ;
+    mission:joins2 [
+      a mission:Interface ;
+      base:hasIdentifier ?i2_id
+    ]
+}

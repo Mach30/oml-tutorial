@@ -1,0 +1,17 @@
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
+PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
+
+SELECT DISTINCT ?m_id ?io_id ?ii_id
+
+WHERE {
+ [] a mission:Message ;
+    base:hasIdentifier ?m_id ;
+    ^mission:transfersOut [
+      a mission:Interface ;
+      base:hasIdentifier ?io_id
+    ] ;
+    ^mission:transfersIn [
+      a mission:Interface ;
+      base:hasIdentifier ?ii_id
+    ]
+}

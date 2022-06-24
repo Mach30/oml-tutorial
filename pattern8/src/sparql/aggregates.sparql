@@ -1,8 +1,0 @@
-PREFIX mission:   <http://opencaesar.io/tutorial/vocabulary/mission#>
-
-SELECT DISTINCT ?x ?y
-
-WHERE {
-	?x mission:aggregates ?y
-}
-ORDER BY ?x ?y

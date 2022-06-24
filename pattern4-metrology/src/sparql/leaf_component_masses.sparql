@@ -1,0 +1,16 @@
+PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
+PREFIX mechanical:  <http://opencaesar.io/tutorial/vocabulary/mechanical#>
+PREFIX vim4:        <http://bipm.org/jcgm/vim4#>
+
+SELECT DISTINCT ?c_id ?mass
+WHERE {
+  [] base:hasCanonicalName "Orbiter Spacecraft" ;
+    base:contains* ?c .
+  ?c base:hasIdentifier ?c_id
+  optional {
+    [] a mechanical:MassConstraint ;
+      vim4:hasDoubleNumber ?mass ;
+      vim4:characterizes ?c .
+  }
+}
+ORDER BY ?c_id
