@@ -11,18 +11,10 @@ output:
 
 ```{r}
 library(SPARQL, quietly=TRUE)
+library("readr")
 
 endpointURL = "http://localhost:3030/oml-tutorial/sparql"
-queryString1 = "
-PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
-
-SELECT DISTINCT ?p_id ?c_id
-WHERE {
-  [] base:hasIdentifier ?p_id ;
-     base:contains [ base:hasIdentifier ?c_id ]
-}
-ORDER BY ?p_id ?c_id
-"
+queryString1 <- read_file("../sparql/component_decomposition_edge_list.sparql")
 d1 <- SPARQL(url=endpointURL, query=queryString1)
 d1$results
 ```
@@ -72,24 +64,7 @@ length(which(degree(g, mode="in") == 0)) == 1
 
 ```{r}
 endpointURL = "http://localhost:3030/oml-tutorial/sparql"
-queryString2 = '
-PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
-PREFIX mechanical:  <http://opencaesar.io/tutorial/vocabulary/mechanical#>
-PREFIX vim4:        <http://bipm.org/jcgm/vim4#>
-
-SELECT DISTINCT ?c_id ?mass
-WHERE {
-  [] base:hasCanonicalName "Orbiter Spacecraft" ;
-    base:contains* ?c .
-  ?c base:hasIdentifier ?c_id
-  optional {
-    [] a mechanical:MassConstraint ;
-      vim4:hasDoubleNumber ?mass ;
-      vim4:characterizes ?c .
-  }
-}
-ORDER BY ?c_id
-'
+queryString2 <- read_file("../sparql/leaf_component_masses.sparql")
 d2 <- SPARQL(url=endpointURL, query=queryString2)
 d2$results
 ```

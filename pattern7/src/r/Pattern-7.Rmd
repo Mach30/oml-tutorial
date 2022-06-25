@@ -15,30 +15,10 @@ output:
 
 ```{r}
 library(SPARQL, quietly=TRUE)
+library("readr")
 
 endpointURL = "http://localhost:3030/oml-tutorial/sparql"
-queryString1 = "
-PREFIX oml:        <http://opencaesar.io/oml#>
-PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
-PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
-
-SELECT DISTINCT ?r_id ?c_id ?i_id
-
-WHERE {
-  [] a mission:Requirement ;
-    base:hasIdentifier ?r_id ;
-    mission:specifies [
-      a mission:Presents ;           # reified relation
-      oml:hasSource [    			 # source
-        base:hasIdentifier ?c_id
-      ] ;
-      oml:hasTarget [    			  # target
-        base:hasIdentifier ?i_id
-      ]
-    ]
-}
-ORDER BY ?r_id ?c_id ?i_id
-"
+queryString1 <- read_file("../sparql/requirements.sparql")
 d1 <- SPARQL(url=endpointURL, query=queryString1)
 d1$results
 ```

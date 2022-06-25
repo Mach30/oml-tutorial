@@ -11,25 +11,10 @@ output:
 
 ```{r}
 library(SPARQL, quietly=TRUE)
+library("readr")
 
 endpointURL = "http://localhost:3030/oml-tutorial/sparql"
-queryString1 = "
-PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
-PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
-
-SELECT DISTINCT ?m_id ?m_name ?c_id ?c_name
-
-WHERE {
-	[] a mission:Mission ;
-    base:hasIdentifier ?m_id ;
-    base:hasCanonicalName ?m_name ;
-    mission:deploys [
-      base:hasIdentifier ?c_id ;
-      base:hasCanonicalName ?c_name ;
-    ]
-}
-ORDER BY ?m_id ?c_id
-"
+queryString1 <- read_file("../sparql/deploys_one_level.sparql")
 d1 <- SPARQL(url=endpointURL, query=queryString1)
 d1$results
 ```
@@ -37,23 +22,7 @@ d1$results
 # Mission Deploys/Contains* Component (Transitive Closure)
 ```{r}
 endpointURL = "http://localhost:3030/oml-tutorial/sparql"
-queryString1 = "
-PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
-PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
-
-SELECT DISTINCT ?m_id ?m_name ?c_id ?c_name
-
-WHERE {
-	[] a mission:Mission ;
-    base:hasIdentifier ?m_id ;
-    base:hasCanonicalName ?m_name ;
-    mission:deploys / base:contains* [
-      base:hasIdentifier ?c_id ;
-      base:hasCanonicalName ?c_name ;
-    ]
-}
-ORDER BY ?m_id ?c_id
-"
+queryString1 <- read_file("../sparql/deploys_contains.sparql")
 d1 <- SPARQL(url=endpointURL, query=queryString1)
 d1$results
 ```

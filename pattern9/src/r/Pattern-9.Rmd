@@ -17,27 +17,10 @@ This query finds out/in pairs of interfaces transferring a single message.
 
 ```{r}
 library(SPARQL, quietly=TRUE)
+library("readr")
 
 endpointURL = "http://localhost:3030/oml-tutorial/sparql"
-queryString1 = "
-PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
-PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
-
-SELECT DISTINCT ?m_id ?io_id ?ii_id
-
-WHERE {
- [] a mission:Message ;
-    base:hasIdentifier ?m_id ;
-    ^mission:transfersOut [
-      a mission:Interface ;
-      base:hasIdentifier ?io_id
-    ] ;
-    ^mission:transfersIn [
-      a mission:Interface ;
-      base:hasIdentifier ?ii_id
-    ]
-}
-"
+queryString1 <- read_file("../sparql/find_transfers_out_in_pairs.sparql")
 d1 <- SPARQL(url=endpointURL, query=queryString1)
 df1 <- d1$results
 df1
@@ -48,29 +31,8 @@ df1
 ## Level 1
 
 ```{r}
-queryString2 = "
-PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
-PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
+queryString2 <- read_file("../sparql/find_level_1_junctions.sparql")
 
-SELECT DISTINCT ?i1_id ?i2_id
-
-WHERE {
- GRAPH ?l1 { ?j a [] }
- VALUES ?l1 {
-    <http://opencaesar.io/tutorial/description/L1-end-to-end-lander-operation>
-    <http://opencaesar.io/tutorial/description/L1-end-to-end-orbiter-operation>
-  }
-  ?j a mission:Junction ;
-    mission:joins1 [
-      a mission:Interface ;
-      base:hasIdentifier ?i1_id
-    ] ;
-    mission:joins2 [
-      a mission:Interface ;
-      base:hasIdentifier ?i2_id
-    ]
-}
-"
 d2 <- SPARQL(url=endpointURL, query=queryString2)
 df2 <- d2$results
 df2
@@ -79,30 +41,7 @@ df2
 ## Level 2
 
 ```{r}
-queryString3 = "
-PREFIX base:        <http://opencaesar.io/tutorial/vocabulary/base#>
-PREFIX mission:     <http://opencaesar.io/tutorial/vocabulary/mission#>
-
-SELECT DISTINCT ?i1_id ?i2_id
-
-WHERE {
- GRAPH ?l2 { ?j a [] }
- VALUES ?l2 {
-    <http://opencaesar.io/tutorial/description/L2-end-to-end-lander-operations>
-    <http://opencaesar.io/tutorial/description/L2-end-to-end-orbiter-operations>
-    <http://opencaesar.io/tutorial/description/L2-shared-operations> 
-  }
-  ?j a mission:Junction ;
-    mission:joins1 [
-      a mission:Interface ;
-      base:hasIdentifier ?i1_id
-    ] ;
-    mission:joins2 [
-      a mission:Interface ;
-      base:hasIdentifier ?i2_id
-    ]
-}
-"
+queryString3 <- read_file("../sparql/find_level_2_junctions.sparql")
 d3 <- SPARQL(url=endpointURL, query=queryString3)
 df3 <- d3$results
 df3
